@@ -1,0 +1,28 @@
+/* Footer */
+footer {
+  background-color: #3806c2;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Header */
+header {
+    background-color: #3806c2;
+    color: #ffffff;
+    padding: 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;  }
+
+    html {
+      height: 100%;
+  }
+  body {
+      min-height: 100%;
+  }
+
+  body {
+    font-family: Consolas, monospace;
+}
