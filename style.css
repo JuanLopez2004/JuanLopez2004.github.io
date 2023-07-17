@@ -1,16 +1,16 @@
 /* Footer */
 footer {
-  background-color: #ffffff;
-  color: #ff0000;
+  background-color: #3806c2;
+  color: #ffffff;
   text-align: center;
-  padding: 50px;
+  padding: 10px;
 }
 
 /* Header */
 header {
-    background-color: #ffffff;
-    color: #ff0000;
-    padding: 50px;
+    background-color: #3806c2;
+    color: #ffffff;
+    padding: 2px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -25,8 +25,4 @@ header {
 
   body {
     font-family: Consolas, monospace;
-}
-
-img {
-  margin-bottom: 20px;
 }
