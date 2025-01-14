@@ -1,205 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Juan Lopez's Site</title>
-    <link rel="icon" type="image/x-icon" href="https://juanlopez2004.github.io/favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+<style>
 
-        body {
-            background-color: #4856a3;
-            font-family: Consolas, monospace;
-            color: aliceblue;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+body {
+    background-color: #4856a3;
+    font-family: Consolas, monospace;
+    color:aliceblue;
+    text-align:center;
+}
 
-        /* for some reason this makes my name closer to the bar */
-        body {
-        margin: 0;
-        padding: 0;
-        font-family: Consolas, monospace;
-        }
-z
-        /* Headers */
-        header {
-            padding: 80px 20px 20px 20px; 
-            background-color: #4856a3;
-            color: aliceblue;
-        }
+footer {
+  background-color: #3806c2;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
 
-        header img {
-            margin-top: 20px;
-            max-width: 30%; 
-            height: auto;
-        }
+header {
+    background-color: #3806c2;
+    color: #ffffff;
+    padding: 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
 
-        /* Section */
-        section {
-            padding: 60px 20px; 
-            background-color: #4856a3;
-            color: aliceblue;
-        }
+.leftallign {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    margin: 20px;
+}  
 
-        section:nth-of-type(even) {
-            background-color: #5a65c9;
-        }
+.leftallign img {
+    margin-right: 20px; 
+    max-width: 30%; 
+    height: auto;
+}
 
-        /* Aligns */
-        .leftalign {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            text-align: left;
-            margin: 20px;
-        }  
+.leftallign p {
+    flex: 1; 
+    margin: 0; 
+}
 
-        .leftalign img {
-            margin-right: 20px; 
-            max-width: 30%; 
-            height: auto;
-        }
+.box {
+        margin: 20px auto;
+        padding: 50px;
+        width: 400px;  
+        background-color: white;  
+        border: 2px solid black;  
+        box-shadow: 3px 3px 5px #888888; 
+        box-sizing: border-box; 
+        color:black
+        
+    }
 
-        .leftalign p {
-            flex: 1; 
-            margin: 0; 
-        }
 
-        /* Footers */
-        html, body {
-            min-height: 100%;
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-        }
+.slimbox {
+        margin: 20px auto;
+        padding: 50px;
+        width: 1200px;
+        height: 200px;
+        background-color: #4856a3;  
+        border: 2px solid black;  
+        box-shadow: 3px 3px 5px #888888; 
+        box-sizing: border-box; 
+        color:white
+    }
 
-        body > * {
-            flex: 1; /* Pushes footer to the bottom */
-        }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+</style>
 
-        footer {
-            position: static;
-        }
-
-        /* Styling */
-        a {
-            color: #ffffff;
-            text-decoration: underline;
-        }
-
-        a:hover {
-            color: #dddddd;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-    </style>
+<html lang="en">
+<title>Juan Lopez's Site</title>
+<link rel="icon" type="image/x-icon" href="https://juanlopez2004.github.io/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#technologies">Technologies</a>
-        <a href="#coursework">Coursework</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
-        <a href="#contact">Contact</a>
+    <h1>Juan Lopez</h1>
     </div>
-
-    <header id="home">
-        <h1>Juan Lopez</h1>
         <h3>Junior NIU Computer Science Student</h3>
-
-        <img src="https://github.com/JuanLopez2004/JuanLopez2004.github.io/blob/main/24_JuanLopez_1002_ST_2.jpg?raw=true" width="300" alt="Juan Lopez">
         <hr>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="leftalign">
-            <p>
-                <strong>
-                    I am a student at NIU passionate about Computer Science. 
-                    I enjoy learning within the classroom and outside of it. Here you can find my coursework, projects, and contacts. 
-                    I am an Officer & Treasurer for the NIU ACM Chapter. I also participate in undergraduate research under Dr. Jun Zhang.
-                    Add me on <a href="https://www.linkedin.com/in/juan-lopez-6278bb234/" target="_blank">LinkedIn!</a>
-                </strong>
-            </p>
+        <div class="leftallign">
+            <p><h2>I am a student at NIU passionate in Computer Science. 
+            I enjoy learning within the classroom and outside of it. Here you can find my coursework, projects, and contacts. 
+            I am an Officer & Treasurer for the NIU ACM Chapter. I also participate in undergraduate research under Dr. Jun Zhang.
+            Add me on <a href="https://www.linkedin.com/in/juan-lopez-6278bb234/">LinkedIn!</a>
+            </h2></p>
         </div>
-    </section>
+
+    <hr>
+    <br></br>
+    <b><h2>Technologies worked with</h2></b>
+    <br></br> 
+    C++, Unix, MySQL, PHP, HTML, CSS, ReactJS, NodeJS, System 370 Assembly, Git & Github.
+    <br></br> 
+    <b>Currently Studying</b>
+    <br></br> 
+    Android Java, Python, C++.
+    <br></br>
+    <br></br>
     <hr>
 
-    <section id="technologies">
-        <h2>Technologies Worked With</h2>
-        <p>C++, Unix, MySQL, PHP, HTML, CSS, Git & Github.</p>
-        <h2>Currently Studying</h2>
-        <p>Javascript (ReactJS + Vite), NodeJS, Express.js, Assembly, and Python.</p>
-    </section>
+    <div class="container">
+    <div class="box">
+        Course Work
+        <p>CSCI 240 Intro to C++</p>
+        <p>CSCI 241 Intermed C++</p>
+        <p>CSCI 330 Unix & Network Programmming</p>
+        <p>CSCI 340 Data Structures & Algs.</p>
+        <p>CSCI 466 Databases</p>
+        <p>CSCI 360 Assembly Prog. </p>
+        <p>CSCI 467 Software Eng. </p>
+        <p>CSCI 322 Android Prog. </p>
+        <p>CSCI 463 Computer Architecture</p>
+        </p>
+    </div>    
 
-    <section id="coursework">
-        <h2>Coursework</h2>
-        <div class="leftalign">
-            <div>
-                <h3>Courses</h3>
-                <p>CSCI 240 Intro to C++</p>
-                <p>CSCI 241 Intermediate C++</p>
-                <p>CSCI 330 Unix & Network Programming</p>
-                <p>CSCI 340 Data Structures & Algorithms</p>
-                <p>CSCI 466 Databases</p>
-                <p>CSCI 360 Assembly Programming (current)</p>
-                <p>CSCI 467 Software Engineering (current)</p>
-                <p>CSCI 321 Android Programming (25)</p>
-                <p>CSCI 463 Computer Architecture (25)</p>
-            </div>
-        </div>
-        <br>
-    </section>
+    <div class="box">
+    <img src="https://juanlopez2004.github.io/linux-tux.gif" width="236">
+    </div>  
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div>
-            <h3>Karaoke Website </h3>
-            <p>Karaoke Website group project</p>
-            <a href="https://students.cs.niu.edu/~z1952526/homepage.php">View Project</a>
-        </div>
-        <br>
-        <div>
-            <h3>Product Catalog Website</h3>
-            <p>Coming soon</p>
-            <a href="#">View Project</a>
-        </div>
-        <div>
-            <h3>Github</h3>
-            <p>Check out my <a href="https://github.com/JuanLopez2004" target="_blank">Github!</a></p>
-            <a href="https://github.com/JuanLopez2004" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="255" alt="Github Logo">
-            </a>
-        </div>
-    </section>
+    <div class="box">
+        Check out my <a href="https://github.com/JuanLopez2004">Github!</a>
+        <a href="https://github.com/JuanLopez2004">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="255">
+        </a>
+    </div>   
 
-    <section id="research">
-        <h2>Research</h2>
-        <div>
-            <h3>Research with Dr. Jun Zhang</h3>
-            <p>In my research using GUIDE, a multipurpose machine learning algorithm for constructing classification and regression trees, I have further honed analyzation skills.
-                GUIDE stands out because it incorporates statistical hypothesis tests to detect and handle variable interactions.
-            </p>
-            <a href="ugrad.html">Learn More</a>
-        </div>
-    </section>
+    <div class="box">
+        Project Portfolio
+        <p><a href="web2port.html">Click Here</a></p>
+    </div>   
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:jlopezcs04@gmail.com">jlopezcs04@gmail.com</a></p>
-    </section>
+    <div class="box">
+        Undergraduate Research with Dr. Jun Zhang
+        <p><a href="ugrad.html">Click Here</a></p>
+    </div>  
 
-    <footer>
-        <p>&copy; copyright juan lopez 2024</p>
-    </footer>
+    <div class="box">
+        Memberships
+        <p>ACM NIU Chapter</p>
+    </div>    
+</div>
 
+<hr>
+<p> Contact me at jlopezcs04@gmail.com </p>
+<p> copyright juan lopez 2025 </p>
 </body>
 </html>
