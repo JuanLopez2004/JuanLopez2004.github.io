@@ -1,5 +1,10 @@
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 body {
@@ -9,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    max-width: 100vw;
 }
 
 a {
@@ -25,6 +31,7 @@ h1, h2, h3, p {
     margin: 0;
 }
 
+/* Headings */
 header h3 {
     color: rgb(0, 0, 0);
     -webkit-text-stroke: 0.5px white;
@@ -75,7 +82,7 @@ h3 {
     transform: scale(1.1);
 }
 
-/* Header Section */
+/* Header */
 header {
     padding: 100px 20px;
     background-image: url('tux-penguins-linux-penguin-wallpaper.jpg');
@@ -106,11 +113,11 @@ header hr {
 /* Sections */
 section {
     padding: 60px 20px;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    transform: translateY(20px);
     background-color: #6574c1;
+    transform: translateY(20px);
     opacity: 0;
     animation: slideUp 0.8s ease forwards;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 section:nth-of-type(even) {
@@ -134,7 +141,7 @@ section h2 {
     line-height: 1.6;
 }
 
-/* Coursework Section */
+/* Coursework */
 #coursework ul {
     list-style: none;
     padding: 0;
@@ -146,7 +153,7 @@ section h2 {
     padding: 5px 0;
 }
 
-/* Projects Section */
+/* Projects */
 #projects div {
     margin: 20px auto;
     padding: 20px;
@@ -158,8 +165,7 @@ section h2 {
     transition: transform 0.3s ease;
 }
 
-#projects h3,
-#projects p {
+#projects h3, #projects p {
     color: #000000;
 }
 
@@ -196,6 +202,113 @@ footer {
     color: aliceblue;
 }
 
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Content Middle */
+.content-middle {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.content-middle iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+
+/* Description, Tech, APK Cards */
+section.description,
+section.technologies,
+section.card {
+    padding: 20px;
+    margin: 15px auto;
+    background-color: #4753b0;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+section.description p,
+section.technologies li,
+section.card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Download Button */
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #2f3b80;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #dfe3ff;
+    color: #1e245f;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    padding-bottom: 30%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.content-middle img.responsive-img {
+    margin-bottom: 40px;
+}
+
+.content-middle .video-wrapper {
+    margin-top: 40px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     h1 {
@@ -222,125 +335,7 @@ footer {
     }
 
     .content-middle {
-        padding-right: 15px; /* smaller padding on mobile */
+        padding-right: 15px;
     }
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* ===== Updated Content-Middle & Media Styles ===== */
-.content-middle {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px 15px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.responsive-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-.content-middle iframe {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    margin-bottom: 20px;
-}
-
-/* Section Cards: Overview, Tech, APK */
-section.description,
-section.technologies,
-section.card {
-    padding: 20px;
-    margin: 15px auto;
-    background-color: #4753b0;
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-}
-
-section.description p,
-section.technologies li,
-section.card p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-/* Download button style */
-.download-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: #2f3b80;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.download-btn:hover {
-    background-color: #dfe3ff;
-    color: #1e245f;
-}
-
-/* Video Wrapper */
-.video-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto 40px;
-    padding-bottom: 30%; /* aspect ratio */
-    height: 0;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.content-middle img.responsive-img {
-    margin-bottom: 40px; /* increase space below the image */
-}
-
-.content-middle .video-wrapper {
-    margin-top: 40px; /* add space above the video */
-}
