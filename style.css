@@ -1,0 +1,247 @@
+    html {
+    scroll-behavior: smooth;
+}
+
+    body {
+            background-color: #4856a3;
+            font-family: 'Consolas', sans-serif;
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+        }
+
+        header h3 {
+    color: rgb(0, 0, 0); /* Set text color to black */
+    -webkit-text-stroke: 0.5px white; /* Thin white outline */
+    font-size: 2rem; /* Keep the existing size */
+    margin-top: 20px; /* Preserve existing margin */
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        -webkit-text-stroke: 1px white; /* Adds a thin white border */
+        color: black; /* Ensures the inner color remains black */
+         }
+
+        h3 {
+            font-size: 2rem;
+            margin-top: 20px;
+            -webkit-text-stroke: 0.5px white; /* Slightly thinner border for h3 */
+            color: rgb(255, 255, 255);
+        }
+
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(135deg, #8348a3, #5a65c9);
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            margin: 5px 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar a:hover {
+            transform: scale(1.1);
+        }
+
+        /* Header Section */
+        header {
+            padding: 100px 20px;
+            background-image: url('tux-penguins-linux-penguin-wallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            color: black;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        header h3 {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        header hr {
+            width: 60%;
+            margin: 20px auto;
+            border: 1px solid black;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+            transform: translateY(20px);
+            background-color: #6574c1; /*first row*/
+            opacity: 0;
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        section:nth-of-type(even) {
+            background-color: #5a65c9;  /*2nd row*/
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+        }
+
+        .leftalign {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .leftalign p {
+            flex: 2;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Coursework Section */
+        #coursework ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #coursework li {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            padding: 5px 0;
+        }
+
+            /* Projects Section */
+        #projects div {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: #ffffff; /* White background */
+            color: #000000; /* Black text */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        #projects h3 {
+            color: #000000; /* Black text for headings */
+        }
+
+        #projects p {
+            color: #000000; /* Black text for paragraphs */
+        }
+
+        #projects a {
+            color: #8348a3; /* Purple for links */
+            text-decoration: none;
+        }
+
+        #projects a:hover {
+            color: #5a65c9; /* Light purple for hover state */
+        }
+
+        #projects div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        #projects a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #8348a3;
+            font-weight: bold;
+        }
+
+        #projects img {
+            width: 100px;
+            margin-top: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        #projects img:hover {
+            transform: rotate(20deg);
+        }
+
+        /* Footer */
+        footer {
+            padding: 15px;
+            text-align: center;
+            background: linear-gradient(100deg, #8348a3, #5a65c9);
+            color: aliceblue;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .navbar a {
+                font-size: 1rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .content-middle {
+        text-align: center;
+        padding-right: 59px; /* Optional: Adds space from the edge */
+        }
+
+        
