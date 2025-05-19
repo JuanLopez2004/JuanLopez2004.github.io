@@ -346,3 +346,19 @@ section.card p {
     }
 }
 
+/* Container for ER diagram */
+.er-diagram-section {
+    padding: 60px 20px;
+    background-color: #4a5abb; /* Distinct but aligned with theme */
+    text-align: center;
+}
+
+/* ER diagram image styles */
+.er-diagram-img {
+    max-width: 90%;
+    height: auto;
+    margin: 40px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
