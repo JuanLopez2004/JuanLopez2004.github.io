@@ -57,6 +57,11 @@ h3 {
     color: rgb(255, 255, 255);
 }
 
+h4 {
+    font-size: 1rem;
+
+}
+
 /* Navbar */
 .navbar {
     background: linear-gradient(135deg, #8348a3, #5a65c9);
