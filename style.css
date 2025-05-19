@@ -367,37 +367,3 @@ section.card p {
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-
-  .jj-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 16px;
-    padding: 0;
-    list-style: none;
-  }
-
-  .jj-grid li {
-    text-align: center;
-  }
-
-  .jj-grid img {
-    width: 100%;
-    max-width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border: 2px solid #0073b1;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  }
-
-  .jj-grid div {
-    margin-top: 8px;
-    font-size: 14px;
-    max-width: 120px;
-    margin-inline: auto;
-  }
-
-  @media (max-width: 500px) {
-    .jj-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
