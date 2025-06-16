@@ -9,17 +9,20 @@
 </head>
 <body>
 
-    <!--nav-->
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#ACM">ACM</a>
-        <a href="#coursework">Coursework</a>
-        <a href="#resume">Resume</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+  <!--nav-->
+  <div class="navbar">
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <div class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#ACM">ACM</a>
+      <a href="#coursework">Coursework</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
+  </div>
 
     <header id="home">
         <h1>Juan Lopez</h1>
@@ -151,9 +154,18 @@
         <h2>Contact Me</h2>
         <h4><p><b>Email: <a href="mailto:jlopezcs04@gmail.com">jlopezcs04@gmail.com</a></b></p></h4>
     </section>
-    
+
     <footer>
         &copy; 2025 Juan Lopez. All Rights Reserved.
     </footer>
+
+    <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

@@ -21,6 +21,47 @@
     transform: scale(1.1);
 }
 
+/**/
+
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(135deg, #8348a3, #5a65c9);
+    padding: 10px 0;
+  }
+
+  .nav-links a {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
 /* ---------- HEADER ---------- */
 header {
     padding: 100px 20px;
