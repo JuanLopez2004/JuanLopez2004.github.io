@@ -1,0 +1,86 @@
+/* ---------- CONTENT CONTAINER ---------- */
+.content-middle {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.content-middle img.responsive-img {
+    margin-bottom: 40px;
+}
+
+/* ---------- VIDEO ---------- */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    padding-bottom: 50%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.content-middle .video-wrapper {
+    margin-top: 40px;
+}
+
+/* ---------- SECTION CARDS ---------- */
+section.description,
+section.technologies,
+section.card {
+    padding: 20px;
+    margin: 15px auto;
+    background-color: #4753b0;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+section.description p,
+section.technologies li,
+section.card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ---------- DOWNLOAD BUTTON ---------- */
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #2f3b80;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.download-btn:hover {
+    background-color: #dfe3ff;
+    color: #1e245f;
+}
