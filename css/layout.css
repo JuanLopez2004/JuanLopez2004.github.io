@@ -24,7 +24,7 @@
 /* ---------- HEADER ---------- */
 header {
     padding: 100px 20px;
-    background-image: url('assets/tux-penguins-linux-penguin-wallpaper.jpg');
+    background-image: url('../assets/tux-penguins-linux-penguin-wallpaper.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
