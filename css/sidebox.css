@@ -1,0 +1,48 @@
+.side-box-layout {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.side-box-left,
+.side-box-right {
+  background-color: #434b9c;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: white;
+  flex: 1;
+  min-width: 280px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.side-box-left ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.side-box-left li {
+  margin-bottom: 0.5rem;
+}
+
+.skills-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.side-box {
+  flex: 1;
+  min-width: 280px;
+}
+
+.skills-description {
+  flex: 2;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #eef1fa;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}

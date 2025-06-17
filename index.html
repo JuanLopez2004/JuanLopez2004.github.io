@@ -9,33 +9,36 @@
 </head>
 <body>
 
-    <!--nav-->
-    <div class="navbar">
-        <a href="#home">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#ACM">Involvement</a>
-        <a href="#resume">Resume</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
-
-    <header id="home">
+    <!--Header Container-->
+     <header id="home">
         <h1>Juan Lopez</h1>
         <h3>Senior NIU Computer Science Student</h3>
         <hr>
     </header>
 
-    <!--about section-->
+    <!--About Section & Sidebar------>
     <section id="about">
-        <h2>About Me</h2>
-        <div class="leftalign">
-            <p><h4>
-                I’m a Senior studying Computer Science at Northern Illinois University, focused on full-stack web development. 
-                I’m comfortable with C++, SQL databases, and have a growing interest in data science and its real-world applications. 
-                I enjoy building practical, efficient apps that connect smoothly with databases and provide great user experiences.
-            </h4></p>
-        </div>
+    <h2>juanlopezcs.com</h2>
+    <div class="about-layout">
+    <div class="sidebar">
+      <ul>
+        <li><a href="#skills"><h2>Skills</h2></a></li>
+        <li><a href="#ACM"><h2>Involvement</h2></a></li>
+        <li><a href="#projects"><h2>Projects</h2></a></li>
+        <li><a href="#Work"><h2>Work Experience</h2></a></li>
+        <li><a href="#resume"><h2>Resume</h2></a></li>
+        <li><a href="#contact"><h2>Contact</h2></a></li>
+      </ul>
+    </div>
 
+    <!--2nd half of the sidebar------>
+    <div class="sidebar">
+      <h4>
+        I’m a Senior studying Computer Science at Northern Illinois University, focused on full-stack web development. 
+        I’m comfortable with C++, SQL databases, and have a growing interest in data science and its real-world applications. 
+        I enjoy building practical, efficient apps that connect smoothly with databases and provide great user experiences.
+      </h4>
+        <!--Socials------>
         <a href="https://github.com/JuanLopez2004" target="_blank">
             <img src="assets/github.png" alt="GitHub" width="32" height="32">
         </a>
@@ -47,16 +50,14 @@
         </a>
     </section>
 
-    <!--Skills Section-->
+    <!--Skills Section------>
     <section id="skills">
     <h2>Skills</h2>
-    <div class="skills-list">
-        <h4 class="skill-item">Languages: C++, JavaScript (React.js), HTML/CSS, SQL, JAVA, ASM 370 TSO/ISPF</h4>
-        <h4 class="skill-item">Developer Tools: GitHub, VSCode, Android Studio, MariaDB, Doxygen</h4>
-        <h4 class="skill-item">Other: Microsoft Office 365, Unix, Windows</h4>
+    <div id="skills-container" class="side-box-layout">
+        <!-- Javascript -->
     </div>
     </section>
-
+    
     <!-- ACM Section -->
     <section id="ACM" style="padding: 20px; font-family: Arial, sans-serif;">
     <h2>Association for Computing Machinery</h2>
@@ -66,8 +67,8 @@
         <p>My goal is to make learning programming languages and concepts engaging and accessible, 
         so students feel confident and motivated to grow.</h4></p></p>
 
-<ul class="acm-grid">
-  <li>
+    <ul class="acm-grid">
+    <li>
         <a href="https://www.linkedin.com/posts/juan-lopez-6278bb234_mainframe-cobol-appian-activity-7308611976430030850-oLEr" target="_blank" style="text-decoration: none; color: inherit;">
             <img src="https://media.licdn.com/dms/image/v2/D5622AQE0D5fTiL-KMg/feedshare-shrink_2048_1536/B56ZW1n1CuGQAs-/0/1742508881070?e=1750291200&v=beta&t=V0K-Dokm6wv1AiPAeTCQDLmaOGkUiwH8b3wp2C-vcGo" alt="JJ Frega's ACM Presentation">
             <div>JJ Frega's ACM Presentation on Appian, Cobol</div>
@@ -99,6 +100,11 @@
         <li>CSCI 490: Datamining I</li>
         <li>COMS 359: Web Design and Development</li>
         </ul>
+    </section>
+
+    <section id="Work">
+        <h2>Work Experience</h2>
+        
     </section>
 
     <!--Resume-->
@@ -142,9 +148,9 @@
             <p>Check out my <a href="https://github.com/JuanLopez2004" target="_blank">GitHub</a>.</p>
             <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo">
         </div>
-        
     </section>
 
+    <!---Contact Section and Footer Section----->
     <section id="contact">
         <h2>Contact Me</h2>
         <h4><p><b>Email: <a href="mailto:jlopezcs04@gmail.com">jlopezcs04@gmail.com</a></b></p></h4>
@@ -153,5 +159,50 @@
     <footer>
         &copy; 2025 Juan Lopez. All Rights Reserved.
     </footer>
+
+    <!----evil javascript---->
+    <script>
+    const skills = [
+        "Languages: C++, ReactJS (Javascript), SQL, HTML/CSS, Python, could do Java if forced",
+        "Developer Tools: GitHub, VSCode, Android Studio, MariaDB, Doxygen",
+        "Other: Microsoft Office 365, Unix, Windows"
+    ];
+
+    const skillsDescription = `
+         <div style="text-align: center;">
+         <img src="assets/dusky.png" alt="Description" style="width:px; height:300px; border-radius:2px;">
+         </div>
+    `;
+
+    const container = document.getElementById("skills-container");
+
+    //create left card for skills list
+    const leftCard = document.createElement("div");
+    leftCard.className = "side-box-left";
+
+    const ul = document.createElement("ul");
+    skills.forEach(skill => {
+        const li = document.createElement("li");
+        li.textContent = skill;
+        ul.appendChild(li);
+    });
+
+    leftCard.appendChild(ul);
+
+    //create right card for description
+    const rightCard = document.createElement("div");
+    rightCard.className = "side-box-right";
+    rightCard.innerHTML = `<p>${skillsDescription}</p>`;
+
+    //append both cards to container
+    container.appendChild(leftCard);
+    container.appendChild(rightCard);
+
+    //font sizes
+    rightCard.style.fontSize = "30px";  // Make text bigger here
+    leftCard.style.fontSize = "30px";
+    
+    </script>
+
 </body>
 </html>

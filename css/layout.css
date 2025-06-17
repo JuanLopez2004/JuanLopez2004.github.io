@@ -83,3 +83,51 @@ footer {
     background: linear-gradient(100deg, #8348a3, #5a65c9);
     color: aliceblue;
 }
+
+/*   Sidebar */
+.about-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sidebar {
+    flex: 1 1 45%;
+    background-color: #4e54a0;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-main {
+    flex: 1 1 45%;
+    background-color: #5a65c9;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.social-links {
+    margin-top: 20px;
+}
