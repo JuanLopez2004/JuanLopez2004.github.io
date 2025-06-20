@@ -37,4 +37,3 @@
     //font sizes
     rightCard.style.fontSize = "30px";  // Make text bigger here
     leftCard.style.fontSize = "30px";
-    
