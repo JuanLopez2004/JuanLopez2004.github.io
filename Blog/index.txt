@@ -1,0 +1,119 @@
+1:"$Sreact.fragment"
+2:I[7555,[],""]
+3:I[1295,[],""]
+5:I[6874,["874","static/chunks/874-28e09647ed7299c2.js","487","static/chunks/app/Blog/page-fbe722860ecaa539.js"],""]
+6:I[3104,["874","static/chunks/874-28e09647ed7299c2.js","487","static/chunks/app/Blog/page-fbe722860ecaa539.js"],"default"]
+8:I[9665,[],"OutletBoundary"]
+b:I[4911,[],"AsyncMetadataOutlet"]
+d:I[9665,[],"ViewportBoundary"]
+f:I[9665,[],"MetadataBoundary"]
+11:I[6614,[],""]
+:HL["/_next/static/css/519f082cc7607243.css","style"]
+4:T814,
+                .header {
+                    display: flex;
+                    padding: 1rem 1rem;
+                    align-items: center;
+                    background-color: #4856a3;
+                    color: white;
+                    box-sizing: border-box;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 1000;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                }
+
+                .header-container {
+                    width: 100%;
+                    max-width: 62.5rem;
+                    margin: 0 auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .header-left,
+                .header-nav {
+                    display: flex;
+                    align-items: center;
+                    height: 80px; 
+                }
+				
+				.header-left {
+                    gap: 0.5rem; 
+				}
+
+                .header-logo {
+                    height: 50px;
+                    transition: opacity 0.3s ease;
+                }
+
+                .header-logo:hover {
+                    opacity: 0.6;
+                }
+
+                .header-title {
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    letter-spacing: 0.5px;
+                    line-height: 50px; /* Match logo height */
+                    display: flex;
+                    align-items: center;
+                }
+
+                .header-nav a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    margin: 0 0.7rem;
+                    transition: color 0.3s ease;
+                    line-height: 50px; /* Match alignment */
+                }
+
+                .header-nav a:hover {
+                    color: rgb(255, 255, 255);
+                    text-decoration: underline;
+                }
+            7:T429,
+              .footer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #4856a3;
+                    color: white;
+                    padding: 1rem 0;
+                    position: relative;
+                    z-index: 1;
+              }
+              .footer-text {
+                    font-size: 1.7rem;
+                    text-align: center;
+              }
+                .footer-bottom {
+                    margin-top: auto; 
+                    text-align: center;
+                    }
+
+              .footer-link {
+                    color: white;
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                    margin-top: 0.7rem;
+              }
+              .footer-nav a:hover {
+                        color:rgb(255, 255, 255);
+                        text-decoration: underline;
+                        fade-in: 0.3s;
+                  }
+            0:{"P":null,"b":"4Mn7Q2c608QUVnNQupTgt","p":"","c":["","Blog",""],"i":false,"f":[[["",{"children":["Blog",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/519f082cc7607243.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__variable_5cfdac","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":["Blog",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","div",null,{"style":{"minHeight":"100vh","display":"flex","flexDirection":"column","position":"relative"},"children":[["$","div",null,{"style":{"position":"fixed","top":0,"left":0,"width":"100vw","height":"100vh","background":"rgba(119,133,204,1)","zIndex":0,"pointerEvents":"none"}}],[["$","style",null,{"children":"$4"}],["$","header",null,{"className":"header","children":["$","div",null,{"className":"header-container","children":[["$","div",null,{"className":"header-left","children":[["$","$L5",null,{"href":"/","children":["$","img",null,{"src":"https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png","alt":"Logo","className":"header-logo"}]}],["$","span",null,{"className":"header-title","children":"Juan Lopez"}]]}],["$","nav",null,{"className":"header-nav","children":[["$","$L5",null,{"href":"/#Skills","children":"Skills"}],["$","$L5",null,{"href":"/#Work","children":"Work"}],["$","$L5",null,{"href":"/involvement","children":"Involvement"}],["$","$L5",null,{"href":"/projects","children":"Projects"}],["$","$L5",null,{"href":"/Blog","children":"Blog"}]]}]]}]}]],["$","main",null,{"style":{"flex":1,"display":"flex","flexDirection":"column","paddingTop":"100px"},"children":["$","$L6",null,{"title":"NIU Linux Users Group","desc":"7/14/2025","image1":"https://web.archive.org/web/20050305132752im_/http://niulug.org/images/logo.jpg","body1":["The NIU Linux Users group was a linux club that was active in the mid 2000s at NIU","They created their own website and had weekly meetings in coffee shops. Sometimes being Java Coffee and THe House Cafe.","They would have meetings where they would give out Linux ISOs on burnt RW CDs. A cool organization that once was."],"link1":"https://web.archive.org/web/20050305132752/http://niulug.org/","link1Label":"linux users group wayback "}]}],[["$","style",null,{"children":"$7"}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"footer-nav","children":[["$","span",null,{"className":"footer-text","children":"© 2025 Juan Lopez"}],["$","div",null,{"className":"footer-bottom","children":["$","a",null,{"href":"mailto:jlopezcs04@gmail.com","className":"footer-link","children":"Contact"}]}]]}]}]]]}],null,["$","$L8",null,{"children":["$L9","$La",["$","$Lb",null,{"promise":"$@c"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","tQ8uQfWaEIfhejjRO5tHyv",{"children":[["$","$Ld",null,{"children":"$Le"}],null]}],["$","$Lf",null,{"children":"$L10"}]]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
+12:"$Sreact.suspense"
+13:I[4911,[],"AsyncMetadata"]
+10:["$","div",null,{"hidden":true,"children":["$","$12",null,{"fallback":null,"children":["$","$L13",null,{"promise":"$@14"}]}]}]
+a:null
+e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+c:{"metadata":[["$","title","0",{"children":"Create Next App"}],["$","meta","1",{"name":"description","content":"Generated by create next app"}],["$","link","2",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}]],"error":null,"digest":"$undefined"}
+14:{"metadata":"$c:metadata","error":null,"digest":"$undefined"}
