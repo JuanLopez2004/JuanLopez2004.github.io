@@ -6,7 +6,7 @@ import Section from '@/components/section';
 import SplitSection from '@/components/splitsection';
 import Showcase, { Project } from '@/components/showcase';
 
-//Projects Section
+// Projects array unchanged
 const projects: Project[] = [
   {
     title: "GooseBot",
@@ -43,27 +43,12 @@ const projects: Project[] = [
 
 export default function Home() {
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        position: 'relative',
-      }}
-    >
+    <div className="container">
       <Background />
       <Header />
 
-      <main
-        style={{
-          flex: 1,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '1rem',
-          paddingTop: '80px', //manual offset for hero section. change this if changing hero size 
-        }}
-      >
-        <section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+      <main>
+        <section className="centered-section">
           <Hero
             title="Aspiring Fullstack Developer with an interest in Data Science"
             content="I’m a Senior studying Computer Science at Northern Illinois University, focused on full-stack web development."
@@ -79,12 +64,12 @@ export default function Home() {
           />
         </section>
 
-        <section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+        <section className="centered-section">
           <Section
             title="Biography"
             content="I am a Senior at NIU! I am in my fourth year learning Computer Science. I have a passion for full-stack web development and data science. I am the Chair of the NIU ACM Chapter, where I help organize fun events and educational workshops for students."
             content2="I believe in an equitable tech community, and I strive to make tech accessible to everyone. I am an avid fan of College Football, Team Fortress 2, and Adult Swim."
-			imageSrc="https://i.ibb.co/hRMFKRWw/IMG-20250711-191116-406.jpg"
+            imageSrc="https://i.ibb.co/hRMFKRWw/IMG-20250711-191116-406.jpg"
             altText="tux"
           />
         </section>
@@ -102,7 +87,7 @@ export default function Home() {
         </div>
 
         <div id="Work">
-          <section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+          <section className="centered-section">
             <SplitSection
               title1="Work Experience"
               content1="ResTech Help Desk Technician - Northern Illinois University · Part-time, Jun 2025 - Present"
@@ -117,29 +102,91 @@ export default function Home() {
           </section>
         </div>
 
-         <div id="Involvement">
-         <section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-          <Section
-            title="Involvement"
-            content="I serve as Chair for the NIU Association of Computing Machinery for 2024-2026. Under our shared vision, we have completely revamped ACM with two new Special Interest Groups (SIGwebdev and SIGmainframe) as well as provide SIGmeeting Workshops, Socials, Speaker Presentations, Career Fairs, and Alumni Council Outreach"
-            content2="If you are interested in reading about our work, my contributions, and our event history click below"
-            imageSrc="https://i.imgur.com/pkz8jYe.png"
-            altText="tux"
-            link1="/Involvement"
-            link1Label="View Involvement Page"
-            whiteBg={true}
-          />
-        </section>
+        <div id="Involvement">
+          <section className="centered-section">
+            <Section
+              title="Involvement"
+              content="I serve as Chair for the NIU Association of Computing Machinery for 2024-2026. Under our shared vision, we have completely revamped ACM with two new Special Interest Groups (SIGwebdev and SIGmainframe) as well as provide SIGmeeting Workshops, Socials, Speaker Presentations, Career Fairs, and Alumni Council Outreach"
+              content2="If you are interested in reading about our work, my contributions, and our event history click below"
+              imageSrc="https://i.imgur.com/pkz8jYe.png"
+              altText="tux"
+              link1="/Involvement"
+              link1Label="View Involvement Page"
+              whiteBg={true}
+            />
+          </section>
         </div>
 
         <div id="Projects">
-          <section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+          <section className="centered-section">
             <Showcase projects={projects} />
           </section>
         </div>
       </main>
 
       <Footer />
+
+      {/* Styled JSX for mobile responsiveness */}
+      <style jsx>{`
+        .container {
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+        }
+        main {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          padding-top: 80px; /* Keep hero offset */
+          max-width: 1200px;
+          margin: 0 auto;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          box-sizing: border-box;
+        }
+        .centered-section {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          box-sizing: border-box;
+        }
+        /* Make images inside hero, section, showcase responsive */
+        img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        /* Media queries for smaller screens */
+        @media (max-width: 768px) {
+          main {
+            padding-top: 60px;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+          }
+          /* Stack split sections vertically on small screens */
+          .split-section,
+          .split-section > div {
+            flex-direction: column !important;
+            width: 100% !important;
+          }
+          /* Reduce padding and gaps */
+          main {
+            gap: 0.75rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          main {
+            padding-top: 50px;
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;
+          }
+          /* Smaller font sizes could be added if needed */
+        }
+      `}</style>
     </div>
   );
 }

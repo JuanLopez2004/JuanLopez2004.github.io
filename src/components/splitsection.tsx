@@ -40,67 +40,85 @@ export default function SplitSection({
   return (
     <>
       <style>{`
-       .sectionbody {
-  width: 100%;
-  margin: 1.5rem auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  background: ${whiteBg ? "#fff" : "transparent"};
-  position: relative;
-  max-width: 1200px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 2rem;
-  border-radius: 1rem;
-  gap: 1.5rem;
-  height: auto;
-}
+        .sectionbody {
+          width: 100%;
+          margin: 1.5rem auto;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          background: ${whiteBg ? "#fff" : "transparent"};
+          position: relative;
+          max-width: 1200px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+          padding: 2rem;
+          border-radius: 1rem;
+          gap: 1.5rem;
+          height: auto;
+          box-sizing: border-box;
+        }
 
-.text-block {
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  box-sizing: border-box;
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-}
+        .text-block {
+          width: 48%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          box-sizing: border-box;
+          background-color: #f9f9f9;
+          padding: 1.5rem;
+          border-radius: 0.75rem;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+        }
 
-.section-title {
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #222;
-}
+        .section-title {
+          font-size: clamp(1.4rem, 2.5vw, 2rem);
+          font-weight: 700;
+          margin-bottom: 1rem;
+          color: #222;
+        }
 
-.section-paragraph {
-  margin-bottom: 0.75rem;
-  font-size: clamp(1rem, 1.8vw, 1.3rem);
-  color: #444;
-  white-space: pre-wrap;
-  word-break: break-word;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-}
+        .section-paragraph {
+          margin-bottom: 0.75rem;
+          font-size: clamp(1rem, 1.8vw, 1.3rem);
+          color: #444;
+          white-space: pre-wrap;
+          word-break: break-word;
+          font-family: Arial, Helvetica, sans-serif;
+          line-height: 1.5;
+        }
 
-.section-link {
-  margin-top: 0.5rem;
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
-  font-weight: 600;
-  color: #007BFF;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
+        .section-link {
+          margin-top: 0.5rem;
+          font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+          font-weight: 600;
+          color: #007BFF;
+          text-decoration: none;
+          transition: color 0.2s ease;
+        }
 
-.section-link:hover {
-  color: #0056b3;
-}
+        .section-link:hover,
+        .section-link:focus {
+          color: #0056b3;
+          outline: none;
+        }
 
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+          .sectionbody {
+            flex-direction: column;
+            padding: 1rem;
+            max-width: 100%;
+          }
 
+          .text-block {
+            width: 100%;
+            margin-bottom: 1.5rem;
+          }
 
+          .text-block:last-child {
+            margin-bottom: 0;
+          }
+        }
       `}</style>
 
       <section className="sectionbody">
@@ -110,7 +128,7 @@ export default function SplitSection({
           {content2 && <p className="section-paragraph">{content2}</p>}
           {content5 && <p className="section-paragraph">{content5}</p>}
           {link1Text && link1Href && (
-            <a href={link1Href} className="section-link">
+            <a href={link1Href} className="section-link" target="_blank" rel="noopener noreferrer">
               {link1Text}
             </a>
           )}
@@ -122,7 +140,7 @@ export default function SplitSection({
           {content4 && <p className="section-paragraph">{content4}</p>}
           {content6 && <p className="section-paragraph">{content6}</p>}
           {link2Text && link2Href && (
-            <a href={link2Href} className="section-link">
+            <a href={link2Href} className="section-link" target="_blank" rel="noopener noreferrer">
               {link2Text}
             </a>
           )}
