@@ -56,7 +56,7 @@ export default function Hero({
                 justify-content: center;
             }
             .hero-image {
-                width: 100%;
+                width: 110%;
                 height: auto%;
                 object-fit: cover;
             }
