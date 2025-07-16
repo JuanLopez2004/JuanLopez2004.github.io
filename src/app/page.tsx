@@ -11,26 +11,26 @@ const projects: Project[] = [
 	{
 		title: 'GooseBot',
 		description: 'General Discord Bot built with DiscordPY',
-		imageSrc: 'https://i.ibb.co/C5YhCYnN/Picsart-25-06-17-02-56-28-663.jpg',
+		imageSrc: 'https://github.com/user-attachments/assets/d5e0ed99-b383-48fa-9284-2132bb02e9bc',
 		link: 'https://github.com/JuanLopez2004/discord-goosebot',
 	},
 	{
 		title: "Ryan's Parts Commerce Site",
 		description: 'Junior Year Software Eng Project built in ReactJS, NodeJs',
-		imageSrc: 'https://i.imgur.com/SvVdlsC.png',
+		imageSrc: 'https://github.com/user-attachments/assets/ad1ddeb6-1282-49fb-9efd-58b04bc92201',
 		link: 'https://github.com/JuanLopez2004/CSCI-467',
 	},
 	{
 		title: 'NIU ACM Website',
 		description:
 			'ACM Departmental Website Programmed with ReactJS, TypeScript. Serverside Development with NextJS with nixOS/Bun toolkit',
-		imageSrc: 'https://i.imgur.com/bscMhK0.png',
+		imageSrc: 'https://github.com/user-attachments/assets/e77bebf6-1547-4f26-9528-994a539eab14',
 		link: 'https://github.com/niu-acm/niu-acm-website',
 	},
 	{
 		title: '2nd Portfolio Site',
 		description: 'This Very Site. Built with TypeScript, ReactJS, and NextJS',
-		imageSrc: 'https://images.pling.com/img/00/00/04/47/10/1114759/44869-1.jpg',
+		imageSrc: 'https://github.com/user-attachments/assets/cbc2447a-7c3e-47e6-85f2-dab83f1cefa2',
 		link: 'https://github.com/JuanLopez2004/Website2',
 	},
 	{
@@ -87,7 +87,7 @@ export default function Home() {
 						content="I’m a Senior studying Computer Science at Northern Illinois University, focused on full-stack web development."
 						content2="I’m comfortable with C++, SQL databases, React, Typescript and have a growing interest in data science and its real-world applications."
 						content3="I enjoy building practical, efficient apps that connect smoothly with databases and provide great user experiences."
-						imageSrc="https://c4.wallpaperflare.com/wallpaper/750/507/586/computers-linux-wallpaper-preview.jpg"
+						imageSrc="https://github.com/user-attachments/assets/f95e2129-8549-457e-95c0-d5fa4b47e358"
 						altText="Tux"
 						link1="https://github.com/JuanLopez2004"
 						link2="https://www.linkedin.com/in/juan-lopez-6278bb234/"
@@ -102,7 +102,7 @@ export default function Home() {
 						title="Biography"
 						content="I am a Senior at NIU! I am in my fourth year learning Computer Science. I have a passion for full-stack web development and data science. I am the Chair of the NIU ACM Chapter, where I help organize fun events and educational workshops for students."
 						content2="I believe in an equitable tech community, and I strive to make tech accessible to everyone. I am an avid fan of College Football, Team Fortress 2, and Adult Swim."
-						imageSrc="https://i.ibb.co/hRMFKRWw/IMG-20250711-191116-406.jpg"
+						imageSrc="https://github.com/user-attachments/assets/d84a47b4-de44-4104-84fa-351d3120fd23"
 						altText="tux"
 					/>
 				</section>

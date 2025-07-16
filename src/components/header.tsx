@@ -124,7 +124,7 @@ export default function Header() {
                     <div className="header-left">
                         <Link href="/">
                             <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png"
+                                src="https://github.com/user-attachments/assets/75ba5dcd-94c9-4eba-b13d-ce46536f9bee"
                                 alt="Logo"
                                 className="header-logo"
                             />

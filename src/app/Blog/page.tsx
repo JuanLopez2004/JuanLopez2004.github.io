@@ -45,7 +45,7 @@ export default function Home() {
 	    <Blog
         title="NIU Linux Users Group"
         desc="7/14/2025"
-        image1="https://web.archive.org/web/20050305132752im_/http://niulug.org/images/logo.jpg"
+        image1="https://github.com/user-attachments/assets/7c04836c-301b-4cc4-8292-0ccd8acf30ed"
         body1={[
             "The NIU Linux Users group was a linux club that was active in the mid 2000s at NIU",
             "They created their own website and had weekly meetings in coffee shops. Sometimes being Java Coffee and THe House Cafe.",
