@@ -47,6 +47,7 @@ export default function Hero({
                 padding: 0;
                 box-sizing: border-box;
                 z-index: 1;
+                min-height: 90vh; /* Adjusted to trim or extend white space */
             }
             .hero-image-container {
                 width: 50%;
