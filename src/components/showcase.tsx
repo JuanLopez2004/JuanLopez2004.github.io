@@ -18,6 +18,10 @@ export default function Showcase({ projects }: ShowcaseProps) {
       style={{
         padding: "1rem",
         zIndex: 1,
+        width: "100%",
+        maxWidth: "1200px",
+        margin: "0 auto",
+        boxSizing: "border-box",
       }}
     >
       <h2
@@ -32,6 +36,7 @@ export default function Showcase({ projects }: ShowcaseProps) {
       </h2>
 
       <div
+        className="projects-container"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -107,6 +112,11 @@ export default function Showcase({ projects }: ShowcaseProps) {
       </div>
 
       <style>{`
+        .project-card {
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          border-radius: 8px;
+          overflow: hidden;
+        }
         .project-card:hover {
           transform: translateY(-0.25rem);
           box-shadow: 0 0.625rem 1rem rgba(0, 0, 0, 0.2);
@@ -117,6 +127,10 @@ export default function Showcase({ projects }: ShowcaseProps) {
             min-width: 0;
             margin: 0 auto 1rem auto;
             height: auto !important;
+            max-width: 350px;
+          }
+          .projects-container {
+            padding: 0 0.5rem;
           }
         }
       `}</style>

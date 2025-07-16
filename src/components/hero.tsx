@@ -41,10 +41,14 @@ export default function Hero({
                 display: flex;
                 align-items: stretch;
                 background: ${whiteBg ? "#fff" : "transparent"};
-                width: 100vw;
+                width: 100%;
+                max-width: 1200px;
                 height: 500px;
                 z-index: 1;
                 box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+                margin: 0 auto;
+                border-radius: 8px;
+                overflow: hidden;
             }
             .hero-image-container {
                 width: 50%;
@@ -71,14 +75,16 @@ export default function Hero({
                 font-family: Arial, Helvetica, sans-serif;
             }
             .hero-title {
-                font-size: clamp(1.8rem, 2vw, 5rem);
+                font-size: clamp(1.8rem, 2vw, 2.5rem);
                 font-weight: bold;
                 margin-bottom: 1rem;
                 color: #222;
+                line-height: 1.2;
             }
             .hero-text {
-                font-size: clamp(1.4rem, 2.0vw, 1.9rem);
+                font-size: clamp(1rem, 1.5vw, 1.2rem);
                 color: #444;
+                line-height: 1.4;
             }
             .hero-text-gap {
                 margin-top: 1.0rem;
@@ -86,7 +92,7 @@ export default function Hero({
             .hero-links {
                 display: flex;
                 gap: 1rem;
-                margin-top: 0.5rem;
+                margin-top: 1.5rem;
             }
             .hero-link-icon {
                 color: #444;
@@ -99,28 +105,41 @@ export default function Hero({
 
             @media (max-width: 900px) {
                 .hero {
-                flex-direction: column;
-                height: auto;
-                min-height: 0;
+                    flex-direction: column;
+                    height: auto;
+                    min-height: 0;
+                    width: 95%;
+                    margin: 0 auto;
                 }
                 .hero-image-container,
                 .hero-content {
-                width: 100%;
-                height: auto;
-                padding: 1.2rem 1rem;
+                    width: 100%;
+                    height: auto;
                 }
-                .hero-image {
-                height: 220px;
-                border-radius: 1rem 1rem 0 0;
+                .hero-image-container {
+                    order: 1;
                 }
                 .hero-content {
-                padding: 1.2rem 1rem;
+                    order: 2;
+                    padding: 1.5rem;
+                }
+                .hero-image {
+                    height: 200px;
+                    border-radius: 0;
                 }
                 .hero-title {
-                font-size: 1.5rem;
+                    font-size: 1.5rem;
+                    margin-bottom: 0.8rem;
+                }
+                .hero-text {
+                    font-size: 0.95rem;
                 }
                 .hero-links {
-                margin-bottom: 1rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0.5rem;
+                }
+                .hero-link-icon {
+                    font-size: 1.4rem;
                 }
             }
             `}</style>

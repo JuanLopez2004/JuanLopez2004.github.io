@@ -14,10 +14,10 @@ export default function Footer() {
                     padding: 1rem 0;
                     position: relative;
                     z-index: 1;
-                    width: 100vw;
-                    left: 0;
+                    width: 100%;
                     margin: 0;
                     box-sizing: border-box;
+                    margin-top: auto;
                 }
               .footer-text {
                     font-size: 1.7rem;

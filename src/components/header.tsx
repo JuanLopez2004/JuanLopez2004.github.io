@@ -69,31 +69,39 @@ export default function Header() {
             }
 
             @media (max-width: 900px) {
+                .header {
+                    height: auto;
+                    min-height: 80px;
+                }
                 .header-container {
-                flex-direction: column;
-                align-items: flex-start;
-                padding: 0 1rem;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0.5rem 1rem;
+                    gap: 0.5rem;
                 }
                 .header-left {
-                height: auto;
-                gap: 0.7rem;
+                    height: auto;
+                    gap: 0.7rem;
+                    width: 100%;
                 }
                 .header-logo {
-                height: 48px;
+                    height: 48px;
                 }
                 .header-title {
-                font-size: 1.1rem;
-                line-height: 48px;
+                    font-size: 1.1rem;
+                    line-height: 48px;
                 }
                 .header-nav {
-                height: auto;
-                flex-wrap: wrap;
-                margin-top: 0.5rem;
+                    height: auto;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    gap: 0.5rem;
                 }
                 .header-nav a {
-                margin: 0 0.7rem 0.5rem 0;
-                font-size: 1rem;
-                line-height: 2.2rem;
+                    margin: 0;
+                    font-size: 0.95rem;
+                    line-height: 2rem;
+                    padding: 0.2rem 0.5rem;
                 }
             }
             `}</style>

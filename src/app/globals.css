@@ -1,11 +1,21 @@
 @import "tailwindcss";
 
-body {
+* {
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
   font-family: 'Roboto Mono', Consolas, 'Courier New', monospace;
   color: black;
   background: #7c87c7;
+  min-height: 100vh;
 }
 
 html {
@@ -17,4 +27,10 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Container fix for full width */
+.hero, .sectionbody, .showcase {
+  max-width: 100%;
+  box-sizing: border-box;
 }

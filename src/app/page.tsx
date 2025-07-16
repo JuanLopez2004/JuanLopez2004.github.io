@@ -49,6 +49,9 @@ export default function Home() {
         display: 'flex',
         flexDirection: 'column',
         position: 'relative',
+        width: '100%',
+        maxWidth: '100vw',
+        overflowX: 'hidden',
       }}
     >
       <Background />
@@ -59,11 +62,16 @@ export default function Home() {
           flex: 1,
           display: 'flex',
           flexDirection: 'column',
-          gap: '1rem',
-          paddingTop: '80px', //manual offset for hero section. change this if changing hero size 
+          gap: '2rem',
+          paddingTop: '100px',
+          paddingBottom: '2rem',
+          paddingLeft: '1rem',
+          paddingRight: '1rem',
+          maxWidth: '100%',
+          boxSizing: 'border-box',
         }}
       >
-        <section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+        <section style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '0 1rem' }}>
           <Hero
             title="Aspiring Fullstack Developer with an interest in Data Science"
             content="I’m a Senior studying Computer Science at Northern Illinois University, focused on full-stack web development."
@@ -79,7 +87,7 @@ export default function Home() {
           />
         </section>
 
-        <section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+        <section style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '0 1rem' }}>
           <Section
             title="Biography"
             content="I am a Senior at NIU! I am in my fourth year learning Computer Science. I have a passion for full-stack web development and data science. I am the Chair of the NIU ACM Chapter, where I help organize fun events and educational workshops for students."
@@ -102,7 +110,7 @@ export default function Home() {
         </div>
 
         <div id="Work">
-          <section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+          <section style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '0 1rem' }}>
             <SplitSection
               title1="Work Experience"
               content1="ResTech Help Desk Technician - Northern Illinois University · Part-time, Jun 2025 - Present"
@@ -118,7 +126,7 @@ export default function Home() {
         </div>
 
          <div id="Involvement">
-         <section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+         <section style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '0 1rem' }}>
           <Section
             title="Involvement"
             content="I serve as Chair for the NIU Association of Computing Machinery for 2024-2026. Under our shared vision, we have completely revamped ACM with two new Special Interest Groups (SIGwebdev and SIGmainframe) as well as provide SIGmeeting Workshops, Socials, Speaker Presentations, Career Fairs, and Alumni Council Outreach"
@@ -133,7 +141,7 @@ export default function Home() {
         </div>
 
         <div id="Projects">
-          <section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+          <section style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '0 1rem' }}>
             <Showcase projects={projects} />
           </section>
         </div>
