@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,           // If you're using next/image (GitHub Pages can't optimize images)
   },
+  experimental: {
+    optimizeCss: true, // Ensures CSS is optimized and included
+  },
 };
 
 export default nextConfig;
