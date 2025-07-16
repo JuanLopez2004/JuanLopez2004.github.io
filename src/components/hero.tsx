@@ -56,9 +56,10 @@ export default function Hero({
                 justify-content: center;
             }
             .hero-image {
-                width: 110%;
-                height: auto%;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
+                display: block;
             }
             .hero-content {
                 background-color: #fff;
