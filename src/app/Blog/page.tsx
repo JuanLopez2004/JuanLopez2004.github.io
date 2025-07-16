@@ -26,6 +26,7 @@ export default function Home() {
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
+        marginTop: '40px',
         position: 'relative',
       }}
     >

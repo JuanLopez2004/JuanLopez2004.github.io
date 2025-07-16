@@ -14,9 +14,9 @@ export default function Footer() {
                     padding: 1rem 0 0.5rem 0;
                     position: relative;
                     z-index: 1;
-                    width: 100vw;
-                    min-width: 100vw;
-                    margin: 0;
+                    width: 100%;
+                    max-width: 100%;
+                    margin: 0 auto;
                     box-sizing: border-box;
                     margin-top: auto;
                     left: 0;

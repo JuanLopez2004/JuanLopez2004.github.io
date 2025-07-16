@@ -40,22 +40,20 @@ export default function Hero({
             .hero {
                 display: flex;
                 align-items: stretch;
-                background: ${whiteBg ? "#fff" : "transparent"};
+                justify-content: center;
                 width: 100%;
-                max-width: 1200px;
-                height: 500px;
-                z-index: 1;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+                max-width: 100%;
                 margin: 0 auto;
-                border-radius: 8px;
-                overflow: hidden;
+                padding: 0;
+                box-sizing: border-box;
+                z-index: 1;
             }
             .hero-image-container {
                 width: 50%;
                 height: 100%;
                 display: flex;
                 align-items: stretch;
-                justify-content: flex-end;
+                justify-content: center;
             }
             .hero-image {
                 width: 100%;
@@ -64,6 +62,8 @@ export default function Hero({
                 display: block;
             }
             .hero-content {
+                background-color: #fff;
+                text-align: left;
                 width: 50%;
                 height: 100%;
                 display: flex;
@@ -112,6 +112,7 @@ export default function Hero({
                     margin: 0;
                     max-width: 100vw;
                     border-radius: 0;
+                    z-index: 2;
                 }
                 .hero-image-container,
                 .hero-content {
@@ -125,9 +126,10 @@ export default function Hero({
                     order: 2;
                     padding: 1.5rem 0.5rem;
                     text-align: center;
+                    min-height: 20vh;
                 }
                 .hero-image {
-                    height: 180px;
+                    height: 350px;
                     border-radius: 0;
                     width: 100vw;
                     max-width: 100vw;
@@ -135,19 +137,9 @@ export default function Hero({
                 .hero-title {
                     font-size: 1.4rem;
                     margin-bottom: 0.8rem;
-                    text-align: center;
                 }
                 .hero-text {
                     font-size: 0.9rem;
-                    text-align: center;
-                }
-                .hero-links {
-                    margin-top: 1rem;
-                    margin-bottom: 0.5rem;
-                    justify-content: center;
-                }
-                .hero-link-icon {
-                    font-size: 1.4rem;
                 }
             }
             `}</style>

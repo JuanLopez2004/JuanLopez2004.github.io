@@ -18,17 +18,14 @@ export default function Showcase({ projects }: ShowcaseProps) {
       style={{
         padding: "1rem",
         zIndex: 1,
-        width: "100%",
-        maxWidth: "1200px",
-        margin: "0 auto",
-        boxSizing: "border-box",
       }}
     >
       <h2
         style={{
           textAlign: "center",
-          fontSize: "2rem",
+          fontSize: "4rem",
           marginTop: "0",
+          marginBottom: "2rem",
           color: "black",
         }}
       >
@@ -36,34 +33,14 @@ export default function Showcase({ projects }: ShowcaseProps) {
       </h2>
 
       <div
-        className="projects-container"
         style={{
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
           gap: "1rem",
           marginBottom: "2rem",
           flexWrap: "wrap",
-          width: "100%",
         }}
       >
-        <style>{`
-          @media (max-width: 900px) {
-            .projects-container {
-              flex-direction: column !important;
-              align-items: center !important;
-              justify-content: center !important;
-              width: 100vw !important;
-              margin: 0 auto !important;
-              padding: 0 !important;
-            }
-            .project-card {
-              margin: 0 auto 1rem auto !important;
-              width: 95vw !important;
-              max-width: 98vw !important;
-            }
-          }
-        `}</style>
         {projects.map(({ title, description, imageSrc, link, website }) => (
           <div
             key={title}
@@ -131,11 +108,6 @@ export default function Showcase({ projects }: ShowcaseProps) {
       </div>
 
       <style>{`
-        .project-card {
-          transition: transform 0.2s ease, box-shadow 0.2s ease;
-          border-radius: 8px;
-          overflow: hidden;
-        }
         .project-card:hover {
           transform: translateY(-0.25rem);
           box-shadow: 0 0.625rem 1rem rgba(0, 0, 0, 0.2);
@@ -146,16 +118,9 @@ export default function Showcase({ projects }: ShowcaseProps) {
             min-width: 0;
             margin: 0 auto 1rem auto;
             height: auto !important;
-            max-width: 300px;
-          }
-          .projects-container {
-            padding: 0 1rem !important;
-            justify-content: center !important;
-            flex-direction: column !important;
-            align-items: center !important;
           }
         }
       `}</style>
-    </div>
+	  </div>
   );
 }

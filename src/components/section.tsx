@@ -20,7 +20,7 @@ export default function Section({ title, content, content2, content3, imageSrc, 
 		<>
 		   <style>{`
 			.sectionbody {
-				width: 100vw;
+				width: 100%;
 				margin: 1.5rem auto;
 				display: flex;
 				align-items: center;
@@ -36,13 +36,17 @@ export default function Section({ title, content, content2, content3, imageSrc, 
 				}
 		   @media (max-width: 900px) {
 			 .sectionbody {
-			   width: 100vw !important;
-			   max-width: 100vw !important;
-			   margin: 1rem auto !important;
-			   padding: 1rem 0.5rem !important;
-			   flex-direction: column !important;
-			   align-items: center !important;
-			   justify-content: center !important;
+			   flex-direction: column;
+			   width: 95%;
+			   max-width: 95%;
+			   margin: 1rem auto;
+			   padding: 1rem;
+			 }
+			 .text-block,
+			 .section-content,
+			 .section-title,
+			 .section-paragraph {
+				text-align: left !important;
 			 }
 		   }
 
@@ -109,20 +113,11 @@ export default function Section({ title, content, content2, content3, imageSrc, 
 				}
 
 			@media (max-width: 900px) {
-				.sectionbody {
-					flex-direction: column;
-					padding: 1rem;
-					gap: 1rem;
-					max-width: 95%;
-					margin: 1rem auto;
-					width: 95%;
-				}
 				.text-block,
 				.section-content,
 				.section-image-wrapper {
-					width: 100% !important;
-					padding: 1rem !important;
-					min-width: 0;
+					width: 100%;
+					padding: 1rem;
 					text-align: center;
 				}
 				.section-image {
