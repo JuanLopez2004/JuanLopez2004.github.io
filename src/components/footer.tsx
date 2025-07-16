@@ -18,31 +18,52 @@ export default function Footer() {
                     margin: 0;
                     box-sizing: border-box;
                     margin-top: auto;
+                    left: 0;
+                    right: 0;
                 }
+                
+                .footer-nav {
+                    width: 100%;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 0 1rem;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+                
               .footer-text {
                     font-size: 1.7rem;
                     text-align: center;
+                    margin: 0;
               }
+              
                 .footer-bottom {
-                    margin-top: auto; 
                     text-align: center;
-                    }
+                    margin: 0;
+                }
 
               .footer-link {
                     color: white;
                     font-size: 1.5rem;
                     text-decoration: none;
-                    margin-top: 0.7rem;
+                    display: inline-block;
+                    transition: color 0.3s ease;
               }
-              .footer-nav a:hover {
-                        color:rgb(255, 255, 255);
+              
+              .footer-link:hover {
+                        color: rgb(200, 200, 255);
                         text-decoration: underline;
-                        fade-in: 0.3s;
                   }
 
                   @media (max-width: 900px) {
                     .footer {
-                        padding: 0.5rem 0;
+                        padding: 0.8rem 0;
+                    }
+                    .footer-nav {
+                        padding: 0 0.5rem;
                     }
                     .footer-text {
                         font-size: 1.1rem;

@@ -104,17 +104,21 @@ export default function SplitSection({
 					flex-direction: column;
 					padding: 1rem;
 					gap: 1rem;
-					max-width: 100%;
+					max-width: 95%;
+					margin: 1rem auto;
+					width: 95%;
 				}
-				.text-block,
-				.section-content,
-				.section-image-wrapper {
+				.text-block {
 					width: 100% !important;
 					padding: 1rem !important;
 					min-width: 0;
+					text-align: center;
 				}
-				.section-image {
-					max-height: 180px;
+				.section-title {
+					text-align: center;
+				}
+				.section-paragraph {
+					text-align: center;
 				}
 				}
 

@@ -70,38 +70,44 @@ export default function Header() {
 
             @media (max-width: 900px) {
                 .header {
-                    height: auto;
-                    min-height: 80px;
+                    height: 60px;
+                    min-height: 60px;
                 }
                 .header-container {
-                    flex-direction: column;
-                    align-items: flex-start;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
                     padding: 0.5rem 1rem;
                     gap: 0.5rem;
+                    height: 60px;
                 }
                 .header-left {
-                    height: auto;
-                    gap: 0.7rem;
-                    width: 100%;
+                    height: 60px;
+                    gap: 0.5rem;
+                    flex-shrink: 0;
                 }
                 .header-logo {
-                    height: 48px;
+                    height: 36px;
                 }
                 .header-title {
-                    font-size: 1.1rem;
-                    line-height: 48px;
+                    font-size: 0.9rem;
+                    line-height: 36px;
+                    white-space: nowrap;
                 }
                 .header-nav {
-                    height: auto;
-                    flex-wrap: wrap;
-                    width: 100%;
-                    gap: 0.5rem;
+                    height: 60px;
+                    flex-wrap: nowrap;
+                    gap: 0.3rem;
+                    flex-shrink: 1;
+                    overflow-x: auto;
                 }
                 .header-nav a {
                     margin: 0;
-                    font-size: 0.95rem;
-                    line-height: 2rem;
-                    padding: 0.2rem 0.5rem;
+                    font-size: 0.8rem;
+                    line-height: 60px;
+                    padding: 0 0.3rem;
+                    white-space: nowrap;
+                    flex-shrink: 0;
                 }
             }
             `}</style>

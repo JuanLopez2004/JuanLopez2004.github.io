@@ -110,6 +110,7 @@ export default function Hero({
                     min-height: 0;
                     width: 95%;
                     margin: 0 auto;
+                    max-width: 500px;
                 }
                 .hero-image-container,
                 .hero-content {
@@ -122,21 +123,25 @@ export default function Hero({
                 .hero-content {
                     order: 2;
                     padding: 1.5rem;
+                    text-align: center;
                 }
                 .hero-image {
-                    height: 200px;
+                    height: 180px;
                     border-radius: 0;
                 }
                 .hero-title {
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                     margin-bottom: 0.8rem;
+                    text-align: center;
                 }
                 .hero-text {
-                    font-size: 0.95rem;
+                    font-size: 0.9rem;
+                    text-align: center;
                 }
                 .hero-links {
                     margin-top: 1rem;
                     margin-bottom: 0.5rem;
+                    justify-content: center;
                 }
                 .hero-link-icon {
                     font-size: 1.4rem;

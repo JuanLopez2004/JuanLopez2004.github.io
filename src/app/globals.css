@@ -34,3 +34,13 @@ img {
   max-width: 100%;
   box-sizing: border-box;
 }
+
+/* Mobile padding adjustments */
+@media (max-width: 900px) {
+  main {
+    padding-top: 70px !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    gap: 1.5rem !important;
+  }
+}

@@ -127,10 +127,13 @@ export default function Showcase({ projects }: ShowcaseProps) {
             min-width: 0;
             margin: 0 auto 1rem auto;
             height: auto !important;
-            max-width: 350px;
+            max-width: 300px;
           }
           .projects-container {
-            padding: 0 0.5rem;
+            padding: 0 1rem !important;
+            justify-content: center !important;
+            flex-direction: column !important;
+            align-items: center !important;
           }
         }
       `}</style>

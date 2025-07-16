@@ -8,8 +8,8 @@ b:I[4911,[],"AsyncMetadataOutlet"]
 d:I[9665,[],"ViewportBoundary"]
 f:I[9665,[],"MetadataBoundary"]
 11:I[6614,[],""]
-:HL["/_next/static/css/50f25fe71b13b24d.css","style"]
-4:Tb53,
+:HL["/_next/static/css/c2c7ccefd3e97265.css","style"]
+4:Tc40,
                .header {
                 display: flex;
                 padding: 1rem 0;
@@ -76,41 +76,47 @@ f:I[9665,[],"MetadataBoundary"]
 
             @media (max-width: 900px) {
                 .header {
-                    height: auto;
-                    min-height: 80px;
+                    height: 60px;
+                    min-height: 60px;
                 }
                 .header-container {
-                    flex-direction: column;
-                    align-items: flex-start;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
                     padding: 0.5rem 1rem;
                     gap: 0.5rem;
+                    height: 60px;
                 }
                 .header-left {
-                    height: auto;
-                    gap: 0.7rem;
-                    width: 100%;
+                    height: 60px;
+                    gap: 0.5rem;
+                    flex-shrink: 0;
                 }
                 .header-logo {
-                    height: 48px;
+                    height: 36px;
                 }
                 .header-title {
-                    font-size: 1.1rem;
-                    line-height: 48px;
+                    font-size: 0.9rem;
+                    line-height: 36px;
+                    white-space: nowrap;
                 }
                 .header-nav {
-                    height: auto;
-                    flex-wrap: wrap;
-                    width: 100%;
-                    gap: 0.5rem;
+                    height: 60px;
+                    flex-wrap: nowrap;
+                    gap: 0.3rem;
+                    flex-shrink: 1;
+                    overflow-x: auto;
                 }
                 .header-nav a {
                     margin: 0;
-                    font-size: 0.95rem;
-                    line-height: 2rem;
-                    padding: 0.2rem 0.5rem;
+                    font-size: 0.8rem;
+                    line-height: 60px;
+                    padding: 0 0.3rem;
+                    white-space: nowrap;
+                    flex-shrink: 0;
                 }
             }
-            7:T628,
+            7:T8ac,
                .footer {
                     display: flex;
                     flex-direction: column;
@@ -125,31 +131,52 @@ f:I[9665,[],"MetadataBoundary"]
                     margin: 0;
                     box-sizing: border-box;
                     margin-top: auto;
+                    left: 0;
+                    right: 0;
                 }
+                
+                .footer-nav {
+                    width: 100%;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 0 1rem;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+                
               .footer-text {
                     font-size: 1.7rem;
                     text-align: center;
+                    margin: 0;
               }
+              
                 .footer-bottom {
-                    margin-top: auto; 
                     text-align: center;
-                    }
+                    margin: 0;
+                }
 
               .footer-link {
                     color: white;
                     font-size: 1.5rem;
                     text-decoration: none;
-                    margin-top: 0.7rem;
+                    display: inline-block;
+                    transition: color 0.3s ease;
               }
-              .footer-nav a:hover {
-                        color:rgb(255, 255, 255);
+              
+              .footer-link:hover {
+                        color: rgb(200, 200, 255);
                         text-decoration: underline;
-                        fade-in: 0.3s;
                   }
 
                   @media (max-width: 900px) {
                     .footer {
-                        padding: 0.5rem 0;
+                        padding: 0.8rem 0;
+                    }
+                    .footer-nav {
+                        padding: 0 0.5rem;
                     }
                     .footer-text {
                         font-size: 1.1rem;
@@ -158,7 +185,7 @@ f:I[9665,[],"MetadataBoundary"]
                         font-size: 1rem;
                     }
                     }
-            0:{"P":null,"b":"LT7lpFdN1_yM_A7wDBDXV","p":"","c":["","Blog",""],"i":false,"f":[[["",{"children":["Blog",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/50f25fe71b13b24d.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__variable_5cfdac","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":["Blog",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","div",null,{"style":{"minHeight":"100vh","display":"flex","flexDirection":"column","position":"relative"},"children":[["$","div",null,{"style":{"position":"fixed","top":0,"left":0,"width":"100vw","height":"100vh","background":"rgba(119,133,204,1)","zIndex":0,"pointerEvents":"none"}}],[["$","style",null,{"children":"$4"}],["$","header",null,{"className":"header","children":["$","div",null,{"className":"header-container","children":[["$","div",null,{"className":"header-left","children":[["$","$L5",null,{"href":"/","children":["$","img",null,{"src":"https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png","alt":"Logo","className":"header-logo"}]}],["$","span",null,{"className":"header-title","children":"Juan Lopez"}]]}],["$","nav",null,{"className":"header-nav","children":[["$","$L5",null,{"href":"/#Skills","children":"Skills"}],["$","$L5",null,{"href":"/#Work","children":"Work"}],["$","$L5",null,{"href":"/involvement","children":"Involvement"}],["$","$L5",null,{"href":"/projects","children":"Projects"}],["$","$L5",null,{"href":"/Blog","children":"Blog"}]]}]]}]}]],["$","main",null,{"style":{"flex":1,"display":"flex","flexDirection":"column","paddingTop":"100px"},"children":["$","$L6",null,{"title":"NIU Linux Users Group","desc":"7/14/2025","image1":"https://web.archive.org/web/20050305132752im_/http://niulug.org/images/logo.jpg","body1":["The NIU Linux Users group was a linux club that was active in the mid 2000s at NIU","They created their own website and had weekly meetings in coffee shops. Sometimes being Java Coffee and THe House Cafe.","They would have meetings where they would give out Linux ISOs on burnt RW CDs. A cool organization that once was."],"link1":"https://web.archive.org/web/20050305132752/http://niulug.org/","link1Label":"linux users group wayback "}]}],[["$","style",null,{"children":"$7"}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"footer-nav","children":[["$","span",null,{"className":"footer-text","children":"© 2025 Juan Lopez"}],["$","div",null,{"className":"footer-bottom","children":["$","a",null,{"href":"mailto:jlopezcs04@gmail.com","className":"footer-link","children":"Contact"}]}]]}]}]]]}],null,["$","$L8",null,{"children":["$L9","$La",["$","$Lb",null,{"promise":"$@c"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","Wn9FO5d-Evu64DQRhUQT-v",{"children":[["$","$Ld",null,{"children":"$Le"}],null]}],["$","$Lf",null,{"children":"$L10"}]]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
+            0:{"P":null,"b":"Uh-HH44uSNZYExIRMIB0R","p":"","c":["","Blog",""],"i":false,"f":[[["",{"children":["Blog",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c2c7ccefd3e97265.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__variable_5cfdac","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":["Blog",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","div",null,{"style":{"minHeight":"100vh","display":"flex","flexDirection":"column","position":"relative"},"children":[["$","div",null,{"style":{"position":"fixed","top":0,"left":0,"width":"100vw","height":"100vh","background":"rgba(119,133,204,1)","zIndex":0,"pointerEvents":"none"}}],[["$","style",null,{"children":"$4"}],["$","header",null,{"className":"header","children":["$","div",null,{"className":"header-container","children":[["$","div",null,{"className":"header-left","children":[["$","$L5",null,{"href":"/","children":["$","img",null,{"src":"https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png","alt":"Logo","className":"header-logo"}]}],["$","span",null,{"className":"header-title","children":"Juan Lopez"}]]}],["$","nav",null,{"className":"header-nav","children":[["$","$L5",null,{"href":"/#Skills","children":"Skills"}],["$","$L5",null,{"href":"/#Work","children":"Work"}],["$","$L5",null,{"href":"/involvement","children":"Involvement"}],["$","$L5",null,{"href":"/projects","children":"Projects"}],["$","$L5",null,{"href":"/Blog","children":"Blog"}]]}]]}]}]],["$","main",null,{"style":{"flex":1,"display":"flex","flexDirection":"column","paddingTop":"100px"},"children":["$","$L6",null,{"title":"NIU Linux Users Group","desc":"7/14/2025","image1":"https://web.archive.org/web/20050305132752im_/http://niulug.org/images/logo.jpg","body1":["The NIU Linux Users group was a linux club that was active in the mid 2000s at NIU","They created their own website and had weekly meetings in coffee shops. Sometimes being Java Coffee and THe House Cafe.","They would have meetings where they would give out Linux ISOs on burnt RW CDs. A cool organization that once was."],"link1":"https://web.archive.org/web/20050305132752/http://niulug.org/","link1Label":"linux users group wayback "}]}],[["$","style",null,{"children":"$7"}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"footer-nav","children":[["$","span",null,{"className":"footer-text","children":"© 2025 Juan Lopez"}],["$","div",null,{"className":"footer-bottom","children":["$","a",null,{"href":"mailto:jlopezcs04@gmail.com","className":"footer-link","children":"Contact"}]}]]}]}]]]}],null,["$","$L8",null,{"children":["$L9","$La",["$","$Lb",null,{"promise":"$@c"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","-ASk6yquUdeDGIeNfvz9qv",{"children":[["$","$Ld",null,{"children":"$Le"}],null]}],["$","$Lf",null,{"children":"$L10"}]]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
 12:"$Sreact.suspense"
 13:I[4911,[],"AsyncMetadata"]
 10:["$","div",null,{"hidden":true,"children":["$","$12",null,{"fallback":null,"children":["$","$L13",null,{"promise":"$@14"}]}]}]
