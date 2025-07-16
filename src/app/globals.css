@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', Consolas, 'Courier New', monospace;
+  color: black;
+  background: #7c87c7;
+}
+
+html {
+  scroll-padding-top: 130px;
+}
+
+/* Responsive helpers */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
