@@ -57,9 +57,8 @@ export default function Hero({
             }
             .hero-image {
                 width: 100%;
-                height: 100%;
+                height: auto%;
                 object-fit: cover;
-                display: block;
             }
             .hero-content {
                 background-color: #fff;
