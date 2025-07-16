@@ -32,7 +32,7 @@ export default function Home() {
 				content="I have been very involved with the Computer Science community at NIU since 2023 when I first Joined the NIU Association for Computing Machinery as a member"
 				content2="In 2024, I took over Chair duties for ACM in 2024, I inherited an ACM with no structure, and no funding."
 				content3="ACM houses two SIGs, SIGmainframe and SIGwebdev. Which meet every week in a 9 week period to host workshops. ACM hosts four Socials, 3 Speakers, and collaborates with the Computer Science Alumni Council"
-				imageSrc="https://media.licdn.com/dms/image/v2/D5622AQHSGkedllEwnw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1726701744586?e=1755129600&v=beta&t=ceJ7KfFeBRpUjcgNWC7EgVp5qrp5uF8ZVE3b29ylv30"
+				imageSrc="https://github.com/user-attachments/assets/7ba6cb7d-6bad-422b-8838-165c1a45ebcc"
 				altText="Tux"
 				whiteBg={true}
 			/>
