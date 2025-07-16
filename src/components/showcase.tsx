@@ -47,6 +47,23 @@ export default function Showcase({ projects }: ShowcaseProps) {
           width: "100%",
         }}
       >
+        <style>{`
+          @media (max-width: 900px) {
+            .projects-container {
+              flex-direction: column !important;
+              align-items: center !important;
+              justify-content: center !important;
+              width: 100vw !important;
+              margin: 0 auto !important;
+              padding: 0 !important;
+            }
+            .project-card {
+              margin: 0 auto 1rem auto !important;
+              width: 95vw !important;
+              max-width: 98vw !important;
+            }
+          }
+        `}</style>
         {projects.map(({ title, description, imageSrc, link, website }) => (
           <div
             key={title}

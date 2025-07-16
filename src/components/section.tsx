@@ -20,10 +20,10 @@ export default function Section({ title, content, content2, content3, imageSrc, 
 		<>
 		   <style>{`
 			.sectionbody {
-				width: 100%;
+				width: 100vw;
 				margin: 1.5rem auto;
 				display: flex;
-				align-items: flex-start;
+				align-items: center;
 				justify-content: center;
 				background: ${whiteBg ? "#fff" : "transparent"};
 				position: relative;
@@ -34,6 +34,17 @@ export default function Section({ title, content, content2, content3, imageSrc, 
 				gap: 1.5rem;
 				height: auto;
 				}
+		   @media (max-width: 900px) {
+			 .sectionbody {
+			   width: 100vw !important;
+			   max-width: 100vw !important;
+			   margin: 1rem auto !important;
+			   padding: 1rem 0.5rem !important;
+			   flex-direction: column !important;
+			   align-items: center !important;
+			   justify-content: center !important;
+			 }
+		   }
 
 			.text-block {
 				width: 48%;

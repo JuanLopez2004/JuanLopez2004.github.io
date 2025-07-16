@@ -15,6 +15,8 @@ export default function Header() {
                 top: 0;
                 left: 0;
                 right: 0;
+                width: 100vw;
+                min-width: 100vw;
                 z-index: 1000;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
             }
