@@ -7,11 +7,11 @@ d:I[9665,[],"OutletBoundary"]
 12:I[9665,[],"ViewportBoundary"]
 14:I[9665,[],"MetadataBoundary"]
 16:I[6614,[],""]
-:HL["/_next/static/css/c2c7ccefd3e97265.css","style"]
-4:Tdea,
+:HL["/_next/static/css/e43e8c6ec6052b1c.css","style"]
+4:Td48,
                .header {
                 display: flex;
-                padding: 1rem 0;
+                padding: 0.5rem 0;
                 align-items: center;
                 background-color: #4856a3;
                 color: white;
@@ -24,6 +24,7 @@ d:I[9665,[],"OutletBoundary"]
                 min-width: 100vw;
                 z-index: 1000;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                height: 100px;
             }
 
             .header-container {
@@ -40,7 +41,7 @@ d:I[9665,[],"OutletBoundary"]
             .header-nav {
                 display: flex;
                 align-items: center;
-                height: 80px;
+                height: 60px;
             }
 
             .header-left {
@@ -53,10 +54,10 @@ d:I[9665,[],"OutletBoundary"]
             }
 
             .header-title {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 font-weight: bold;
                 letter-spacing: 0.5px;
-                line-height: 70px;
+                line-height: 50px;
                 display: flex;
                 align-items: center;
             }
@@ -64,10 +65,10 @@ d:I[9665,[],"OutletBoundary"]
             .header-nav a {
                 color: white;
                 text-decoration: none;
-                font-size: 1.1rem;
+                font-size: 1.5rem;
                 margin: 0 1.3rem;
                 transition: color 0.3s ease;
-                line-height: 70px;
+                line-height: 50px;
             }
 
             .header-nav a:hover {
@@ -77,74 +78,68 @@ d:I[9665,[],"OutletBoundary"]
 
             @media (max-width: 900px) {
                 .header {
+                    padding: 0.3rem 0;
                     height: auto;
                     min-height: unset;
                 }
                 .header-container {
                     flex-direction: column;
-                    align-items: stretch;
-                    justify-content: flex-start;
-                    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
-                    gap: 0.2rem;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0.5rem;
+                    gap: 0.5rem;
                     height: auto;
                 }
                 .header-left {
-                    height: 40px;
-                    gap: 0.5rem;
-                    flex-shrink: 0;
                     flex-direction: row;
-                    align-items: center;
-                    justify-content: flex-start;
+                    justify-content: center;
+                    gap: 0.5rem;
+                    height: 40px;
                 }
                 .header-logo {
-                    height: 32px;
+                    height: 55px;
                 }
                 .header-title {
-                    font-size: 1.1rem;
-                    line-height: 32px;
+                    font-size: 2rem;
+                    line-height: 30px;
                     white-space: nowrap;
                 }
                 .header-nav {
                     display: flex;
                     flex-direction: row;
-                    flex-wrap: wrap;
-                    gap: 0.3rem;
-                    width: 100%;
+                    flex-wrap: nowrap;
                     justify-content: center;
-                    align-items: center;
-                    height: auto;
-                    overflow-x: hidden;
-                    margin-top: 0.2rem;
+                    gap: 0.2rem;
+                    width: auto;
                 }
                 .header-nav a {
-                    margin: 0 0.2rem;
-                    font-size: 0.9rem;
-                    line-height: 1.8rem;
+                    margin: 0;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    line-height: 30px;
                     padding: 0.2rem 0.3rem;
                     white-space: nowrap;
                     flex-shrink: 0;
                 }
             }
-            6:Tddc,
+            6:Tcbd,
             .hero {
                 display: flex;
                 align-items: stretch;
-                background: #fff;
+                justify-content: center;
                 width: 100%;
-                max-width: 1200px;
-                height: 500px;
-                z-index: 1;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+                max-width: 100%;
                 margin: 0 auto;
-                border-radius: 8px;
-                overflow: hidden;
+                padding: 0;
+                box-sizing: border-box;
+                z-index: 1;
             }
             .hero-image-container {
                 width: 50%;
                 height: 100%;
                 display: flex;
                 align-items: stretch;
-                justify-content: flex-end;
+                justify-content: center;
             }
             .hero-image {
                 width: 100%;
@@ -153,13 +148,15 @@ d:I[9665,[],"OutletBoundary"]
                 display: block;
             }
             .hero-content {
-                width: 50%;
+                background-color: #fff;
+                text-align: left;
+                width: 60%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
-                padding: 3rem;
+                padding: 4rem;
                 box-sizing: border-box;
                 font-family: Arial, Helvetica, sans-serif;
             }
@@ -201,6 +198,7 @@ d:I[9665,[],"OutletBoundary"]
                     margin: 0;
                     max-width: 100vw;
                     border-radius: 0;
+                    z-index: 2;
                 }
                 .hero-image-container,
                 .hero-content {
@@ -214,9 +212,10 @@ d:I[9665,[],"OutletBoundary"]
                     order: 2;
                     padding: 1.5rem 0.5rem;
                     text-align: center;
+                    min-height: 20vh;
                 }
                 .hero-image {
-                    height: 180px;
+                    height: 350px;
                     border-radius: 0;
                     width: 100vw;
                     max-width: 100vw;
@@ -224,24 +223,14 @@ d:I[9665,[],"OutletBoundary"]
                 .hero-title {
                     font-size: 1.4rem;
                     margin-bottom: 0.8rem;
-                    text-align: center;
                 }
                 .hero-text {
                     font-size: 0.9rem;
-                    text-align: center;
-                }
-                .hero-links {
-                    margin-top: 1rem;
-                    margin-bottom: 0.5rem;
-                    justify-content: center;
-                }
-                .hero-link-icon {
-                    font-size: 1.4rem;
                 }
             }
-            7:T518,M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z8:T9c8,
+            7:T518,M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z8:T8ef,
 			.sectionbody {
-				width: 100vw;
+				width: 100%;
 				margin: 1.5rem auto;
 				display: flex;
 				align-items: center;
@@ -257,13 +246,17 @@ d:I[9665,[],"OutletBoundary"]
 				}
 		   @media (max-width: 900px) {
 			 .sectionbody {
-			   width: 100vw !important;
-			   max-width: 100vw !important;
-			   margin: 1rem auto !important;
-			   padding: 1rem 0.5rem !important;
-			   flex-direction: column !important;
-			   align-items: center !important;
-			   justify-content: center !important;
+			   flex-direction: column;
+			   width: 95%;
+			   max-width: 95%;
+			   margin: 1rem auto;
+			   padding: 1rem;
+			 }
+			 .text-block,
+			 .section-content,
+			 .section-title,
+			 .section-paragraph {
+				text-align: left !important;
 			 }
 		   }
 
@@ -330,20 +323,11 @@ d:I[9665,[],"OutletBoundary"]
 				}
 
 			@media (max-width: 900px) {
-				.sectionbody {
-					flex-direction: column;
-					padding: 1rem;
-					gap: 1rem;
-					max-width: 95%;
-					margin: 1rem auto;
-					width: 95%;
-				}
 				.text-block,
 				.section-content,
 				.section-image-wrapper {
-					width: 100% !important;
-					padding: 1rem !important;
-					min-width: 0;
+					width: 100%;
+					padding: 1rem;
 					text-align: center;
 				}
 				.section-image {
@@ -359,9 +343,9 @@ d:I[9665,[],"OutletBoundary"]
 				}
 
 
-		9:T805,
+		9:T5f0,
        .sectionbody {
-  width: 100vw;
+  width: 100%;
   margin: 1.5rem auto;
   display: flex;
   align-items: center;
@@ -370,43 +354,53 @@ d:I[9665,[],"OutletBoundary"]
   position: relative;
   max-width: 1200px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 1rem;
   gap: 1.5rem;
   height: auto;
 }
-       @media (max-width: 900px) {
-         .sectionbody {
-           width: 100vw !important;
-           max-width: 100vw !important;
-           margin: 1rem auto !important;
-           padding: 1rem 0.5rem !important;
-           flex-direction: column !important;
-           align-items: center !important;
-           justify-content: center !important;
-         }
-       }
-
 .text-block {
-  width: 48%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   box-sizing: border-box;
   background-color: #f9f9f9;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 0.75rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
-
+@media (max-width: 900px) {
+  .sectionbody {
+    flex-direction: column;
+    width: 95%;
+    max-width: 95%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .text-block {
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+  }
+}
+@media (min-width: 900px) {
+  .sectionbody {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .text-block {
+    width: 70%;
+  }
+}
 .section-title {
   font-size: clamp(1.4rem, 2.5vw, 2rem);
   font-weight: 700;
   margin-bottom: 1rem;
   color: #222;
 }
-
 .section-paragraph {
   margin-bottom: 0.75rem;
   font-size: clamp(1rem, 1.8vw, 1.3rem);
@@ -416,7 +410,6 @@ d:I[9665,[],"OutletBoundary"]
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
-
 .section-link {
   margin-top: 0.5rem;
   font-size: clamp(0.9rem, 1.5vw, 1.1rem);
@@ -425,38 +418,12 @@ d:I[9665,[],"OutletBoundary"]
   text-decoration: none;
   transition: color 0.2s ease;
 }
-
 .section-link:hover {
   color: #0056b3;
 }
-
-@media (max-width: 900px) {
-        .sectionbody {
-          flex-direction: column;
-          padding: 1rem;
-          gap: 1rem;
-          max-width: 95%;
-          margin: 1rem auto;
-          width: 95%;
-        }
-        .text-block {
-          width: 100% !important;
-          padding: 1rem !important;
-          min-width: 0;
-          text-align: center;
-        }
-        .section-title {
-          text-align: center;
-        }
-        .section-paragraph {
-          text-align: center;
-        }
-        }
-
-
-      a:T805,
+a:T5f0,
        .sectionbody {
-  width: 100vw;
+  width: 100%;
   margin: 1.5rem auto;
   display: flex;
   align-items: center;
@@ -465,43 +432,53 @@ d:I[9665,[],"OutletBoundary"]
   position: relative;
   max-width: 1200px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 1rem;
   gap: 1.5rem;
   height: auto;
 }
-       @media (max-width: 900px) {
-         .sectionbody {
-           width: 100vw !important;
-           max-width: 100vw !important;
-           margin: 1rem auto !important;
-           padding: 1rem 0.5rem !important;
-           flex-direction: column !important;
-           align-items: center !important;
-           justify-content: center !important;
-         }
-       }
-
 .text-block {
-  width: 48%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   box-sizing: border-box;
   background-color: #f9f9f9;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 0.75rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
-
+@media (max-width: 900px) {
+  .sectionbody {
+    flex-direction: column;
+    width: 95%;
+    max-width: 95%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .text-block {
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+  }
+}
+@media (min-width: 900px) {
+  .sectionbody {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .text-block {
+    width: 70%;
+  }
+}
 .section-title {
   font-size: clamp(1.4rem, 2.5vw, 2rem);
   font-weight: 700;
   margin-bottom: 1rem;
   color: #222;
 }
-
 .section-paragraph {
   margin-bottom: 0.75rem;
   font-size: clamp(1rem, 1.8vw, 1.3rem);
@@ -511,7 +488,6 @@ d:I[9665,[],"OutletBoundary"]
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
-
 .section-link {
   margin-top: 0.5rem;
   font-size: clamp(0.9rem, 1.5vw, 1.1rem);
@@ -520,38 +496,12 @@ d:I[9665,[],"OutletBoundary"]
   text-decoration: none;
   transition: color 0.2s ease;
 }
-
 .section-link:hover {
   color: #0056b3;
 }
-
-@media (max-width: 900px) {
-        .sectionbody {
-          flex-direction: column;
-          padding: 1rem;
-          gap: 1rem;
-          max-width: 95%;
-          margin: 1rem auto;
-          width: 95%;
-        }
-        .text-block {
-          width: 100% !important;
-          padding: 1rem !important;
-          min-width: 0;
-          text-align: center;
-        }
-        .section-title {
-          text-align: center;
-        }
-        .section-paragraph {
-          text-align: center;
-        }
-        }
-
-
-      b:T9c1,
+b:T8e8,
 			.sectionbody {
-				width: 100vw;
+				width: 100%;
 				margin: 1.5rem auto;
 				display: flex;
 				align-items: center;
@@ -567,13 +517,17 @@ d:I[9665,[],"OutletBoundary"]
 				}
 		   @media (max-width: 900px) {
 			 .sectionbody {
-			   width: 100vw !important;
-			   max-width: 100vw !important;
-			   margin: 1rem auto !important;
-			   padding: 1rem 0.5rem !important;
-			   flex-direction: column !important;
-			   align-items: center !important;
-			   justify-content: center !important;
+			   flex-direction: column;
+			   width: 95%;
+			   max-width: 95%;
+			   margin: 1rem auto;
+			   padding: 1rem;
+			 }
+			 .text-block,
+			 .section-content,
+			 .section-title,
+			 .section-paragraph {
+				text-align: left !important;
 			 }
 		   }
 
@@ -640,20 +594,11 @@ d:I[9665,[],"OutletBoundary"]
 				}
 
 			@media (max-width: 900px) {
-				.sectionbody {
-					flex-direction: column;
-					padding: 1rem;
-					gap: 1rem;
-					max-width: 95%;
-					margin: 1rem auto;
-					width: 95%;
-				}
 				.text-block,
 				.section-content,
 				.section-image-wrapper {
-					width: 100% !important;
-					padding: 1rem !important;
-					min-width: 0;
+					width: 100%;
+					padding: 1rem;
 					text-align: center;
 				}
 				.section-image {
@@ -669,7 +614,7 @@ d:I[9665,[],"OutletBoundary"]
 				}
 
 
-		c:Ta4d,
+		c:Ta50,
                .footer {
                     display: flex;
                     flex-direction: column;
@@ -680,9 +625,9 @@ d:I[9665,[],"OutletBoundary"]
                     padding: 1rem 0 0.5rem 0;
                     position: relative;
                     z-index: 1;
-                    width: 100vw;
-                    min-width: 100vw;
-                    margin: 0;
+                    width: 100%;
+                    max-width: 100%;
+                    margin: 0 auto;
                     box-sizing: border-box;
                     margin-top: auto;
                     left: 0;
@@ -748,7 +693,7 @@ d:I[9665,[],"OutletBoundary"]
                         font-size: 1rem;
                     }
                     }
-            0:{"P":null,"b":"lQLmLtPWc5K1TYmkxxLFn","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c2c7ccefd3e97265.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__variable_5cfdac","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","div",null,{"style":{"minHeight":"100vh","display":"flex","flexDirection":"column","position":"relative","width":"100%","maxWidth":"100vw","overflowX":"hidden"},"children":[["$","div",null,{"style":{"position":"fixed","top":0,"left":0,"width":"100vw","height":"100vh","background":"rgba(119,133,204,1)","zIndex":0,"pointerEvents":"none"}}],[["$","style",null,{"children":"$4"}],["$","header",null,{"className":"header","children":["$","div",null,{"className":"header-container","children":[["$","div",null,{"className":"header-left","children":[["$","$L5",null,{"href":"/","children":["$","img",null,{"src":"https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png","alt":"Logo","className":"header-logo"}]}],["$","span",null,{"className":"header-title","children":"Juan Lopez"}]]}],["$","nav",null,{"className":"header-nav","children":[["$","$L5",null,{"href":"/#Skills","children":"Skills"}],["$","$L5",null,{"href":"/#Work","children":"Work"}],["$","$L5",null,{"href":"/involvement","children":"Involvement"}],["$","$L5",null,{"href":"/projects","children":"Projects"}],["$","$L5",null,{"href":"/Blog","children":"Blog"}]]}]]}]}]],["$","main",null,{"style":{"flex":1,"display":"flex","flexDirection":"column","gap":"2rem","paddingTop":"100px","paddingBottom":"2rem","paddingLeft":"1rem","paddingRight":"1rem","maxWidth":"100%","boxSizing":"border-box"},"children":[["$","section",null,{"style":{"width":"100%","display":"flex","justifyContent":"center","padding":"0 1rem"},"children":[["$","style",null,{"children":"$6"}],["$","div",null,{"className":"hero","children":[["$","div",null,{"className":"hero-image-container","children":["$","img",null,{"src":"https://c4.wallpaperflare.com/wallpaper/750/507/586/computers-linux-wallpaper-preview.jpg","alt":"Tux","className":"hero-image"}]}],["$","div",null,{"className":"hero-content","children":[["$","div",null,{"className":"hero-title","children":"Aspiring Fullstack Developer with an interest in Data Science"}],["$","div",null,{"className":"hero-text","children":"I’m a Senior studying Computer Science at Northern Illinois University, focused on full-stack web development."}],["$","div",null,{"className":"hero-text hero-text-gap","children":"I’m comfortable with C++, SQL databases, React, Typescript and have a growing interest in data science and its real-world applications."}],["$","div",null,{"className":"hero-text hero-text-gap","children":"I enjoy building practical, efficient apps that connect smoothly with databases and provide great user experiences."}],"$undefined","$undefined","$undefined",["$","div",null,{"className":"hero-links","children":[["$","a",null,{"href":"https://github.com/JuanLopez2004","target":"_blank","rel":"noopener noreferrer","className":"hero-link-icon","title":"GitHub","children":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 496 512","children":["$undefined",[["$","path","0",{"d":"$7","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}],["$","a",null,{"href":"https://www.linkedin.com/in/juan-lopez-6278bb234/","target":"_blank","rel":"noopener noreferrer","className":"hero-link-icon","title":"LinkedIn","children":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 448 512","children":["$undefined",[["$","path","0",{"d":"M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}],["$","a",null,{"href":"https://www.hackerrank.com/profile/jlopezcs04","target":"_blank","rel":"noopener noreferrer","className":"hero-link-icon","title":"HackerRank","children":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 512 512","children":["$undefined",[["$","path","0",{"d":"M477.5 128C463 103.05 285.13 0 256.16 0S49.25 102.79 34.84 128s-14.49 230.8 0 256 192.38 128 221.32 128S463 409.08 477.49 384s14.51-231 .01-256zM316.13 414.22c-4 0-40.91-35.77-38-38.69.87-.87 6.26-1.48 17.55-1.83 0-26.23.59-68.59.94-86.32 0-2-.44-3.43-.44-5.85h-79.93c0 7.1-.46 36.2 1.37 72.88.23 4.54-1.58 6-5.74 5.94-10.13 0-20.27-.11-30.41-.08-4.1 0-5.87-1.53-5.74-6.11.92-33.44 3-84-.15-212.67v-3.17c-9.67-.35-16.38-1-17.26-1.84-2.92-2.92 34.54-38.69 38.49-38.69s41.17 35.78 38.27 38.69c-.87.87-7.9 1.49-16.77 1.84v3.16c-2.42 25.75-2 79.59-2.63 105.39h80.26c0-4.55.39-34.74-1.2-83.64-.1-3.39.95-5.17 4.21-5.2 11.07-.08 22.15-.13 33.23-.06 3.46 0 4.57 1.72 4.5 5.38C333 354.64 336 341.29 336 373.69c8.87.35 16.82 1 17.69 1.84 2.88 2.91-33.62 38.69-37.58 38.69z","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}],["$","a",null,{"href":"https://drive.google.com/file/d/1nR7Vh3GKPJ2FIKtNlN_zoIqoUFamPgpn/view?usp=sharing","target":"_blank","rel":"noopener noreferrer","className":"hero-link-icon","title":"Resume","children":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 384 512","children":["$undefined",[["$","path","0",{"d":"M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}]]}]]}]]}]]}],["$","section",null,{"style":{"width":"100%","display":"flex","justifyContent":"center","padding":"0 1rem"},"children":[["$","style",null,{"children":"$8"}],["$","header",null,{"className":"sectionbody","children":[["$","div",null,{"className":"section-image-wrapper","children":["$","img",null,{"src":"https://i.ibb.co/hRMFKRWw/IMG-20250711-191116-406.jpg","alt":"tux","className":"section-image"}]}],["$","div",null,{"className":"section-content","children":[["$","h1",null,{"className":"section-title","children":"Biography"}],["$","p",null,{"className":"section-paragraph","children":"I am a Senior at NIU! I am in my fourth year learning Computer Science. I have a passion for full-stack web development and data science. I am the Chair of the NIU ACM Chapter, where I help organize fun events and educational workshops for students."}],["$","p",null,{"className":"section-paragraph","children":"I believe in an equitable tech community, and I strive to make tech accessible to everyone. I am an avid fan of College Football, Team Fortress 2, and Adult Swim."}],"$undefined",["$","div",null,{"className":"section-links","children":["$undefined","$undefined","$undefined","$undefined"]}]]}]]}]]}],["$","div",null,{"id":"Skills","children":[["$","style",null,{"children":"$9"}],["$","section",null,{"className":"sectionbody","children":[["$","div",null,{"className":"text-block","children":[["$","h2",null,{"className":"section-title","children":"Skills"}],["$","p",null,{"className":"section-paragraph","children":"C++, SQL, ReactJS, TypeScript, Python,"}],["$","p",null,{"className":"section-paragraph","children":"HTML, CSS, NextJS, Could do Java if forced"}],"$undefined","$undefined"]}],["$","div",null,{"className":"text-block","children":[["$","h2",null,{"className":"section-title","children":"Dev Tools"}],["$","p",null,{"className":"section-paragraph","children":"VScode, Git, GitHub, GitLab,"}],["$","p",null,{"className":"section-paragraph","children":"MySQL, Vite, Windows, Linux"}],"$undefined","$undefined"]}]]}]]}],["$","div",null,{"id":"Work","children":["$","section",null,{"style":{"width":"100%","display":"flex","justifyContent":"center","padding":"0 1rem"},"children":[["$","style",null,{"children":"$a"}],["$","section",null,{"className":"sectionbody","children":[["$","div",null,{"className":"text-block","children":[["$","h2",null,{"className":"section-title","children":"Work Experience"}],["$","p",null,{"className":"section-paragraph","children":"ResTech Help Desk Technician - Northern Illinois University · Part-time, Jun 2025 - Present"}],["$","p",null,{"className":"section-paragraph","children":"DeKalb, Illinois, United States"}],["$","p",null,{"className":"section-paragraph","children":"On-site"}],"$undefined"]}],["$","div",null,{"className":"text-block","children":[["$","h2",null,{"className":"section-title","children":"Description"}],["$","p",null,{"className":"section-paragraph","children":"Provide IT support to students and staff in the various NIU residence halls and the Student Center, including laptop troubleshooting, hardware/software support, Computer Imaging, Powershell, and Assistance."}],["$","p",null,{"className":"section-paragraph","children":"Tools Learned: Powershell, Windows 11 Support, GitLab"}],"$undefined","$undefined"]}]]}]]}]}],["$","div",null,{"id":"Involvement","children":["$","section",null,{"style":{"width":"100%","display":"flex","justifyContent":"center","padding":"0 1rem"},"children":[["$","style",null,{"children":"$b"}],["$","header",null,{"className":"sectionbody","children":[["$","div",null,{"className":"section-image-wrapper","children":["$","img",null,{"src":"https://i.imgur.com/pkz8jYe.png","alt":"tux","className":"section-image"}]}],["$","div",null,{"className":"section-content","children":[["$","h1",null,{"className":"section-title","children":"Involvement"}],["$","p",null,{"className":"section-paragraph","children":"I serve as Chair for the NIU Association of Computing Machinery for 2024-2026. Under our shared vision, we have completely revamped ACM with two new Special Interest Groups (SIGwebdev and SIGmainframe) as well as provide SIGmeeting Workshops, Socials, Speaker Presentations, Career Fairs, and Alumni Council Outreach"}],["$","p",null,{"className":"section-paragraph","children":"If you are interested in reading about our work, my contributions, and our event history click below"}],"$undefined",["$","div",null,{"className":"section-links","children":[["$","a",null,{"href":"/Involvement","children":"View Involvement Page"}],"$undefined","$undefined","$undefined"]}]]}]]}]]}]}],["$","div",null,{"id":"Projects","children":["$","section",null,{"style":{"width":"100%","display":"flex","justifyContent":"center","padding":"0 1rem"},"children":["$","div",null,{"style":{"padding":"1rem","zIndex":1,"width":"100%","maxWidth":"1200px","margin":"0 auto","boxSizing":"border-box"},"children":[["$","h2",null,{"style":{"textAlign":"center","fontSize":"2rem","marginTop":"0","color":"black"},"children":"Projects"}],["$","div",null,{"className":"projects-container","style":{"display":"flex","justifyContent":"center","alignItems":"center","gap":"1rem","marginBottom":"2rem","flexWrap":"wrap","width":"100%"},"children":[["$","style",null,{"children":"\n          @media (max-width: 900px) {\n            .projects-container {\n              flex-direction: column !important;\n              align-items: center !important;\n              justify-content: center !important;\n              width: 100vw !important;\n              margin: 0 auto !important;\n              padding: 0 !important;\n            }\n            .project-card {\n              margin: 0 auto 1rem auto !important;\n              width: 95vw !important;\n              max-width: 98vw !important;\n            }\n          }\n        "}],[["$","div","GooseBot",{"className":"project-card","style":{"border":"1px solid #ccc","borderRadius":"0.5rem","width":"20rem","height":"30rem","backgroundColor":"white","boxShadow":"0 0.125rem 0.5rem rgba(0,0,0,0.1)","overflow":"hidden","display":"flex","flexDirection":"column","zIndex":1,"transition":"all 0.3s ease"},"children":[["$","img",null,{"src":"https://i.ibb.co/C5YhCYnN/Picsart-25-06-17-02-56-28-663.jpg","alt":"GooseBot","style":{"width":"100%","height":"17.25rem","objectFit":"cover"}}],["$","div",null,{"style":{"padding":"1rem","flexGrow":1},"children":[["$","h3",null,{"style":{"margin":"0 0 0.5rem 0"},"children":"GooseBot"}],["$","p",null,{"style":{"margin":0},"children":"General Discord Bot built with DiscordPY"}]]}],["$","div",null,{"style":{"padding":"0 1rem 1rem 1rem","display":"flex","flexDirection":"column","gap":"0.25rem"},"children":[["$","a",null,{"href":"https://github.com/JuanLopez2004/discord-goosebot","target":"_blank","rel":"noopener noreferrer","style":{"color":"#0070f3","textDecoration":"none","fontWeight":"bold"},"children":"View Code →"}],"$undefined"]}]]}],["$","div","Ryan's Parts Commerce Site",{"className":"project-card","style":{"border":"1px solid #ccc","borderRadius":"0.5rem","width":"20rem","height":"30rem","backgroundColor":"white","boxShadow":"0 0.125rem 0.5rem rgba(0,0,0,0.1)","overflow":"hidden","display":"flex","flexDirection":"column","zIndex":1,"transition":"all 0.3s ease"},"children":[["$","img",null,{"src":"https://i.imgur.com/SvVdlsC.png","alt":"Ryan's Parts Commerce Site","style":{"width":"100%","height":"17.25rem","objectFit":"cover"}}],["$","div",null,{"style":{"padding":"1rem","flexGrow":1},"children":[["$","h3",null,{"style":{"margin":"0 0 0.5rem 0"},"children":"Ryan's Parts Commerce Site"}],["$","p",null,{"style":{"margin":0},"children":"Junior Year Software Eng Project built in ReactJS, NodeJs"}]]}],["$","div",null,{"style":{"padding":"0 1rem 1rem 1rem","display":"flex","flexDirection":"column","gap":"0.25rem"},"children":[["$","a",null,{"href":"https://github.com/JuanLopez2004/CSCI-467","target":"_blank","rel":"noopener noreferrer","style":{"color":"#0070f3","textDecoration":"none","fontWeight":"bold"},"children":"View Code →"}],"$undefined"]}]]}],["$","div","NIU ACM Website",{"className":"project-card","style":{"border":"1px solid #ccc","borderRadius":"0.5rem","width":"20rem","height":"30rem","backgroundColor":"white","boxShadow":"0 0.125rem 0.5rem rgba(0,0,0,0.1)","overflow":"hidden","display":"flex","flexDirection":"column","zIndex":1,"transition":"all 0.3s ease"},"children":[["$","img",null,{"src":"https://i.imgur.com/bscMhK0.png","alt":"NIU ACM Website","style":{"width":"100%","height":"17.25rem","objectFit":"cover"}}],["$","div",null,{"style":{"padding":"1rem","flexGrow":1},"children":[["$","h3",null,{"style":{"margin":"0 0 0.5rem 0"},"children":"NIU ACM Website"}],["$","p",null,{"style":{"margin":0},"children":"ACM Departmental Website Programmed with ReactJS, TypeScript. Serverside Development with NextJS with nixOS/Bun toolkit"}]]}],["$","div",null,{"style":{"padding":"0 1rem 1rem 1rem","display":"flex","flexDirection":"column","gap":"0.25rem"},"children":[["$","a",null,{"href":"https://github.com/niu-acm/niu-acm-website","target":"_blank","rel":"noopener noreferrer","style":{"color":"#0070f3","textDecoration":"none","fontWeight":"bold"},"children":"View Code →"}],"$undefined"]}]]}],["$","div","2nd Portfolio Site",{"className":"project-card","style":{"border":"1px solid #ccc","borderRadius":"0.5rem","width":"20rem","height":"30rem","backgroundColor":"white","boxShadow":"0 0.125rem 0.5rem rgba(0,0,0,0.1)","overflow":"hidden","display":"flex","flexDirection":"column","zIndex":1,"transition":"all 0.3s ease"},"children":[["$","img",null,{"src":"https://images.pling.com/img/00/00/04/47/10/1114759/44869-1.jpg","alt":"2nd Portfolio Site","style":{"width":"100%","height":"17.25rem","objectFit":"cover"}}],["$","div",null,{"style":{"padding":"1rem","flexGrow":1},"children":[["$","h3",null,{"style":{"margin":"0 0 0.5rem 0"},"children":"2nd Portfolio Site"}],["$","p",null,{"style":{"margin":0},"children":"This Very Site. Built with TypeScript, ReactJS, and NextJS"}]]}],["$","div",null,{"style":{"padding":"0 1rem 1rem 1rem","display":"flex","flexDirection":"column","gap":"0.25rem"},"children":[["$","a",null,{"href":"https://github.com/JuanLopez2004/Website2","target":"_blank","rel":"noopener noreferrer","style":{"color":"#0070f3","textDecoration":"none","fontWeight":"bold"},"children":"View Code →"}],"$undefined"]}]]}],["$","div","More Projects",{"className":"project-card","style":{"border":"1px solid #ccc","borderRadius":"0.5rem","width":"20rem","height":"30rem","backgroundColor":"white","boxShadow":"0 0.125rem 0.5rem rgba(0,0,0,0.1)","overflow":"hidden","display":"flex","flexDirection":"column","zIndex":1,"transition":"all 0.3s ease"},"children":[["$","img",null,{"src":"https://i.imgur.com/viSEu7f.jpeg","alt":"More Projects","style":{"width":"100%","height":"17.25rem","objectFit":"cover"}}],["$","div",null,{"style":{"padding":"1rem","flexGrow":1},"children":[["$","h3",null,{"style":{"margin":"0 0 0.5rem 0"},"children":"More Projects"}],["$","p",null,{"style":{"margin":0},"children":"Click View to View More Projects"}]]}],["$","div",null,{"style":{"padding":"0 1rem 1rem 1rem","display":"flex","flexDirection":"column","gap":"0.25rem"},"children":[["$","a",null,{"href":"/projects","target":"_blank","rel":"noopener noreferrer","style":{"color":"#0070f3","textDecoration":"none","fontWeight":"bold"},"children":"View Code →"}],"$undefined"]}]]}]]]}],["$","style",null,{"children":"\n        .project-card {\n          transition: transform 0.2s ease, box-shadow 0.2s ease;\n          border-radius: 8px;\n          overflow: hidden;\n        }\n        .project-card:hover {\n          transform: translateY(-0.25rem);\n          box-shadow: 0 0.625rem 1rem rgba(0, 0, 0, 0.2);\n        }\n        @media (max-width: 900px) {\n          .project-card {\n            width: 100% !important;\n            min-width: 0;\n            margin: 0 auto 1rem auto;\n            height: auto !important;\n            max-width: 300px;\n          }\n          .projects-container {\n            padding: 0 1rem !important;\n            justify-content: center !important;\n            flex-direction: column !important;\n            align-items: center !important;\n          }\n        }\n      "}]]}]}]}]]}],[["$","style",null,{"children":"$c"}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"footer-nav","children":[["$","span",null,{"className":"footer-text","children":"© 2025 Juan Lopez"}],["$","div",null,{"className":"footer-bottom","children":["$","a",null,{"href":"mailto:jlopezcs04@gmail.com","className":"footer-link","children":"Contact"}]}]]}]}]]]}],null,["$","$Ld",null,{"children":["$Le","$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","UdjKTe_p28-PsKa24JpM6v",{"children":[["$","$L12",null,{"children":"$L13"}],null]}],["$","$L14",null,{"children":"$L15"}]]}],false]],"m":"$undefined","G":["$16","$undefined"],"s":false,"S":true}
+            0:{"P":null,"b":"BETjfQtcuKXrBX3QJlBO2","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e43e8c6ec6052b1c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","div",null,{"style":{"minHeight":"100vh","display":"flex","flexDirection":"column","position":"relative","width":"100%","maxWidth":"100vw","overflowX":"hidden","zIndex":1},"children":[["$","div",null,{"style":{"position":"fixed","top":0,"left":0,"width":"100vw","height":"100vh","background":"rgba(119,133,204,1)","zIndex":0,"pointerEvents":"none"}}],[["$","style",null,{"children":"$4"}],["$","header",null,{"className":"header","children":["$","div",null,{"className":"header-container","children":[["$","div",null,{"className":"header-left","children":[["$","$L5",null,{"href":"/","children":["$","img",null,{"src":"https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png","alt":"Logo","className":"header-logo"}]}],["$","span",null,{"className":"header-title","children":"Juan Lopez"}]]}],["$","nav",null,{"className":"header-nav","children":[["$","$L5",null,{"href":"/#Skills","children":"Skills"}],["$","$L5",null,{"href":"/#Work","children":"Work"}],["$","$L5",null,{"href":"/involvement","children":"Involvement"}],["$","$L5",null,{"href":"/projects","children":"Projects"}],["$","$L5",null,{"href":"/Blog","children":"Blog"}]]}]]}]}]],["$","main",null,{"style":{"flex":1,"display":"flex","flexDirection":"column","gap":"2rem","paddingTop":"100px","maxWidth":"100%","boxSizing":"border-box","zIndex":1},"children":[["$","section",null,{"style":{"width":"100%","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center","boxSizing":"border-box","backgroundColor":"white","zIndex":2},"children":[["$","style",null,{"children":"$6"}],["$","div",null,{"className":"hero","children":[["$","div",null,{"className":"hero-image-container","children":["$","img",null,{"src":"https://c4.wallpaperflare.com/wallpaper/750/507/586/computers-linux-wallpaper-preview.jpg","alt":"Tux","className":"hero-image"}]}],["$","div",null,{"className":"hero-content","children":[["$","div",null,{"className":"hero-title","children":"Aspiring Fullstack Developer with an interest in Data Science"}],["$","div",null,{"className":"hero-text","children":"I’m a Senior studying Computer Science at Northern Illinois University, focused on full-stack web development."}],["$","div",null,{"className":"hero-text hero-text-gap","children":"I’m comfortable with C++, SQL databases, React, Typescript and have a growing interest in data science and its real-world applications."}],["$","div",null,{"className":"hero-text hero-text-gap","children":"I enjoy building practical, efficient apps that connect smoothly with databases and provide great user experiences."}],"$undefined","$undefined","$undefined",["$","div",null,{"className":"hero-links","children":[["$","a",null,{"href":"https://github.com/JuanLopez2004","target":"_blank","rel":"noopener noreferrer","className":"hero-link-icon","title":"GitHub","children":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 496 512","children":["$undefined",[["$","path","0",{"d":"$7","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}],["$","a",null,{"href":"https://www.linkedin.com/in/juan-lopez-6278bb234/","target":"_blank","rel":"noopener noreferrer","className":"hero-link-icon","title":"LinkedIn","children":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 448 512","children":["$undefined",[["$","path","0",{"d":"M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}],["$","a",null,{"href":"https://www.hackerrank.com/profile/jlopezcs04","target":"_blank","rel":"noopener noreferrer","className":"hero-link-icon","title":"HackerRank","children":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 512 512","children":["$undefined",[["$","path","0",{"d":"M477.5 128C463 103.05 285.13 0 256.16 0S49.25 102.79 34.84 128s-14.49 230.8 0 256 192.38 128 221.32 128S463 409.08 477.49 384s14.51-231 .01-256zM316.13 414.22c-4 0-40.91-35.77-38-38.69.87-.87 6.26-1.48 17.55-1.83 0-26.23.59-68.59.94-86.32 0-2-.44-3.43-.44-5.85h-79.93c0 7.1-.46 36.2 1.37 72.88.23 4.54-1.58 6-5.74 5.94-10.13 0-20.27-.11-30.41-.08-4.1 0-5.87-1.53-5.74-6.11.92-33.44 3-84-.15-212.67v-3.17c-9.67-.35-16.38-1-17.26-1.84-2.92-2.92 34.54-38.69 38.49-38.69s41.17 35.78 38.27 38.69c-.87.87-7.9 1.49-16.77 1.84v3.16c-2.42 25.75-2 79.59-2.63 105.39h80.26c0-4.55.39-34.74-1.2-83.64-.1-3.39.95-5.17 4.21-5.2 11.07-.08 22.15-.13 33.23-.06 3.46 0 4.57 1.72 4.5 5.38C333 354.64 336 341.29 336 373.69c8.87.35 16.82 1 17.69 1.84 2.88 2.91-33.62 38.69-37.58 38.69z","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}],["$","a",null,{"href":"https://drive.google.com/file/d/1nR7Vh3GKPJ2FIKtNlN_zoIqoUFamPgpn/view?usp=sharing","target":"_blank","rel":"noopener noreferrer","className":"hero-link-icon","title":"Resume","children":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 384 512","children":["$undefined",[["$","path","0",{"d":"M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}]]}]]}]]}]]}],["$","section",null,{"style":{"width":"100%","display":"flex","justifyContent":"center","padding":"0 1rem"},"children":[["$","style",null,{"children":"$8"}],["$","header",null,{"className":"sectionbody","children":[["$","div",null,{"className":"section-image-wrapper","children":["$","img",null,{"src":"https://i.ibb.co/hRMFKRWw/IMG-20250711-191116-406.jpg","alt":"tux","className":"section-image"}]}],["$","div",null,{"className":"section-content","children":[["$","h1",null,{"className":"section-title","children":"Biography"}],["$","p",null,{"className":"section-paragraph","children":"I am a Senior at NIU! I am in my fourth year learning Computer Science. I have a passion for full-stack web development and data science. I am the Chair of the NIU ACM Chapter, where I help organize fun events and educational workshops for students."}],["$","p",null,{"className":"section-paragraph","children":"I believe in an equitable tech community, and I strive to make tech accessible to everyone. I am an avid fan of College Football, Team Fortress 2, and Adult Swim."}],"$undefined",["$","div",null,{"className":"section-links","children":["$undefined","$undefined","$undefined","$undefined"]}]]}]]}]]}],["$","div",null,{"id":"Skills","children":[["$","style",null,{"children":"$9"}],["$","section",null,{"className":"sectionbody","children":[["$","div",null,{"className":"text-block","children":[["$","h2",null,{"className":"section-title","children":"Skills"}],["$","p",null,{"className":"section-paragraph","children":"C++, SQL, ReactJS, TypeScript, Python,"}],["$","p",null,{"className":"section-paragraph","children":"HTML, CSS, NextJS, Could do Java if forced"}],"$undefined","$undefined"]}],["$","div",null,{"className":"text-block","children":[["$","h2",null,{"className":"section-title","children":"Dev Tools"}],["$","p",null,{"className":"section-paragraph","children":"VScode, Git, GitHub, GitLab,"}],["$","p",null,{"className":"section-paragraph","children":"MySQL, Vite, Windows, Linux"}],"$undefined","$undefined"]}]]}]]}],["$","div",null,{"id":"Work","children":["$","section",null,{"style":{"width":"100%","display":"flex","justifyContent":"center","padding":"0 1rem"},"children":[["$","style",null,{"children":"$a"}],["$","section",null,{"className":"sectionbody","children":[["$","div",null,{"className":"text-block","children":[["$","h2",null,{"className":"section-title","children":"Work Experience"}],["$","p",null,{"className":"section-paragraph","children":"ResTech Help Desk Technician - Northern Illinois University · Part-time, Jun 2025 - Present"}],["$","p",null,{"className":"section-paragraph","children":"DeKalb, Illinois, United States"}],["$","p",null,{"className":"section-paragraph","children":"On-site"}],"$undefined"]}],["$","div",null,{"className":"text-block","children":[["$","h2",null,{"className":"section-title","children":"Description"}],["$","p",null,{"className":"section-paragraph","children":"Provide IT support to students and staff in the various NIU residence halls and the Student Center, including laptop troubleshooting, hardware/software support, Computer Imaging, Powershell, and Assistance."}],["$","p",null,{"className":"section-paragraph","children":"Tools Learned: Powershell, Windows 11 Support, GitLab"}],"$undefined","$undefined"]}]]}]]}]}],["$","div",null,{"id":"Involvement","children":["$","section",null,{"style":{"width":"100%","display":"flex","justifyContent":"center","padding":"0 1rem"},"children":[["$","style",null,{"children":"$b"}],["$","header",null,{"className":"sectionbody","children":[["$","div",null,{"className":"section-image-wrapper","children":["$","img",null,{"src":"https://i.imgur.com/pkz8jYe.png","alt":"tux","className":"section-image"}]}],["$","div",null,{"className":"section-content","children":[["$","h1",null,{"className":"section-title","children":"Involvement"}],["$","p",null,{"className":"section-paragraph","children":"I serve as Chair for the NIU Association of Computing Machinery for 2024-2026. Under our shared vision, we have completely revamped ACM with two new Special Interest Groups (SIGwebdev and SIGmainframe) as well as provide SIGmeeting Workshops, Socials, Speaker Presentations, Career Fairs, and Alumni Council Outreach"}],["$","p",null,{"className":"section-paragraph","children":"If you are interested in reading about our work, my contributions, and our event history click below"}],"$undefined",["$","div",null,{"className":"section-links","children":[["$","a",null,{"href":"/Involvement","children":"View Involvement Page"}],"$undefined","$undefined","$undefined"]}]]}]]}]]}]}],["$","div",null,{"id":"Projects","children":["$","section",null,{"style":{"width":"100%","display":"flex","justifyContent":"center","padding":"0 1rem"},"children":["$","div",null,{"style":{"padding":"1rem","zIndex":1},"children":[["$","h2",null,{"style":{"textAlign":"center","fontSize":"4rem","marginTop":"0","marginBottom":"2rem","color":"black"},"children":"Projects"}],["$","div",null,{"style":{"display":"flex","justifyContent":"center","gap":"1rem","marginBottom":"2rem","flexWrap":"wrap"},"children":[["$","div","GooseBot",{"className":"project-card","style":{"border":"1px solid #ccc","borderRadius":"0.5rem","width":"20rem","height":"30rem","backgroundColor":"white","boxShadow":"0 0.125rem 0.5rem rgba(0,0,0,0.1)","overflow":"hidden","display":"flex","flexDirection":"column","zIndex":1,"transition":"all 0.3s ease"},"children":[["$","img",null,{"src":"https://i.ibb.co/C5YhCYnN/Picsart-25-06-17-02-56-28-663.jpg","alt":"GooseBot","style":{"width":"100%","height":"17.25rem","objectFit":"cover"}}],["$","div",null,{"style":{"padding":"1rem","flexGrow":1},"children":[["$","h3",null,{"style":{"margin":"0 0 0.5rem 0"},"children":"GooseBot"}],["$","p",null,{"style":{"margin":0},"children":"General Discord Bot built with DiscordPY"}]]}],["$","div",null,{"style":{"padding":"0 1rem 1rem 1rem","display":"flex","flexDirection":"column","gap":"0.25rem"},"children":[["$","a",null,{"href":"https://github.com/JuanLopez2004/discord-goosebot","target":"_blank","rel":"noopener noreferrer","style":{"color":"#0070f3","textDecoration":"none","fontWeight":"bold"},"children":"View Code →"}],"$undefined"]}]]}],["$","div","Ryan's Parts Commerce Site",{"className":"project-card","style":{"border":"1px solid #ccc","borderRadius":"0.5rem","width":"20rem","height":"30rem","backgroundColor":"white","boxShadow":"0 0.125rem 0.5rem rgba(0,0,0,0.1)","overflow":"hidden","display":"flex","flexDirection":"column","zIndex":1,"transition":"all 0.3s ease"},"children":[["$","img",null,{"src":"https://i.imgur.com/SvVdlsC.png","alt":"Ryan's Parts Commerce Site","style":{"width":"100%","height":"17.25rem","objectFit":"cover"}}],["$","div",null,{"style":{"padding":"1rem","flexGrow":1},"children":[["$","h3",null,{"style":{"margin":"0 0 0.5rem 0"},"children":"Ryan's Parts Commerce Site"}],["$","p",null,{"style":{"margin":0},"children":"Junior Year Software Eng Project built in ReactJS, NodeJs"}]]}],["$","div",null,{"style":{"padding":"0 1rem 1rem 1rem","display":"flex","flexDirection":"column","gap":"0.25rem"},"children":[["$","a",null,{"href":"https://github.com/JuanLopez2004/CSCI-467","target":"_blank","rel":"noopener noreferrer","style":{"color":"#0070f3","textDecoration":"none","fontWeight":"bold"},"children":"View Code →"}],"$undefined"]}]]}],["$","div","NIU ACM Website",{"className":"project-card","style":{"border":"1px solid #ccc","borderRadius":"0.5rem","width":"20rem","height":"30rem","backgroundColor":"white","boxShadow":"0 0.125rem 0.5rem rgba(0,0,0,0.1)","overflow":"hidden","display":"flex","flexDirection":"column","zIndex":1,"transition":"all 0.3s ease"},"children":[["$","img",null,{"src":"https://i.imgur.com/bscMhK0.png","alt":"NIU ACM Website","style":{"width":"100%","height":"17.25rem","objectFit":"cover"}}],["$","div",null,{"style":{"padding":"1rem","flexGrow":1},"children":[["$","h3",null,{"style":{"margin":"0 0 0.5rem 0"},"children":"NIU ACM Website"}],["$","p",null,{"style":{"margin":0},"children":"ACM Departmental Website Programmed with ReactJS, TypeScript. Serverside Development with NextJS with nixOS/Bun toolkit"}]]}],["$","div",null,{"style":{"padding":"0 1rem 1rem 1rem","display":"flex","flexDirection":"column","gap":"0.25rem"},"children":[["$","a",null,{"href":"https://github.com/niu-acm/niu-acm-website","target":"_blank","rel":"noopener noreferrer","style":{"color":"#0070f3","textDecoration":"none","fontWeight":"bold"},"children":"View Code →"}],"$undefined"]}]]}],["$","div","2nd Portfolio Site",{"className":"project-card","style":{"border":"1px solid #ccc","borderRadius":"0.5rem","width":"20rem","height":"30rem","backgroundColor":"white","boxShadow":"0 0.125rem 0.5rem rgba(0,0,0,0.1)","overflow":"hidden","display":"flex","flexDirection":"column","zIndex":1,"transition":"all 0.3s ease"},"children":[["$","img",null,{"src":"https://images.pling.com/img/00/00/04/47/10/1114759/44869-1.jpg","alt":"2nd Portfolio Site","style":{"width":"100%","height":"17.25rem","objectFit":"cover"}}],["$","div",null,{"style":{"padding":"1rem","flexGrow":1},"children":[["$","h3",null,{"style":{"margin":"0 0 0.5rem 0"},"children":"2nd Portfolio Site"}],["$","p",null,{"style":{"margin":0},"children":"This Very Site. Built with TypeScript, ReactJS, and NextJS"}]]}],["$","div",null,{"style":{"padding":"0 1rem 1rem 1rem","display":"flex","flexDirection":"column","gap":"0.25rem"},"children":[["$","a",null,{"href":"https://github.com/JuanLopez2004/Website2","target":"_blank","rel":"noopener noreferrer","style":{"color":"#0070f3","textDecoration":"none","fontWeight":"bold"},"children":"View Code →"}],"$undefined"]}]]}],["$","div","More Projects",{"className":"project-card","style":{"border":"1px solid #ccc","borderRadius":"0.5rem","width":"20rem","height":"30rem","backgroundColor":"white","boxShadow":"0 0.125rem 0.5rem rgba(0,0,0,0.1)","overflow":"hidden","display":"flex","flexDirection":"column","zIndex":1,"transition":"all 0.3s ease"},"children":[["$","img",null,{"src":"https://i.imgur.com/viSEu7f.jpeg","alt":"More Projects","style":{"width":"100%","height":"17.25rem","objectFit":"cover"}}],["$","div",null,{"style":{"padding":"1rem","flexGrow":1},"children":[["$","h3",null,{"style":{"margin":"0 0 0.5rem 0"},"children":"More Projects"}],["$","p",null,{"style":{"margin":0},"children":"Click View to View More Projects"}]]}],["$","div",null,{"style":{"padding":"0 1rem 1rem 1rem","display":"flex","flexDirection":"column","gap":"0.25rem"},"children":[["$","a",null,{"href":"/projects","target":"_blank","rel":"noopener noreferrer","style":{"color":"#0070f3","textDecoration":"none","fontWeight":"bold"},"children":"View Code →"}],"$undefined"]}]]}]]}],["$","style",null,{"children":"\n        .project-card:hover {\n          transform: translateY(-0.25rem);\n          box-shadow: 0 0.625rem 1rem rgba(0, 0, 0, 0.2);\n        }\n        @media (max-width: 900px) {\n          .project-card {\n            width: 100% !important;\n            min-width: 0;\n            margin: 0 auto 1rem auto;\n            height: auto !important;\n          }\n        }\n      "}]]}]}]}]]}],[["$","style",null,{"children":"$c"}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"footer-nav","children":[["$","span",null,{"className":"footer-text","children":"© 2025 Juan Lopez"}],["$","div",null,{"className":"footer-bottom","children":["$","a",null,{"href":"mailto:jlopezcs04@gmail.com","className":"footer-link","children":"Contact"}]}]]}]}]]]}],null,["$","$Ld",null,{"children":["$Le","$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","XsQVJ5DsTxDpXUf-icx8Yv",{"children":[["$","$L12",null,{"children":"$L13"}],null]}],["$","$L14",null,{"children":"$L15"}]]}],false]],"m":"$undefined","G":["$16","$undefined"],"s":false,"S":true}
 17:"$Sreact.suspense"
 18:I[4911,[],"AsyncMetadata"]
 15:["$","div",null,{"hidden":true,"children":["$","$17",null,{"fallback":null,"children":["$","$L18",null,{"promise":"$@19"}]}]}]
