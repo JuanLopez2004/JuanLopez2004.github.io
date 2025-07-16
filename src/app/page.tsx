@@ -66,6 +66,7 @@ export default function Home() {
 					gap: '2rem',
 					paddingTop: '100px',
 					maxWidth: '100%',
+					boxSizing: 'border-box',
 					zIndex: 1,
 				}}
 			>
@@ -76,10 +77,9 @@ export default function Home() {
 						flexDirection: 'column',
 						alignItems: 'center',
 						justifyContent: 'center',
-						padding: '2rem',
-				
+						boxSizing: 'border-box',
 						backgroundColor: 'white',
-						zIndex: 1,
+						zIndex: 2,
 					}}
 				>
 					<Hero

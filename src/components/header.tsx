@@ -6,7 +6,7 @@ export default function Header() {
             <style>{`
                .header {
                 display: flex;
-                padding: 1rem 0;
+                padding: 0.5rem 0;
                 align-items: center;
                 background-color: #4856a3;
                 color: white;
@@ -19,6 +19,7 @@ export default function Header() {
                 min-width: 100vw;
                 z-index: 1000;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                height: 100px;
             }
 
             .header-container {
@@ -35,7 +36,7 @@ export default function Header() {
             .header-nav {
                 display: flex;
                 align-items: center;
-                height: 80px;
+                height: 60px;
             }
 
             .header-left {
@@ -48,10 +49,10 @@ export default function Header() {
             }
 
             .header-title {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 font-weight: bold;
                 letter-spacing: 0.5px;
-                line-height: 70px;
+                line-height: 50px;
                 display: flex;
                 align-items: center;
             }
@@ -59,10 +60,10 @@ export default function Header() {
             .header-nav a {
                 color: white;
                 text-decoration: none;
-                font-size: 1.1rem;
+                font-size: 1.5rem;
                 margin: 0 1.3rem;
                 transition: color 0.3s ease;
-                line-height: 70px;
+                line-height: 50px;
             }
 
             .header-nav a:hover {
@@ -72,49 +73,45 @@ export default function Header() {
 
             @media (max-width: 900px) {
                 .header {
+                    padding: 0.3rem 0;
                     height: auto;
                     min-height: unset;
                 }
                 .header-container {
                     flex-direction: column;
-                    align-items: stretch;
-                    justify-content: flex-start;
-                    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
-                    gap: 0.2rem;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0.5rem;
+                    gap: 0.5rem;
                     height: auto;
                 }
                 .header-left {
-                    height: 40px;
-                    gap: 0.5rem;
-                    flex-shrink: 0;
                     flex-direction: row;
-                    align-items: center;
-                    justify-content: flex-start;
+                    justify-content: center;
+                    gap: 0.5rem;
+                    height: 40px;
                 }
                 .header-logo {
-                    height: 32px;
+                    height: 55px;
                 }
                 .header-title {
-                    font-size: 1.1rem;
-                    line-height: 32px;
+                    font-size: 2rem;
+                    line-height: 30px;
                     white-space: nowrap;
                 }
                 .header-nav {
                     display: flex;
                     flex-direction: row;
-                    flex-wrap: wrap;
-                    gap: 0.3rem;
-                    width: 100%;
+                    flex-wrap: nowrap;
                     justify-content: center;
-                    align-items: center;
-                    height: auto;
-                    overflow-x: hidden;
-                    margin-top: 0.2rem;
+                    gap: 0.2rem;
+                    width: auto;
                 }
                 .header-nav a {
-                    margin: 0 0.2rem;
-                    font-size: 0.9rem;
-                    line-height: 1.8rem;
+                    margin: 0;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    line-height: 30px;
                     padding: 0.2rem 0.3rem;
                     white-space: nowrap;
                     flex-shrink: 0;

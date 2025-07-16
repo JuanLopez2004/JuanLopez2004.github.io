@@ -64,13 +64,13 @@ export default function Hero({
             .hero-content {
                 background-color: #fff;
                 text-align: left;
-                width: 50%;
+                width: 60%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
-                padding: 3rem;
+                padding: 4rem;
                 box-sizing: border-box;
                 font-family: Arial, Helvetica, sans-serif;
             }

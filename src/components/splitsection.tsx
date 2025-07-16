@@ -22,13 +22,6 @@ type SplitSectionProps = {
   whiteBg?: boolean;
 };
 
-const additionalSkills = [
-  "Problem-solving",
-  "Team collaboration",
-  "Effective communication",
-  "Time management",
-];
-
 export default function SplitSection({
   title1,
   content1,
@@ -44,7 +37,7 @@ export default function SplitSection({
   link2Href,
   whiteBg,
 }: SplitSectionProps) {
-  const updatedContent1 = `${content1} ${additionalSkills.join(", ")}`;
+  const updatedContent1 = `${content1}`;
 
   return (
     <>
