@@ -40,9 +40,11 @@ export default function Showcase({ projects }: ShowcaseProps) {
         style={{
           display: "flex",
           justifyContent: "center",
+          alignItems: "center",
           gap: "1rem",
           marginBottom: "2rem",
           flexWrap: "wrap",
+          width: "100%",
         }}
       >
         {projects.map(({ title, description, imageSrc, link, website }) => (
@@ -137,6 +139,6 @@ export default function Showcase({ projects }: ShowcaseProps) {
           }
         }
       `}</style>
-	  </div>
+    </div>
   );
 }

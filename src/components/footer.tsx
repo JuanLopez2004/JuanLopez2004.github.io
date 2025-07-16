@@ -9,17 +9,20 @@ export default function Footer() {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    background-color: #4856a3;
+                    background: #4856a3 !important;
                     color: white;
-                    padding: 1rem 0;
+                    padding: 1rem 0 0.5rem 0;
                     position: relative;
                     z-index: 1;
-                    width: 100%;
+                    width: 100vw;
+                    min-width: 100vw;
                     margin: 0;
                     box-sizing: border-box;
                     margin-top: auto;
                     left: 0;
                     right: 0;
+                    border: none;
+                    box-shadow: none;
                 }
                 
                 .footer-nav {
@@ -60,7 +63,14 @@ export default function Footer() {
 
                   @media (max-width: 900px) {
                     .footer {
-                        padding: 0.8rem 0;
+                        padding: 0.8rem 0 0.3rem 0;
+                        width: 100vw;
+                        min-width: 100vw;
+                        left: 0;
+                        right: 0;
+                        background: #4856a3 !important;
+                        border: none;
+                        box-shadow: none;
                     }
                     .footer-nav {
                         padding: 0 0.5rem;

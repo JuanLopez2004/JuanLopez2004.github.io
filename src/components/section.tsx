@@ -1,30 +1,30 @@
 import React from "react";
 
 type IntroBodyProps = {
-    title: string;
-    content: string;
-    content2?: string;
-    content3?: string;
-    imageSrc: string;
-    altText: string;
-    whiteBg?: boolean;
-    link1?: string;
-    link2?: string;
-    link3?: string;
-    link4?: string;
-    link1Label?: string;
+	title: string;
+	content: string;
+	content2?: string;
+	content3?: string;
+	imageSrc: string;
+	altText: string;
+	whiteBg?: boolean;
+	link1?: string;
+	link2?: string;
+	link3?: string;
+	link4?: string;
+	link1Label?: string;
 };
 
 export default function Section({ title, content, content2, content3, imageSrc, altText, whiteBg, link1, link2, link3, link4, link1Label }: IntroBodyProps) {
-    return (
-        <>
-           <style>{`
-         	.sectionbody {
-        		width: 100%;
-              	margin: 1.5rem auto;
+	return (
+		<>
+		   <style>{`
+			.sectionbody {
+				width: 100%;
+				margin: 1.5rem auto;
 				display: flex;
 				align-items: flex-start;
-				justify-content: space-between;
+				justify-content: center;
 				background: ${whiteBg ? "#fff" : "transparent"};
 				position: relative;
 				max-width: 1200px;
@@ -127,29 +127,29 @@ export default function Section({ title, content, content2, content3, imageSrc, 
 				}
 
 
-        `}</style>
+		`}</style>
 
 
 
-            <header className="sectionbody">
-                <div className="section-image-wrapper">
-                    <img src={imageSrc} alt={altText} className="section-image" />
-                </div>
+			<header className="sectionbody">
+				<div className="section-image-wrapper">
+					<img src={imageSrc} alt={altText} className="section-image" />
+				</div>
 
-                <div className="section-content">
-                    <h1 className="section-title">{title}</h1>
-                    <p className="section-paragraph">{content}</p>
-                    {content2 && <p className="section-paragraph">{content2}</p>}
-                    {content3 && <p className="section-paragraph">{content3}</p>}
+				<div className="section-content">
+					<h1 className="section-title">{title}</h1>
+					<p className="section-paragraph">{content}</p>
+					{content2 && <p className="section-paragraph">{content2}</p>}
+					{content3 && <p className="section-paragraph">{content3}</p>}
 
-                    <div className="section-links">
-                        {link1 && <a href={link1}>{link1Label || "Link 1"}</a>}
-                        {link2 && <a href={link2}>Link 2</a>}
-                        {link3 && <a href={link3}>Link 3</a>}
-                        {link4 && <a href={link4}>Link 4</a>}
-                    </div>
-                </div>
-            </header>
-        </>
-    );
+					<div className="section-links">
+						{link1 && <a href={link1}>{link1Label || "Link 1"}</a>}
+						{link2 && <a href={link2}>Link 2</a>}
+						{link3 && <a href={link3}>Link 3</a>}
+						{link4 && <a href={link4}>Link 4</a>}
+					</div>
+				</div>
+			</header>
+		</>
+	);
 }

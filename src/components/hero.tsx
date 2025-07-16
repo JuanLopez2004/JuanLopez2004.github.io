@@ -108,13 +108,14 @@ export default function Hero({
                     flex-direction: column;
                     height: auto;
                     min-height: 0;
-                    width: 95%;
-                    margin: 0 auto;
-                    max-width: 500px;
+                    width: 100vw;
+                    margin: 0;
+                    max-width: 100vw;
+                    border-radius: 0;
                 }
                 .hero-image-container,
                 .hero-content {
-                    width: 100%;
+                    width: 100vw;
                     height: auto;
                 }
                 .hero-image-container {
@@ -122,12 +123,14 @@ export default function Hero({
                 }
                 .hero-content {
                     order: 2;
-                    padding: 1.5rem;
+                    padding: 1.5rem 0.5rem;
                     text-align: center;
                 }
                 .hero-image {
                     height: 180px;
                     border-radius: 0;
+                    width: 100vw;
+                    max-width: 100vw;
                 }
                 .hero-title {
                     font-size: 1.4rem;

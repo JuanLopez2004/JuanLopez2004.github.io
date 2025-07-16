@@ -45,7 +45,7 @@ export default function SplitSection({
   margin: 1.5rem auto;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   background: ${whiteBg ? "#fff" : "transparent"};
   position: relative;
   max-width: 1200px;
@@ -100,27 +100,27 @@ export default function SplitSection({
 }
 
 @media (max-width: 900px) {
-				.sectionbody {
-					flex-direction: column;
-					padding: 1rem;
-					gap: 1rem;
-					max-width: 95%;
-					margin: 1rem auto;
-					width: 95%;
-				}
-				.text-block {
-					width: 100% !important;
-					padding: 1rem !important;
-					min-width: 0;
-					text-align: center;
-				}
-				.section-title {
-					text-align: center;
-				}
-				.section-paragraph {
-					text-align: center;
-				}
-				}
+        .sectionbody {
+          flex-direction: column;
+          padding: 1rem;
+          gap: 1rem;
+          max-width: 95%;
+          margin: 1rem auto;
+          width: 95%;
+        }
+        .text-block {
+          width: 100% !important;
+          padding: 1rem !important;
+          min-width: 0;
+          text-align: center;
+        }
+        .section-title {
+          text-align: center;
+        }
+        .section-paragraph {
+          text-align: center;
+        }
+        }
 
 
       `}</style>
