@@ -95,8 +95,6 @@ export default function Home() {
                     body2={[
 						"ACM had been going through a rough patch at this time, it felt very disorganized and filling out forms for events was exhuasting, confusing, and difficult.",
 						"Pizza and Pop was provided with the funding of the Department of Computer Science. 17 Students attended.",
-						"The Process to reserve the room, order Pizza and Pop, and with the help of the new Vice-Chair, Douglas Johnson, was overall much easier. ",
-						"40 Students attended.",
 					]}
 					/>
 

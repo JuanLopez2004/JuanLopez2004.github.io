@@ -30,13 +30,13 @@ const projects: Project[] = [
 	{
 		title: '2nd Portfolio Site',
 		description: 'This Very Site. Built with TypeScript, ReactJS, and NextJS',
-		imageSrc: 'https://github.com/user-attachments/assets/cbc2447a-7c3e-47e6-85f2-dab83f1cefa2',
+		imageSrc: 'https://github.com/user-attachments/assets/2579a930-412d-4c14-9ad9-99885d3e4e6a',
 		link: 'https://github.com/JuanLopez2004/Website2',
 	},
 	{
 		title: 'More Projects',
 		description: 'Click View to View More Projects',
-		imageSrc: 'https://i.imgur.com/viSEu7f.jpeg',
+		imageSrc: 'https://github.com/user-attachments/assets/b4e5dcf3-ea5d-47b2-961a-8a2346593cea',
 		link: '/projects',
 	},
 ];
@@ -66,7 +66,6 @@ export default function Home() {
           paddingTop: '80px', // adjust if header height changes
         }}
       >
-			
 				<section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
 					<Hero
 						title="Aspiring Fullstack Developer with an interest in Data Science"
@@ -127,9 +126,9 @@ export default function Home() {
 							title="Involvement"
 							content="I serve as Chair for the NIU Association of Computing Machinery for 2024-2026. Under our shared vision, we have completely revamped ACM with two new Special Interest Groups (SIGwebdev and SIGmainframe) as well as provide SIGmeeting Workshops, Socials, Speaker Presentations, Career Fairs, and Alumni Council Outreach"
 							content2="If you are interested in reading about our work, my contributions, and our event history click below"
-							imageSrc="https://i.imgur.com/pkz8jYe.png"
+							imageSrc="https://github.com/user-attachments/assets/5a4d12d3-76e3-4f90-ad86-cbe0041925c7"
 							altText="tux"
-							link1="/Involvement"
+							link1="/involvement"
 							link1Label="View Involvement Page"
 							whiteBg={true}
 						/>

@@ -34,6 +34,7 @@ export default function Section({ title, content, content2, content3, imageSrc, 
 				gap: 1.5rem;
 				height: auto;
 				}
+				
 		   @media (max-width: 900px) {
 			 .sectionbody {
 			   flex-direction: column;
@@ -68,6 +69,13 @@ export default function Section({ title, content, content2, content3, imageSrc, 
 				font-weight: 700;
 				margin-bottom: 1rem;
 				color: #222;
+				transition: color 0.3s ease, text-shadow 0.3s ease;
+				cursor: default;
+				}
+
+			.section-title:hover {
+				color: #4856a3;
+				text-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
 				}
 
 			.section-paragraph {
@@ -78,6 +86,13 @@ export default function Section({ title, content, content2, content3, imageSrc, 
 				word-break: break-word;
 				font-family: Arial, Helvetica, sans-serif;
 				line-height: 1.5;
+				transition: color 0.3s ease, transform 0.2s ease;
+				cursor: default;
+				}
+
+			.section-paragraph:hover {
+				color: #4856a3;
+				transform: translateY(-2px);
 				}
 
 			.section-link {
@@ -90,7 +105,34 @@ export default function Section({ title, content, content2, content3, imageSrc, 
 				}
 
 			.section-link:hover {
-				color: #0056b3;
+				color: #4856a3;
+				}
+
+			.section-links {
+				margin-top: 1rem;
+				display: flex;
+				flex-direction: column;
+				gap: 0.5rem;
+				align-items: center;
+				justify-content: center;
+				}
+
+			.section-links a {
+				display: inline-block;
+				padding: 0.5rem 1rem;
+				background-color: #4856a3;
+				color: white;
+				text-decoration: none;
+				border-radius: 0.5rem;
+				font-weight: 600;
+				transition: all 0.3s ease;
+				text-align: center;
+				}
+
+			.section-links a:hover {
+				background-color: #4856a3;
+				transform: translateY(-2px);
+				box-shadow: 0 4px 8px rgba(72, 86, 163, 0.3);
 				}
 
 			.section-image-wrapper {
@@ -132,10 +174,7 @@ export default function Section({ title, content, content2, content3, imageSrc, 
 				}
 				}
 
-
 		`}</style>
-
-
 
 			<header className="sectionbody">
 				<div className="section-image-wrapper">

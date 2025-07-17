@@ -32,7 +32,7 @@ const projects: Project[] = [
 	{
 	title: "1st Portfolio Site",
 	description: "My Original Website from 2023 to 2025, multiple versions all in HTML/CSS",
-	imageSrc: "https://i.imgur.com/wEkKF4w.png",
+	imageSrc: "https://github.com/user-attachments/assets/cbc2447a-7c3e-47e6-85f2-dab83f1cefa2",
 	link: "https://github.com/JuanLopez2004/FirstPortfolio",
 	website: "https://web.archive.org/web/20250620044839/https://juanlopezcs.com/"
 	},

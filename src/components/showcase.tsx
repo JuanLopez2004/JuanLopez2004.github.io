@@ -48,7 +48,7 @@ export default function Showcase({ projects }: ShowcaseProps) {
             style={{
               border: "1px solid #ccc",
               borderRadius: "0.5rem",
-              width: "20rem",
+              width: "18rem",
               height: "30rem",
               backgroundColor: "white",
               boxShadow: "0 0.125rem 0.5rem rgba(0,0,0,0.1)",
@@ -65,8 +65,8 @@ export default function Showcase({ projects }: ShowcaseProps) {
               style={{ width: "100%", height: "17.25rem", objectFit: "cover" }}
             />
             <div style={{ padding: "1rem", flexGrow: 1 }}>
-              <h3 style={{ margin: "0 0 0.5rem 0" }}>{title}</h3>
-              <p style={{ margin: 0 }}>{description}</p>
+              <h3 style={{ margin: "0 0 0.5rem 0", fontSize: "1.25rem" }}>{title}</h3>
+              <p style={{ margin: 0, fontSize: "1.2rem" }}>{description}</p>
             </div>
             <div
               style={{

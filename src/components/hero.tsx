@@ -77,30 +77,51 @@ export default function Hero({
             .hero-title {
                 font-size: clamp(1.8rem, 2vw, 2.5rem);
                 font-weight: bold;
-                margin-bottom: 1rem;
+                margin-bottom: 1.5rem;
                 color: #222;
                 line-height: 1.2;
+                padding: 1rem 0;
+                padding-bottom: 1rem;
             }
+            
             .hero-text {
-                font-size: clamp(1rem, 1.5vw, 1.2rem);
+                font-size: clamp(1.1rem, 1.8vw, 1.4rem);
                 color: #444;
-                line-height: 1.4;
+                line-height: 1.6;
+                padding: 0.8rem 1.2rem;
+                margin: 0.5rem 0;
+                background-color: #f8f9fa;
+                border-radius: 0.5rem;
+                border-left: 4px solid #4856a3;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             }
             .hero-text-gap {
-                margin-top: 1.0rem;
+                margin-top: 1.2rem;
             }
             .hero-links {
                 display: flex;
-                gap: 1rem;
-                margin-top: 1.5rem;
+                gap: 1.5rem;
+                margin-top: 2rem;
+                padding: 1.5rem;
+                background-color: #f8f9fa;
+                border-radius: 0.75rem;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid #e9ecef;
             }
             .hero-link-icon {
                 color: #444;
-                font-size: 1.6rem;
-                transition: color 0.2s;
+                font-size: 2rem;
+                transition: all 0.3s ease;
+                padding: 0.8rem;
+                background-color: white;
+                border-radius: 50%;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             }
             .hero-link-icon:hover {
                 color: #4856a3;
+                transform: translateY(-3px) scale(1.1);
+                box-shadow: 0 4px 12px rgba(72, 86, 163, 0.3);
             }
 
             @media (max-width: 900px) {
@@ -127,6 +148,7 @@ export default function Hero({
                     padding: 1.5rem 0.5rem;
                     text-align: center;
                     min-height: 20vh;
+                    align-items: center;
                 }
                 .hero-image {
                     height: 350px;
@@ -140,6 +162,10 @@ export default function Hero({
                 }
                 .hero-text {
                     font-size: 0.9rem;
+                }
+                .hero-links {
+                    align-self: center;
+                    width: fit-content;
                 }
             }
             `}</style>
