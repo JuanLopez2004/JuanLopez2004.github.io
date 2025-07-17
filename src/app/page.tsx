@@ -59,29 +59,15 @@ export default function Home() {
 			<Header />
 
 			<main
-				style={{
-					flex: 1,
-					display: 'flex',
-					flexDirection: 'column',
-					gap: '2rem',
-					paddingTop: '100px',
-					maxWidth: '100%',
-					boxSizing: 'border-box',
-					zIndex: 1,
-				}}
-			>
-				<section
-					style={{
-						width: '100%',
-						display: 'flex',
-						flexDirection: 'column',
-						alignItems: 'center',
-						justifyContent: 'center',
-						boxSizing: 'border-box',
-						backgroundColor: 'white',
-						zIndex: 2,
-					}}
-				>
+        style={{
+          flex: 1,
+          display: 'flex',
+          flexDirection: 'column',
+          paddingTop: '80px', // adjust if header height changes
+        }}
+      >
+			
+				<section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
 					<Hero
 						title="Aspiring Fullstack Developer with an interest in Data Science"
 						content="I’m a Senior studying Computer Science at Northern Illinois University, focused on full-stack web development."
