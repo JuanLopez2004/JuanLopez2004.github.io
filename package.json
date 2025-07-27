@@ -5,8 +5,6 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "next start",
     "lint": "next lint"
   },

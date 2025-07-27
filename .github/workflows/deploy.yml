@@ -59,10 +59,24 @@ jobs:
       - name: Build with Next.js (Static Export)
         run: npm run build
 
+      - name: List files after build (debug)
+        run: ls -la
+
+      - name: Check if out folder exists
+        run: |
+          if [ -d "./out" ]; then
+            echo "✅ /out folder exists"
+            ls -la ./out
+          else
+            echo "❌ /out folder not found"
+            echo "Available folders:"
+            ls -la
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ${{ github.workspace }}/out
 
   # Deployment job
   deploy:
