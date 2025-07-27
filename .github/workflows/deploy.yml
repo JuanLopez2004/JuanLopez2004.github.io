@@ -29,7 +29,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
 
       - name: Setup Pages
@@ -53,7 +53,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build with Next.js
+      - name: Clean previous build
+        run: rm -rf ./out
+
+      - name: Build with Next.js (Static Export)
         run: npm run build
 
       - name: Upload artifact
