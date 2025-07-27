@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+:root {
+  --base-font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--base-font-size);
+  scroll-padding-top: 130px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  color: black;
+  background: #7c87c7;
+  min-height: 100vh;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero, .sectionbody, .showcase {
+  max-width: 100vw;     /* Important: force full screen width */
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Make sure text doesn’t overflow */
+.hero * {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.hero {
+  padding: 2rem 1rem;
+}
+
+.header {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sectionbody, .splitsection, .showcase, .blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  main {
+    padding-top: 70px !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    gap: 1.5rem !important;
+  }
+
+  .hero {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .hero-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+  }
+
+  .sectionbody, .splitsection, .showcase, .blog-container {
+    width: 95%;
+    max-width: 95%;
+    padding: 0.5rem;
+    margin: 0 auto;
+  }
+
+  .header {
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0.5rem;
+  }
+}
