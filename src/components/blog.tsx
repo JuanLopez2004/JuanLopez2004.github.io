@@ -46,47 +46,50 @@ export default function BlogPostContainer({title, desc, image1, image2, image3, 
       <style>{`
         .blog-container {
 			background: #fff;
-			border-radius: 12px;
+			border-radius: clamp(8px, 2vw, 12px);
 			box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-			max-width: 1100px;
-			width: 1000px;
-			margin: 2rem auto;
-			padding: 2rem;
+			max-width: min(1100px, 95vw);
+			width: 100%;
+			margin: clamp(1rem, 3vw, 2rem) auto;
+			padding: clamp(1rem, 4vw, 2rem);
 			box-sizing: border-box;
 			display: flex;
 			flex-direction: column;
-			gap: 1.5rem;
+			gap: clamp(1rem, 2.5vw, 1.5rem);
 			z-index: 1;
         }
 
         .blog-title {
-			font-size: 1.5rem;
+			font-size: clamp(1.25rem, 3.5vw, 1.5rem);
 			font-weight: bold;
         }
 
         .blog-desc {
-			font-size: 1rem;
+			font-size: clamp(0.9rem, 2.5vw, 1rem);
 			font-family: Arial, Helvetica, sans-serif;
         }
 
         .blog-section {
 			display: flex;
 			align-items: flex-start;
-			gap: 1rem;
-			font-size: 1.2rem;
+			gap: clamp(0.5rem, 2vw, 1rem);
+			font-size: clamp(1rem, 2.8vw, 1.2rem);
 			font-family: Arial, Helvetica, sans-serif;
 			flex-wrap: wrap;
         }
 
         .blog-section img {
-			max-width: 260px;
-			height: 215px;
+			max-width: min(260px, 40vw);
+			height: auto;
+			aspect-ratio: 260/215;
 			flex-shrink: 0;
+			border-radius: 8px;
+			object-fit: cover;
         }
 
         .blog-body {
 			flex: 1;
-			min-width: 300px;
+			min-width: min(300px, 100%);
 			padding: 0;
 			margin: 0;
 			display: flex;
@@ -95,7 +98,7 @@ export default function BlogPostContainer({title, desc, image1, image2, image3, 
         }
 
         .blog-body p {
-          	margin-bottom: 0.1rem;
+          	margin-bottom: clamp(0.05rem, 0.5vw, 0.1rem);
         }
 
         .blog-body p:first-of-type {
@@ -103,43 +106,70 @@ export default function BlogPostContainer({title, desc, image1, image2, image3, 
         }
 
         .blog-body-title {
-			font-size: 1.2rem;
+			font-size: clamp(1.1rem, 2.8vw, 1.2rem);
 			font-weight: 600;
-			margin-bottom: 0.3rem;
+			margin-bottom: clamp(0.2rem, 0.8vw, 0.3rem);
 			margin-top: 0;
         }
 
         .blog-links {
-        	gap: 1rem;
+        	gap: clamp(0.5rem, 2vw, 1rem);
           	display: flex;
           	align-items: flex-start;
+          	flex-wrap: wrap;
         }
 
-            @media (max-width: 700px) {
+        .blog-links a {
+          	padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(1rem, 2.5vw, 1.5rem);
+          	background-color: #4856a3;
+          	color: white;
+          	text-decoration: none;
+          	border-radius: 6px;
+          	font-weight: 600;
+          	font-size: clamp(0.9rem, 2.2vw, 1rem);
+          	transition: all 0.3s ease;
+        }
+
+        .blog-links a:hover {
+          	background-color: #3d4a8f;
+          	transform: translateY(-2px);
+        }
+
+        /* Responsive breakpoints */
+        @media (max-width: 768px) {
           .blog-container {
-            width: 100%;
-            max-width: 100vw;
+            margin: 1rem auto;
             padding: 1rem;
           }
           .blog-section {
             flex-direction: column;
             align-items: stretch;
-            gap: 0.5rem;
-            font-size: 1rem;
+            gap: 0.75rem;
           }
           .blog-section img {
             max-width: 100%;
-            height: auto;
             margin-bottom: 0.5rem;
           }
           .blog-body {
             min-width: 0;
           }
-          .blog-title {
-            font-size: 1.1rem;
+        }
+
+        @media (max-width: 480px) {
+          .blog-container {
+            padding: 0.75rem;
+            margin: 0.5rem auto;
           }
-          .blog-desc {
-            font-size: 0.95rem;
+          .blog-section {
+            gap: 0.5rem;
+          }
+          .blog-links {
+            flex-direction: column;
+            gap: 0.5rem;
+          }
+          .blog-links a {
+            text-align: center;
+            width: 100%;
           }
         }
       `}</style>

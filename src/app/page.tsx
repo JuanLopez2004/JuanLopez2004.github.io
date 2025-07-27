@@ -15,12 +15,6 @@ const projects: Project[] = [
 		link: 'https://github.com/JuanLopez2004/discord-goosebot',
 	},
 	{
-		title: "Ryan's Parts Commerce Site",
-		description: 'Junior Year Software Eng Project built in ReactJS, NodeJs',
-		imageSrc: 'https://github.com/user-attachments/assets/ad1ddeb6-1282-49fb-9efd-58b04bc92201',
-		link: 'https://github.com/JuanLopez2004/CSCI-467',
-	},
-	{
 		title: 'NIU ACM Website',
 		description:
 			'ACM Departmental Website Programmed with ReactJS, TypeScript. Serverside Development with NextJS with nixOS/Bun toolkit',

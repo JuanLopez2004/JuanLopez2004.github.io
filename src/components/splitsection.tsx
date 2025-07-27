@@ -44,17 +44,17 @@ export default function SplitSection({
       <style>{`
        .sectionbody {
   width: 100%;
-  margin: 1.5rem auto;
+  margin: clamp(1rem, 3vw, 1.5rem) auto;
   display: flex;
   align-items: center;
   justify-content: center;
   background: ${whiteBg ? "#fff" : "transparent"};
   position: relative;
-  max-width: 1200px;
+  max-width: min(1200px, 95vw);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 3rem;
-  border-radius: 1rem;
-  gap: 1.5rem;
+  padding: clamp(2rem, 5vw, 3rem);
+  border-radius: clamp(8px, 2vw, 1rem);
+  gap: clamp(1rem, 3vw, 1.5rem);
   height: auto;
 }
 .text-block {
@@ -65,25 +65,25 @@ export default function SplitSection({
   align-items: flex-start;
   box-sizing: border-box;
   background-color: #f9f9f9;
-  padding: 2rem;
-  border-radius: 0.75rem;
+  padding: clamp(1.5rem, 4vw, 2rem);
+  border-radius: clamp(6px, 1.5vw, 0.75rem);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .sectionbody {
     flex-direction: column;
     width: 95%;
     max-width: 95%;
-    margin: 1rem auto;
-    padding: 1rem;
+    margin: clamp(0.5rem, 2vw, 1rem) auto;
+    padding: clamp(0.75rem, 2.5vw, 1rem);
   }
   .text-block {
     width: 100%;
-    padding: 1rem;
-    text-align: left;
+    padding: clamp(0.75rem, 2.5vw, 1rem);
+    text-align: center;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 769px) {
   .sectionbody {
     flex-direction: row;
   }
@@ -93,31 +93,53 @@ export default function SplitSection({
     width: 70%;
   }
 }
+@media (max-width: 480px) {
+  .sectionbody {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .text-block {
+    padding: 1rem;
+  }
+}
 .section-title {
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-size: clamp(1.2rem, 4vw, 2rem);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
   color: #222;
+  line-height: 1.3;
 }
 .section-paragraph {
-  margin-bottom: 0.75rem;
-  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  margin-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
+  font-size: clamp(0.9rem, 3vw, 1.3rem);
   color: #444;
   white-space: pre-wrap;
   word-break: break-word;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .section-link {
-  margin-top: 0.5rem;
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  margin-top: clamp(0.25rem, 1vw, 0.5rem);
+  font-size: clamp(0.8rem, 2.5vw, 1.1rem);
   font-weight: 600;
   color: #007BFF;
   text-decoration: none;
   transition: color 0.2s ease;
+  padding: clamp(0.375rem, 1vw, 0.5rem) clamp(0.75rem, 2vw, 1rem);
+  background-color: #007BFF;
+  color: white;
+  border-radius: clamp(4px, 1vw, 6px);
+  display: inline-block;
 }
 .section-link:hover {
-  color: #0056b3;
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .sectionbody {
+    border-width: 0.5px;
+  }
 }
 `}</style>
 

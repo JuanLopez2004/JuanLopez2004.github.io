@@ -70,53 +70,59 @@ export default function Hero({
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
-                padding: 4rem;
+                padding: clamp(2rem, 5vw, 4rem);
                 box-sizing: border-box;
                 font-family: Arial, Helvetica, sans-serif;
             }
             .hero-title {
-                font-size: clamp(1.8rem, 2vw, 2.5rem);
+                font-size: clamp(1.5rem, 4vw, 2.5rem);
                 font-weight: bold;
-                margin-bottom: 1.5rem;
+                margin-bottom: clamp(1rem, 3vw, 1.5rem);
                 color: #222;
                 line-height: 1.2;
-                padding: 1rem 0;
-                padding-bottom: 1rem;
+                padding: clamp(0.5rem, 2vw, 1rem) 0;
+                padding-bottom: clamp(0.5rem, 2vw, 1rem);
             }
             
             .hero-text {
-                font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+                font-size: clamp(0.9rem, 3vw, 1.4rem);
                 color: #444;
                 line-height: 1.6;
-                padding: 0.8rem 1.2rem;
-                margin: 0.5rem 0;
+                padding: clamp(0.5rem, 2vw, 0.8rem) clamp(0.75rem, 2.5vw, 1.2rem);
+                margin: clamp(0.25rem, 1vw, 0.5rem) 0;
                 background-color: #f8f9fa;
-                border-radius: 0.5rem;
+                border-radius: clamp(4px, 1vw, 0.5rem);
                 border-left: 4px solid #4856a3;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             }
             .hero-text-gap {
-                margin-top: 1.2rem;
+                margin-top: clamp(0.75rem, 2.5vw, 1.2rem);
             }
             .hero-links {
                 display: flex;
-                gap: 1.5rem;
-                margin-top: 2rem;
-                padding: 1.5rem;
+                gap: clamp(1rem, 3vw, 1.5rem);
+                margin-top: clamp(1.5rem, 4vw, 2rem);
+                padding: clamp(1rem, 3vw, 1.5rem);
                 background-color: #f8f9fa;
-                border-radius: 0.75rem;
+                border-radius: clamp(6px, 1.5vw, 0.75rem);
                 justify-content: center;
                 align-items: center;
                 border: 2px solid #e9ecef;
+                flex-wrap: wrap;
             }
             .hero-link-icon {
                 color: #444;
-                font-size: 2rem;
+                font-size: clamp(1.5rem, 4vw, 2rem);
                 transition: all 0.3s ease;
-                padding: 0.8rem;
+                padding: clamp(0.5rem, 1.5vw, 0.8rem);
                 background-color: white;
                 border-radius: 50%;
                 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: clamp(40px, 8vw, 56px);
+                min-height: clamp(40px, 8vw, 56px);
             }
             .hero-link-icon:hover {
                 color: #4856a3;
@@ -124,7 +130,7 @@ export default function Hero({
                 box-shadow: 0 4px 12px rgba(72, 86, 163, 0.3);
             }
 
-            @media (max-width: 900px) {
+            @media (max-width: 768px) {
                 .hero {
                     flex-direction: column;
                     height: auto;
@@ -145,27 +151,64 @@ export default function Hero({
                 }
                 .hero-content {
                     order: 2;
-                    padding: 1.5rem 0.5rem;
+                    padding: clamp(1rem, 3vw, 1.5rem) clamp(0.5rem, 2vw, 1rem);
                     text-align: center;
                     min-height: 20vh;
                     align-items: center;
                 }
                 .hero-image {
-                    height: 350px;
+                    height: clamp(250px, 50vw, 350px);
                     border-radius: 0;
                     width: 100vw;
                     max-width: 100vw;
                 }
                 .hero-title {
-                    font-size: 1.4rem;
-                    margin-bottom: 0.8rem;
+                    font-size: clamp(1.2rem, 5vw, 1.6rem);
+                    margin-bottom: clamp(0.5rem, 2vw, 0.8rem);
+                    text-align: center;
                 }
                 .hero-text {
-                    font-size: 0.9rem;
+                    font-size: clamp(0.8rem, 3.5vw, 1rem);
+                    text-align: left;
                 }
                 .hero-links {
                     align-self: center;
                     width: fit-content;
+                    gap: clamp(0.75rem, 2.5vw, 1rem);
+                    padding: clamp(0.75rem, 2.5vw, 1rem);
+                }
+                .hero-link-icon {
+                    font-size: clamp(1.25rem, 4.5vw, 1.75rem);
+                    padding: clamp(0.4rem, 1.2vw, 0.6rem);
+                    min-width: clamp(36px, 7vw, 48px);
+                    min-height: clamp(36px, 7vw, 48px);
+                }
+            }
+
+            @media (max-width: 480px) {
+                .hero-content {
+                    padding: 1rem 0.75rem;
+                }
+                .hero-text {
+                    font-size: 0.85rem;
+                    padding: 0.5rem 0.75rem;
+                }
+                .hero-links {
+                    gap: 0.75rem;
+                    padding: 0.75rem;
+                }
+                .hero-link-icon {
+                    font-size: 1.25rem;
+                    padding: 0.4rem;
+                    min-width: 36px;
+                    min-height: 36px;
+                }
+            }
+
+            /* High DPI displays */
+            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                .hero-links {
+                    border-width: 1px;
                 }
             }
             `}</style>
