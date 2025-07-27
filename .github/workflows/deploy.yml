@@ -71,6 +71,24 @@ jobs:
             echo "❌ /out folder not found"
             echo "Available folders:"
             ls -la
+            echo "Checking .next folder:"
+            ls -la .next/ || echo "No .next folder"
+          fi
+
+      - name: Create out folder if missing and copy from .next
+        run: |
+          if [ ! -d "./out" ]; then
+            echo "Creating out folder and copying static files..."
+            mkdir -p ./out
+            if [ -d ".next/static" ]; then
+              cp -r .next/static ./out/
+            fi
+            if [ -f ".next/export/index.html" ]; then
+              cp -r .next/export/* ./out/
+            fi
+            # Copy any HTML files from .next
+            find .next -name "*.html" -exec cp {} ./out/ \; 2>/dev/null || true
+            ls -la ./out
           fi
 
       - name: Upload artifact
