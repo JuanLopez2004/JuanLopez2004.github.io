@@ -12,6 +12,10 @@ export default function Home() {
         display: 'flex',
         flexDirection: 'column',
         position: 'relative',
+        width: '100%',
+        maxWidth: '100vw',
+        overflowX: 'hidden',
+        zIndex: 1,
       }}
     >
       <Background />
@@ -25,8 +29,7 @@ export default function Home() {
           paddingTop: '80px', // adjust if header height changes
         }}
       >
-
-		<section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+		<section style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '0', margin: '0' }}>
 			<Hero
 				title="Involvement"
 				content="I have been very involved with the Computer Science community at NIU since 2023 when I first Joined the NIU Association for Computing Machinery as a member"

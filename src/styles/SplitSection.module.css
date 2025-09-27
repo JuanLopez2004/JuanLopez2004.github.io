@@ -1,0 +1,139 @@
+.splitSectionBody {
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  position: relative;
+  max-width: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: clamp(2rem, 4vw, 3rem);
+  gap: clamp(1.5rem, 3vw, 2rem);
+  min-height: 300px;
+  background: #fff;
+}
+
+.splitSectionBody.grayBg {
+  background: #f2f2f2;
+}
+
+.sectionTitle {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-weight: 700;
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
+  color: #222;
+  line-height: 1.3;
+}
+.sectionParagraph {
+  margin-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
+  font-size: clamp(0.9rem, 3vw, 1.3rem);
+  color: #444;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+.sectionLink {
+  margin-top: clamp(0.25rem, 1vw, 0.5rem);
+  font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+  font-weight: 600;
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: clamp(0.375rem, 1vw, 0.5rem) clamp(0.75rem, 2vw, 1rem);
+  background-color: #007BFF;
+  color: white;
+  border-radius: clamp(4px, 1vw, 6px);
+  display: inline-block;
+}
+.textBlock {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  padding: clamp(1.5rem, 4vw, 2rem);
+  border-radius: clamp(6px, 1.5vw, 0.75rem);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+@media (max-width: 768px) {
+  .splitSectionBody {
+    flex-direction: column;
+    width: 100vw;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    gap: clamp(1rem, 3vw, 1.5rem);
+    min-height: auto;
+  }
+  .textBlock {
+    width: 100%;
+    padding: clamp(1rem, 3vw, 1.5rem);
+    text-align: center;
+  }
+  .sectionTitle,
+  .sectionParagraph {
+    text-align: center !important;
+  }
+}
+@media (min-width: 769px) {
+  .splitSectionBody {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .textBlock {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .splitSectionBody {
+    padding: clamp(1rem, 3vw, 1.5rem);
+    gap: 1rem;
+  }
+  .textBlock {
+    padding: clamp(0.75rem, 2.5vw, 1rem);
+  }
+}
+.sectionTitle {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-weight: 700;
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
+  color: #222;
+  line-height: 1.3;
+}
+.sectionParagraph {
+  margin-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
+  font-size: clamp(0.9rem, 3vw, 1.3rem);
+  color: #444;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+.sectionLink {
+  margin-top: clamp(0.25rem, 1vw, 0.5rem);
+  font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+  font-weight: 600;
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: clamp(0.375rem, 1vw, 0.5rem) clamp(0.75rem, 2vw, 1rem);
+  background-color: #007BFF;
+  color: white;
+  border-radius: clamp(4px, 1vw, 6px);
+  display: inline-block;
+}
+.sectionLink:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .splitSectionBody {
+    border-width: 0.5px;
+  }
+}
