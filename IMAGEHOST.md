@@ -14,3 +14,4 @@
 ![jordanlynch](https://github.com/user-attachments/assets/61404502-523a-45bc-bd6f-8cd88d7ee5c7)
 ![luglogo](https://github.com/user-attachments/assets/7c04836c-301b-4cc4-8292-0ccd8acf30ed)
 ![involvementheader](https://github.com/user-attachments/assets/7ba6cb7d-6bad-422b-8838-165c1a45ebcc)
+![header](https://github.com/user-attachments/assets/66272a2a-6b75-47b0-b4cf-6eeca8f4398c)
