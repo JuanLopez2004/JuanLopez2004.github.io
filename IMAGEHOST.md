@@ -16,3 +16,4 @@
 ![involvementheader](https://github.com/user-attachments/assets/7ba6cb7d-6bad-422b-8838-165c1a45ebcc)
 ![header](https://github.com/user-attachments/assets/66272a2a-6b75-47b0-b4cf-6eeca8f4398c)
 ![ibmzz](https://github.com/user-attachments/assets/6a11be26-dcd3-4793-ab4e-77965a4ebcdf)
+![frutiger](https://github.com/user-attachments/assets/dcb0b1d6-d5ae-4c71-838e-03861957220e)
