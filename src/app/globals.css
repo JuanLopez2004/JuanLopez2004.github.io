@@ -94,3 +94,25 @@ img {
     margin: 0;
   }
 }
+
+.giggity-trail {
+    position: fixed;
+    pointer-events: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff6b6b;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    z-index: 9999;
+    animation: trail-fade 1s ease-out forwards;
+}
+
+@keyframes trail-fade {
+    0% { 
+        opacity: 1; 
+        transform: scale(1) rotate(0deg);
+    }
+    100% { 
+        opacity: 0; 
+        transform: scale(0.5) rotate(360deg);
+    }
+}

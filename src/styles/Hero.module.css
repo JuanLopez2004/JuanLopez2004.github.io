@@ -35,27 +35,27 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: clamp(2rem, 5vw, 4rem);
+    padding: clamp(2rem, 5vw, 2.1rem);
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .hero-title {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: clamp(1.5rem, 4vw, 1.6rem);
     font-weight: bold;
-    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+    margin-bottom: clamp(1rem, 3vw, 0.9rem);
     color: #222;
     line-height: 1.2;
-    padding: clamp(0.5rem, 2vw, 1rem) 0;
-    padding-bottom: clamp(0.5rem, 2vw, 1rem);
+    padding: clamp(0.5rem, 2vw, 0.6rem) 0;
+    padding-bottom: clamp(0.5rem, 2vw, 0.6rem);
 }
 
 .hero-text {
-    font-size: clamp(0.9rem, 3vw, 1.4rem);
+    font-size: clamp(0.9rem, 3vw, 0.9rem);
     color: #444;
     line-height: 1.6;
-    padding: clamp(0.5rem, 2vw, 0.8rem) clamp(0.75rem, 2.5vw, 1.2rem);
-    margin: clamp(0.25rem, 1vw, 0.5rem) 0;
+    padding: clamp(0.5rem, 2vw, 0.5rem) clamp(0.75rem, 2.5vw, 0.75rem);
+    margin: clamp(0.25rem, 1vw, 0.25rem) 0;
     background-color: #f8f9fa;
     border-radius: clamp(4px, 1vw, 0.5rem);
     border-left: 4px solid #4856a3;
@@ -63,14 +63,14 @@
 }
 
 .hero-text-gap {
-    margin-top: clamp(0.75rem, 2.5vw, 1.2rem);
+    margin-top: clamp(0.75rem, 2.5vw, 0.8rem);
 }
 
 .hero-links {
     display: flex;
-    gap: clamp(1rem, 3vw, 1.5rem);
-    margin-top: clamp(1.5rem, 4vw, 2rem);
-    padding: clamp(1rem, 3vw, 1.5rem);
+    gap: clamp(1rem, 3vw, 1rem);
+    margin-top: clamp(1.5rem, 4vw, 1.5rem);
+    padding: clamp(1rem, 3vw, 1rem);
     background-color: #f8f9fa;
     border-radius: clamp(6px, 1.5vw, 0.75rem);
     justify-content: center;
@@ -81,17 +81,17 @@
 
 .hero-link-icon {
     color: #444;
-    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp(1.5rem, 4vw, 1.7rem);
     transition: all 0.3s ease;
-    padding: clamp(0.5rem, 1.5vw, 0.8rem);
+    padding: clamp(0.5rem, 1.5vw, 0.7rem);
     background-color: white;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: clamp(40px, 8vw, 56px);
-    min-height: clamp(40px, 8vw, 56px);
+    min-width: clamp(40px, 8vw, 50px);
+    min-height: clamp(40px, 8vw, 50px);
 }
 
 .hero-link-icon:hover {
