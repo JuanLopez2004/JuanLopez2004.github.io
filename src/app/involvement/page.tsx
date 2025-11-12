@@ -35,14 +35,78 @@ export default function Home() {
 				content="I have been very involved with the Computer Science community at NIU since 2023 when I first Joined the NIU Association for Computing Machinery as a member"
 				content2="In 2024, I took over Chair duties for ACM in 2024, I inherited an ACM with no structure, and no funding."
 				content3="ACM houses two SIGs, SIGmainframe and SIGwebdev. Which meet every week in a 9 week period to host workshops. ACM hosts four Socials, 3 Speakers, and collaborates with the Computer Science Alumni Council"
-				imageSrc="https://github.com/user-attachments/assets/7ba6cb7d-6bad-422b-8838-165c1a45ebcc"
+				imageSrc="https://github.com/user-attachments/assets/a4bf10f4-6be5-4a4f-b420-ec1491b0c3db"
 				altText="Tux"
 				whiteBg={true}
 			/>
 			</section>
 
+			<Blog
+                title="ACM Speaker: Michael Minella of Spring/Broadcom"
+                desc="October 2025"
+                image1="https://github.com/user-attachments/assets/7c7e37d5-de83-4c4e-b3ed-d7e0331f624c"
+                image2="https://github.com/user-attachments/assets/ad8f1c76-d12e-4bb0-a038-1d30ccdff305"
+        		body1Title="Event"
+				body1={[
+					
+
+				]}
+				body2Title="Aftermath"
+                body2={[
+					"ACM Member Brett Williams, showcased his DDS dice rolling game", 
+					
+				]}
+           	/>
+
+			<Blog
+                title="StemFest 2025"
+                desc="September 2025"
+                image1="https://github.com/user-attachments/assets/ccf8ba70-c95b-4bb5-89d4-dad75da6842f"
+                image2="https://github.com/user-attachments/assets/5a7446fd-a803-4708-82b1-fc5c18e7747a"
+        		body1Title="Event"
+				body1={[
+					"NIU ACM hosted a booth during NIU Stemfest 2025", 
+					"We showcased various projects, including a time reaction game, a live coding web demo, and a binary puzzle game",
+					"Over 60 Students, Families, and Faculty were engaged and interested in computer science as a discipline.",
+				]}
+				body2Title="Exhibits"
+                body2={[
+					"ACM Member Brett Williams, showcased his DDS dice rolling game", 
+					"Attendees were able to try out the game and the technology behind the arduino based device.",
+				]}
+           	/>
+
+			<Blog
+                title="IBMz Career Connection"
+                desc="September 2025"
+                image1="https://github.com/user-attachments/assets/214cb342-07f3-4b5f-97e5-9edcc6ebc150"
+                image2="https://github.com/user-attachments/assets/43f65a9a-23ab-44b8-a26f-ce9e09b53972"
+        		body1Title="Event"
+				body1={[
+					"NIU ACM participated in the IBMz Career Connection event hosted by IBM and NIU's Computer Science Department",
+					"We had a booth where we talked to students about mainframe careers, IBM zSystems, and the resources available to them through IBM Academic Initiative",
+				]}
+				body2Title="Aftermath"
+                body2={[
+					"ACM had supported the event, signing in over 173 students",
+					"Many students signed up for our mailing list and expressed interest in attending our upcoming events.",
+				]}
+           	/>
+
+			<Blog
+                title="ACM at the Involvement fair!"
+                desc="September 2025"
+                image1="https://github.com/user-attachments/assets/d854abb8-dd6e-4c0a-a50a-9d290776b868"
+        		body1Title="ACM "
+				body1={[
+					"Doug and Jakobi running the involvement fair booth for ACM!",
+					"We had a steady stream of interested students stop by to learn about ACM and what we do on campus.",
+					"Many students signed up for our mailing list and expressed interest in attending our upcoming events.",
+				]}
+           	/>
+
             <Blog
-				title="My Contributions to ACM"
+				title="ACM Summer 2025"
 				desc="Served as Treasurer, Chair, and SIGwebdev's Lead Officer through the years of 2023-2026"
 				body1Title="Rebuilding ACM"
 				body1={[
@@ -68,8 +132,8 @@ export default function Home() {
 				<Blog
                 	title="ACM Speaker: JJ Frega"
                     desc="March 20th, 2025"
-                    image1="https://media.licdn.com/dms/image/v2/D5622AQE0D5fTiL-KMg/feedshare-shrink_800/B56ZW1n1CuGQAk-/0/1742508880901?e=1755129600&v=beta&t=rPC8i4Ph5gDVCiWOVk8kJbQG8GXYkt2INtbyRGOPcUk"
-                    image2="https://media.licdn.com/dms/image/v2/D5622AQHTXFkxkZoaBw/feedshare-shrink_800/B56ZW1n1DIHEAk-/0/1742508880892?e=1755129600&v=beta&t=ZGr3A60rYfe4ZqG1OJpVNbF1L5kzFjbqXObjg_b7fCs"
+                    image1="https://github.com/user-attachments/assets/e725e215-6183-43af-a93b-ee3a5f28b8f0"
+                    image2="https://github.com/user-attachments/assets/d375d3fb-b78b-4f5f-b476-b167aa052cce"
         			body1Title="Presentation"
 					body1={[
 						"NIU Alum, BS 2006, JJ Frega of J2amIT Consultants came to discuss Appian", 
@@ -87,8 +151,8 @@ export default function Home() {
 				<Blog
                 	title="ACM Speaker: Juan Arreola"
                     desc="March 6th, 2025"
-                    image1="https://media.licdn.com/dms/image/v2/D5622AQHN07jqkvmsag/feedshare-shrink_2048_1536/B56ZVuO7mFGUAs-/0/1741311169569?e=1755129600&v=beta&t=KB1kmZr_aTeME-U5uwofSNhOD70E5K9sD-_DiUQERuY"
-                    image2="https://media.licdn.com/dms/image/v2/D5622AQEwJxEIlXZwhQ/feedshare-shrink_2048_1536/B56ZVuO7mCGUAo-/0/1741311172592?e=1755129600&v=beta&t=zUKoUey1t-ji1t8mY64-d8_HNoi7JE-NKOEP8Kkve-8"
+                    image1="https://github.com/user-attachments/assets/f78c6124-3642-4162-8b7a-db2b908ef25d"
+                    image2="https://github.com/user-attachments/assets/fd161d8b-3ef0-43f3-afae-4667edc7c1d0"
 					body1Title="Presentation"
 					body1={[
 						"NIU Alum, BS 2004, Juan Arreola came to campus to discuss his career journey.", 
@@ -104,8 +168,8 @@ export default function Home() {
 				<Blog
                 	title="NIU Alumni Panel"
                     desc="October, 2024"
-                    image1="https://media.licdn.com/dms/image/v2/D5622AQHSGkedllEwnw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1726701744586?e=1755129600&v=beta&t=ceJ7KfFeBRpUjcgNWC7EgVp5qrp5uF8ZVE3b29ylv30"
-                    image2="https://media.licdn.com/dms/image/v2/D5622AQGKep-rYkc-lg/feedshare-shrink_1280/feedshare-shrink_1280/0/1726701752472?e=1755129600&v=beta&t=CGCjkyjzURx1SDRPAen47ITbTND1flQqjsxqDZRdZQw"
+                    image1="https://github.com/user-attachments/assets/bce08dbf-8860-46d0-8aa6-5a7153e9467d"
+                    image2="https://github.com/user-attachments/assets/e1e7b153-9978-4d37-b6be-66c5211c49ac"
                    	body1Title="Presentation"
 					body1={[
 						"More than 150 students came out to learn about mainframe careers. There was the panel discussion by recent NIU alumni and current students who are working in the mainframe industry.", 
