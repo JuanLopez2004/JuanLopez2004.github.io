@@ -42,23 +42,6 @@ export default function Home() {
 			</section>
 
 			<Blog
-                title="ACM Speaker: Michael Minella of Spring/Broadcom"
-                desc="October 2025"
-                image1="https://github.com/user-attachments/assets/7c7e37d5-de83-4c4e-b3ed-d7e0331f624c"
-                image2="https://github.com/user-attachments/assets/ad8f1c76-d12e-4bb0-a038-1d30ccdff305"
-        		body1Title="Event"
-				body1={[
-					
-
-				]}
-				body2Title="Aftermath"
-                body2={[
-					"ACM Member Brett Williams, showcased his DDS dice rolling game", 
-					
-				]}
-           	/>
-
-			<Blog
                 title="StemFest 2025"
                 desc="September 2025"
                 image1="https://github.com/user-attachments/assets/ccf8ba70-c95b-4bb5-89d4-dad75da6842f"
