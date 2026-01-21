@@ -1,4 +1,3 @@
-<img width="1919" height="1079" alt="cute" src="https://github.com/user-attachments/assets/d0a0bb23-3d12-4432-81c4-224d9dfe2ba3" />
 ![tuxlogo](https://github.com/user-attachments/assets/75ba5dcd-94c9-4eba-b13d-ce46536f9bee)
 ![bio](https://github.com/user-attachments/assets/d84a47b4-de44-4104-84fa-351d3120fd23)
 ![goose](https://github.com/user-attachments/assets/d5e0ed99-b383-48fa-9284-2132bb02e9bc)
@@ -38,3 +37,6 @@
 ![stemfair2](https://github.com/user-attachments/assets/5a7446fd-a803-4708-82b1-fc5c18e7747a)
 ![ibmz2](https://github.com/user-attachments/assets/214cb342-07f3-4b5f-97e5-9edcc6ebc150)
 ![cute](https://github.com/user-attachments/assets/5962ede9-e2fb-4892-b7bc-27ab4103670f)
+![dekalbmusic](https://github.com/user-attachments/assets/93945744-4979-4b3a-a346-441405bae935)
+![csci490](https://github.com/user-attachments/assets/f856ae4f-557b-420f-9659-3e25fa0c6884)
+![dusky](https://github.com/user-attachments/assets/1ac938b0-ca98-41f3-8e78-f1ff30dad132)
