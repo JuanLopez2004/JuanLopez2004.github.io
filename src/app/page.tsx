@@ -62,10 +62,11 @@ export default function Home() {
       >
 				<section style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '0', margin: '0' }}>
 					<Hero
-						title="Aspiring Frontend Developer with an interest in Information Technology and Business Intelligence"
-						content="I’m a Senior studying Computer Science at Northern Illinois University, focused on Frontend web development."
-						content2="I’m comfortable with C++, SQL, React, Typescript, HTML, CSS, NodeJS and IT helpdesk operations."
-						content3="I enjoy building practical, efficient apps that connect smoothly with databases and provide great user experiences."
+						title="Aspiring Frontend Developer with an interest in Information Technology"
+						content="I'm a current MSIM graduate student at the University of Illinois Urbana-Champaign. I have a BS in Computer Science from Northern Illinois University."
+						content2="I'm an incoming Software Engineer intern at the Illinois Housing Development Authority in Chicago, Illinois."
+						content3="I’m comfortable with C++, SQL, React, Typescript, HTML, CSS, NodeJS and IT helpdesk operations."
+						content4="I enjoy building practical, efficient apps that connect smoothly with databases and provide great user experiences."
 						imageSrc="https://github.com/user-attachments/assets/dcb0b1d6-d5ae-4c71-838e-03861957220e"
 						altText="Frutiger"
 						link1="https://github.com/JuanLopez2004"
@@ -103,12 +104,11 @@ export default function Home() {
 				<section style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '0', margin: '0' }}>
 						<SplitSection
 							title1="Work Experience"
-							content1="Endpoint Technician - Northern Illinois University · Part-time, Jun 2025 - Present"
-							content2="DeKalb, Illinois, United States"
-							content5="Formerly ResTech"
-							title2="Description"
-							content3="Provide IT support to students and staff in the various NIU residence halls and the Student Center, including laptop troubleshooting, hardware/software support, Computer Imaging, Powershell, and Assistance."
-							content4="Tools Learned: Powershell, Windows 11 Support, GitLab"
+							content1="ResTech/Endpoint Technician - Northern Illinois University"
+							content2="Part-time, June 2025 - May 2026"
+							title2="Internships"
+							content3="Software Engineer intern - Illinois Housing Development Authority (IHDA)"
+							content4="Tools Learned: TBA"
 							grayBg={true}
 							large={true}
 						/>
@@ -119,8 +119,8 @@ export default function Home() {
 				<section style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '0', margin: '0' }}>
 						<Section
 							title="Involvement"
-							content="I serve as Chair for the NIU Association of Computing Machinery for 2024-2026. Under our shared vision, we have completely revamped ACM with two new Special Interest Groups (SIGwebdev and SIGmainframe) as well as provide SIGmeeting Workshops, Socials, Speaker Presentations, Career Fairs, and Alumni Council Outreach"
-							content2="If you are interested in reading about our work, my contributions, and our event history click below"
+							content="I served as the NIU ACM Chapter's Chair from December 2024 - May 2026. I am also involved at UIUC in a mixture of tech related organizations."
+							content3="Read about my involvement history here."
 							imageSrc="https://github.com/user-attachments/assets/ea132924-cb5e-4e66-bcf5-3a6aaa09e4ba"
 							altText="tux"
 							link1="/involvement"
