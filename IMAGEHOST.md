@@ -1,3 +1,4 @@
+![gpt2010](https://github.com/user-attachments/assets/2636d959-f2ea-4a08-b2c3-5f1e823fcee6)
 ![tuxlogo](https://github.com/user-attachments/assets/75ba5dcd-94c9-4eba-b13d-ce46536f9bee)
 ![bio](https://github.com/user-attachments/assets/d84a47b4-de44-4104-84fa-351d3120fd23)
 ![goose](https://github.com/user-attachments/assets/d5e0ed99-b383-48fa-9284-2132bb02e9bc)
