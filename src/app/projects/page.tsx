@@ -92,38 +92,32 @@ const projects: Project[] = [
 
 export default function Home() {
     return (
-        	<div style={{ 
-			minHeight: "100vh", 
-			display: "flex", 
-			flexDirection: "column", 
-			position: "relative" 
-		}}>
+        <div style={{
+            minHeight: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            position: 'relative',
+            width: '100%',
+            maxWidth: '100vw',
+            overflowX: 'hidden',
+        }}>
+            <Background />
+            <Header />
 
-          <main style={{
-          	flex: 1,
-          	display: 'flex',
-          	flexDirection: 'column',
-          	paddingTop: '120px', 
-        	}}
-      	></main>
+            <main style={{
+                flex: 1,
+                display: 'flex',
+                flexDirection: 'column',
+                paddingTop: '80px',
+            }}>
+                <div id="Projects">
+                    <section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+                        <Showcase projects={projects} />
+                    </section>
+                </div>
+            </main>
 
-          <Background />
-          <Header />
-
-            
-          <main style={{ flex: 1 }}>
-          {/* main content goes here */}
-                
-                
-          {/* Showcase Section */}
-          <div id="Projects">
-          	<section style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-          	<Showcase projects={projects} />
-          	</section>
-          </div>
-
-          </main>
-		<Footer />
+            <Footer />
         </div>
     );
 }

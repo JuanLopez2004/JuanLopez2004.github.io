@@ -12,8 +12,6 @@ type SplitSectionProps = {
   content4?: string;
   content6?: string;
 
-  large?: boolean;
-
   link1Text?: string;
   link1Href?: string;
 

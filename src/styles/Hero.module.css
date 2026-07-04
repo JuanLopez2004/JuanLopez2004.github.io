@@ -64,6 +64,10 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+.hero-text-gap {
+    margin-top: clamp(0.7rem, 1.5vw, 1rem);
+}
+
 .hero-links {
     display: flex;
     gap: clamp(1rem, 2.5vw, 1.5rem); 
@@ -130,26 +134,6 @@
         padding: clamp(0.45rem, 1vw, 0.65rem); 
         min-width: clamp(38px, 6vw, 46px); 
         min-height: clamp(38px, 6vw, 46px); 
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-content {
-        padding: 1rem 0.75rem;
-    }
-    .hero-text {
-        font-size: 0.85rem;
-        padding: 0.5rem 0.75rem;
-    }
-    .hero-links {
-        gap: 0.75rem;
-        padding: 0.75rem;
-    }
-    .hero-link-icon {
-        font-size: 1.25rem;
-        padding: 0.4rem;
-        min-width: 36px;
-        min-height: 36px;
     }
 }
 

@@ -3,7 +3,6 @@ import Footer from '@/components/footer';
 import Background from '@/components/background';
 import Hero from '@/components/hero';
 import Section from '@/components/section';
-import SplitSection from '@/components/splitsection';
 import Showcase, { Project } from '@/components/showcase';
 
 //Projects Section
@@ -88,29 +87,19 @@ export default function Home() {
 					/>
 				</section>
 
-				<div id="Skills">
-					<SplitSection
-						title1="Skills"
-						content1="C++, SQL, ReactJS, TypeScript, Python,"
-						content2="HTML, CSS, NextJS, Could do Java if forced"
-						title2="Dev Tools"
-						content3="VScode, Git, GitHub, GitLab,"
-						content4="MySQL, Vite, Windows, Linux"
-						grayBg={false}
-					/>
-				</div>
-
-				<div id="Work">
+				<div id="Experience">
 				<section style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '0', margin: '0' }}>
-						<SplitSection
-							title1="Work Experience"
-							content1="ResTech/Endpoint Technician - Northern Illinois University"
-							content2="Part-time, June 2025 - May 2026"
-							title2="Internships"
-							content3="Software Engineer intern - Illinois Housing Development Authority (IHDA)"
-							content4="Tools Learned: TBA"
-							grayBg={true}
-							large={true}
+						<Section
+							title="Experience"
+							content="I have technical experience in C++, Python, SQL, ReactJS, TypeScript, and modern frontend frameworks like NextJS."
+							content2="Currently working as a ResTech/Endpoint Technician at NIU, and incoming Software Engineer intern at IHDA."
+							content3="View my full experience, skills, and work history."
+							imageSrc="https://github.com/user-attachments/assets/d84a47b4-de44-4104-84fa-351d3120fd23"
+							altText="experience"
+							link1="/experience"
+							link1Label="View Experience Page"
+							whiteBg={false}
+							reverse={true}
 						/>
 					</section>
 				</div>

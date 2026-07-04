@@ -22,6 +22,10 @@
   background: #f2f2f2;
 }
 
+.sectionbody.reverse {
+  flex-direction: row-reverse;
+}
+
 		   @media (max-width: 768px) {
 			 .sectionbody {
 			   flex-direction: column;

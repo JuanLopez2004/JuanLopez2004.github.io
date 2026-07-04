@@ -41,22 +41,26 @@ function copyGlobalsCss() {
   console.log('✓ Copied globals.css to output directory');
 }
 
+// Recursively find all index.html files under a directory
+function findHtmlFiles(dir, results = []) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      findHtmlFiles(full, results);
+    } else if (entry.name === 'index.html') {
+      results.push(full);
+    }
+  }
+  return results;
+}
+
 // Process HTML files
 function processHtmlFiles() {
   const outDir = path.join(__dirname, '../out');
-  const htmlFiles = [
-    path.join(outDir, 'index.html'),
-    path.join(outDir, 'Blog/index.html'),
-    path.join(outDir, 'involvement/index.html'),
-    path.join(outDir, 'projects/index.html')
-  ];
-  
+  const htmlFiles = findHtmlFiles(outDir);
+
   htmlFiles.forEach(file => {
-    if (fs.existsSync(file)) {
-      addGlobalsCssToHtml(file);
-    } else {
-      console.log(`⚠ File not found: ${file}`);
-    }
+    addGlobalsCssToHtml(file);
   });
 }
 

@@ -18,8 +18,7 @@ export default function Header() {
                         <span className={styles.headerTitle}>Juan Lopez</span>
                     </div>
                     <nav className={styles.headerNav}>
-                        <Link href="/#Skills">Skills</Link>
-                        <Link href="/#Work">Work</Link>
+                        <Link href="/experience">Experience</Link>
                         <Link href="/involvement">Involvement</Link>
                         <Link href="/projects">Projects</Link>
                         <Link href="/Blog">Blog</Link>

@@ -10,6 +10,7 @@ type IntroBodyProps = {
 	altText: string;
 	whiteBg?: boolean;
 	grayBg?: boolean;
+	reverse?: boolean;
 	link1?: string;
 	link2?: string;
 	link3?: string;
@@ -17,10 +18,10 @@ type IntroBodyProps = {
 	link1Label?: string;
 };
 
-export default function Section({ title, content, content2, content3, imageSrc, altText, whiteBg, grayBg, link1, link2, link3, link4, link1Label }: IntroBodyProps) {
+export default function Section({ title, content, content2, content3, imageSrc, altText, whiteBg, grayBg, reverse, link1, link2, link3, link4, link1Label }: IntroBodyProps) {
 	return (
 		<>
-			<header className={`${styles.sectionbody} ${whiteBg ? styles.whiteBg : ''} ${grayBg ? styles.grayBg : ''}`}>
+			<header className={`${styles.sectionbody} ${whiteBg ? styles.whiteBg : ''} ${grayBg ? styles.grayBg : ''} ${reverse ? styles.reverse : ''}`}>
 				<div className={styles.sectionImageWrapper}>
 					<img src={imageSrc} alt={altText} className={styles.sectionImage} />
 				</div>
