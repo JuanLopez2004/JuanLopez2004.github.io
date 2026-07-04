@@ -1,3 +1,4 @@
+![portfolio](https://github.com/user-attachments/assets/42066ff9-499a-4bab-8c61-76a5756cb390)
 ![gpt2010](https://github.com/user-attachments/assets/2636d959-f2ea-4a08-b2c3-5f1e823fcee6)
 ![tuxlogo](https://github.com/user-attachments/assets/75ba5dcd-94c9-4eba-b13d-ce46536f9bee)
 ![bio](https://github.com/user-attachments/assets/d84a47b4-de44-4104-84fa-351d3120fd23)
