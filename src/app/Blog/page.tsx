@@ -24,7 +24,19 @@ export default function Home() {
           paddingTop: '80px',
         }}
       >
-      
+
+       <Blog
+        title="Website refresh"
+        desc="7/4/2026"
+        image1="https://github.com/user-attachments/assets/dcb0b1d6-d5ae-4c71-838e-03861957220e"
+        body1={[
+            "Today I refreshed much of the CSS on this website, it had been a little messy. I also changed out a ton of images and updated info to match what life is right now.",
+            "I really like the look of this version. The last one was meh. I should probably get rid of the Tux icon image. I just don't know what to put LOL",
+            "I should really talk here more though, It's a cool feature."
+        ]}
+        
+        />
+
 	    <Blog
         title="NIU Linux Users Group"
         desc="7/14/2025"

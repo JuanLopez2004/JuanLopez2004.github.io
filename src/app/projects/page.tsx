@@ -24,6 +24,12 @@ const projects: Project[] = [
 	link: "https://github.com/niu-acm/niu-acm-website",
 	},
 	{
+		title: 'GPT2010',
+		description: 'Web 2.0 Era ChatGPT buddy. Built with HTML, JS, Node, and CSS for that 2000s. ',
+		imageSrc: 'https://github.com/user-attachments/assets/2636d959-f2ea-4a08-b2c3-5f1e823fcee6',
+		link: 'https://github.com/JuanLopez2004/gpt2010',
+	},
+	{
 	title: "Portfolio Site",
 	description: "This Very Site. Built with TypeScript, ReactJS, and NextJS",
 	imageSrc: "https://github.com/user-attachments/assets/2579a930-412d-4c14-9ad9-99885d3e4e6a",

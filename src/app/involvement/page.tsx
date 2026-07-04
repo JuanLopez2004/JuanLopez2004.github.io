@@ -32,11 +32,13 @@ export default function Home() {
 		<section style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '0', margin: '0' }}>
 			<Hero
 				title="Involvement"
-				content="I have been very involved with the Computer Science community at NIU since 2023 when I first Joined the NIU Association for Computing Machinery as a member"
-				content2="In 2024, I took over Chair duties for ACM in 2024, I inherited an ACM with no structure, and no funding."
-				content3="ACM houses two SIGs, SIGmainframe and SIGwebdev. Which meet every week in a 9 week period to host workshops. ACM hosts four Socials, 3 Speakers, and collaborates with the Computer Science Alumni Council"
-				imageSrc="https://github.com/user-attachments/assets/a4bf10f4-6be5-4a4f-b420-ec1491b0c3db"
-				altText="Tux"
+				content="I had been very involved with the Computer Science community at NIU since 2023 when I
+				 first Joined the NIU Association for Computing Machinery as a member. In 2024, 
+				 I took over Chair duties for ACM in 2024, I inherited an ACM with no structure, and no funding. 
+				 ACM housed two SIGs, SIGmainframe and SIGwebdev. Which met every week in a 9 week period to host workshops. ACM hosts four Socials, 3 Speakers, and collaborates with the Computer Science Alumni Council"
+				content2="Ever since graduating NIU, I have become involved in IHDA's affordable housing mission and UIUC's tech communities"
+				imageSrc="https://github.com/user-attachments/assets/d854abb8-dd6e-4c0a-a50a-9d290776b868"
+				altText="my guys"
 				whiteBg={true}
 			/>
 			</section>
