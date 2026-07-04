@@ -1,3 +1,6 @@
+![me](https://github.com/user-attachments/assets/d2f55c4d-cea8-4829-99b2-080369f7990b)
+![chrismas](https://github.com/user-attachments/assets/60b8d4d8-f5f1-4958-88b3-f5bf621fb8cd)
+
 ![andy](https://github.com/user-attachments/assets/8e947683-4f46-49c8-81a9-738d9b38279e)
 
 ![acmlogonew](https://github.com/user-attachments/assets/ed6f4e66-62f6-440e-817b-04b145490136)
