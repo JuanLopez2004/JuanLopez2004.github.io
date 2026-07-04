@@ -1,3 +1,5 @@
+![quad](https://github.com/user-attachments/assets/94fe4818-5526-4e57-ab61-732b70829a12)
+![csharp](https://github.com/user-attachments/assets/4c03b2cd-af20-4bfc-84c7-9577315b257f)
 ![pinkline](https://github.com/user-attachments/assets/e7a7960c-31c7-4227-8d94-0ad87f3af700)
 ![ihda](https://github.com/user-attachments/assets/0618ad7d-81c9-4641-ae11-e87aec32c19b)
 ![me](https://github.com/user-attachments/assets/d2f55c4d-cea8-4829-99b2-080369f7990b)
