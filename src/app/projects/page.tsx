@@ -92,7 +92,6 @@ const projects: Project[] = [
 	imageSrc: "",
 	link: "https://github.com/JuanLopez2004/project-three",
 	},
-
 	*/
 ];
 
