@@ -36,7 +36,6 @@ export default function Home() {
         ]}
         
         />
-
 	    <Blog
         title="NIU Linux Users Group"
         desc="7/14/2025"
