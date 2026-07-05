@@ -1,6 +1,5 @@
 name: Deploy Next.js to GitHub Pages
 
-# Automatically deploy on push to main branch
 on:
   push:
     branches: [ main ]
@@ -20,8 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout
+    - name: Checkout code
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
       
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -29,17 +30,28 @@ jobs:
         node-version: '18'
         cache: 'npm'
 
-    - name: Setup Pages
-      uses: actions/configure-pages@v4
-      with:
-        static_site_generator: next
-        
     - name: Install dependencies
-      run: npm ci
+      run: npm ci --verbose
       
     - name: Build application
       run: npm run build
-        
+      
+    - name: Verify build output
+      run: |
+        if [ ! -d "out" ]; then
+          echo "❌ Build failed: 'out' directory not found"
+          exit 1
+        fi
+        if [ ! -f "out/index.html" ]; then
+          echo "❌ Build failed: 'out/index.html' not found"
+          exit 1
+        fi
+        echo "✅ Build verified successfully"
+        ls -la out/ | head -20
+      
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+      
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
