@@ -35,6 +35,7 @@
 
 .blogSection img {
 	max-width: min(260px, 40vw);
+	width: 100%;
 	height: auto;
 	aspect-ratio: 260/215;
 	flex-shrink: 0;
@@ -90,7 +91,6 @@
 	transform: translateY(-2px);
 }
 
-/* Responsive breakpoints */
 @media (max-width: 768px) {
 	.blogContainer {
 		margin: 1rem auto;
@@ -103,7 +103,10 @@
 	}
 	.blogSection img {
 		max-width: 100%;
+		height: auto;
+		aspect-ratio: 16 / 9;
 		margin-bottom: 0.5rem;
+		object-fit: cover;
 	}
 	.blogBody {
 		min-width: 0;
@@ -117,6 +120,12 @@
 	}
 	.blogSection {
 		gap: 0.5rem;
+	}
+	.blogSection img {
+		max-width: 100%;
+		height: auto;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
 	}
 	.blogLinks {
 		flex-direction: column;

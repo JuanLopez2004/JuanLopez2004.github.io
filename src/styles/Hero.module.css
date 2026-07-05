@@ -172,10 +172,11 @@
         align-items: center;
     }
     .hero-image {
-        height: clamp(250px, 50vw, 350px);
+        height: clamp(200px, 60vw, 350px);
         border-radius: 0;
-        width: 100vw;
-        max-width: 100vw;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
     }
     .hero-title {
         font-size: clamp(1.2rem, 5vw, 1.6rem);
