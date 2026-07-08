@@ -22,7 +22,7 @@ const projects: Project[] = [
 	},
 	{
 		title: 'GPT2010',
-		description: 'Web 2.0 Era ChatGPT buddy. Built with HTML, JS, Node, and CSS for that 2000s. ',
+		description: 'Web 2.0 Era ChatGPT buddy. Built with HTML, JS, Node, and CSS for that 2000s look.',
 		imageSrc: 'https://github.com/user-attachments/assets/2636d959-f2ea-4a08-b2c3-5f1e823fcee6',
 		link: 'https://github.com/JuanLopez2004/gpt2010',
 	},
