@@ -11,7 +11,7 @@ const projects: Project[] = [
 		title: 'NIU ACM Website',
 		description:
 			'ACM Departmental Website Programmed with ReactJS, TypeScript. Serverside Development with NextJS with nixOS/Bun toolkit',
-		imageSrc: 'https://github.com/user-attachments/assets/ed6f4e66-62f6-440e-817b-04b145490136',
+		imageSrc: 'https://github.com/user-attachments/assets/aae54359-7f88-400b-a9a9-77bbd42aba99',
 		link: 'https://github.com/niu-acm/niu-acm-website',
 	},
 	{
