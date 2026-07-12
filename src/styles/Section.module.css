@@ -166,7 +166,7 @@
 			.sectionImageWrapper {
 				width: 50%;
 				flex: 1 1 50%;
-				max-width: 760px;
+				max-width: 600px;
 				display: flex;
 				justify-content: center;
 				align-items: center;

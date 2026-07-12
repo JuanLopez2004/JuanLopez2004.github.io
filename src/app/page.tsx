@@ -33,10 +33,22 @@ const projects: Project[] = [
 		link: 'https://github.com/JuanLopez2004/Website2',
 	},
 	{
+		title: 'Radishbeet.com',
+		description: 'Where I get to be myself! Built with basic HTML/CSS for simplicity.',
+		imageSrc: 'https://github.com/user-attachments/assets/d0f1bcee-235f-499b-9ccb-43dd3d5f4a6a',
+		link: 'https://github.com/JuanLopez2004/radishbeet',
+	},
+	{
 		title: 'GooseFM Radio Website',
 		description: 'Fake online radio built in NextJS with embedded Online Radio play functionality.',
-		imageSrc: 'https://github.com/user-attachments/assets/93945744-4979-4b3a-a346-441405bae935',
+		imageSrc: 'https://github.com/user-attachments/assets/63367ab2-da72-41b9-b97a-05e1b249d11c',
 		link: 'https://github.com/JuanLopez2004/goosefm',
+	},
+	{
+		title: "Ryan's Parts Commerce Website",
+		description: "Junior Year Software Engineering Project built in ReactJS, NodeJs",
+		imageSrc: "https://github.com/user-attachments/assets/4b65a6c7-25bd-4635-a01d-f0c82ad86d9d",
+		link: "https://github.com/JuanLopez2004/CSCI-467",
 	},
 	{
 		title: 'More Projects',
@@ -78,7 +90,7 @@ export default function Home() {
 						content2="I'm experienced in full-stack web development with ReactJS, TypeScript, Next.js, and ASP.NET Core/.NET. I recently completed a Software Engineering internship building and maintaining production applications, where I implemented features, wrote unit tests, and collaborated using modern development tools."
 						content3="I'm currently a Software Engineering intern at the Illinois Housing Development Authority (IHDA)."
 						content4="I enjoy building practical, efficient apps that connect smoothly with databases and provide great user experiences."
-						imageSrc="https://github.com/user-attachments/assets/60b8d4d8-f5f1-4958-88b3-f5bf621fb8cd"
+						imageSrc="https://github.com/user-attachments/assets/3b2b3bdf-3205-4b5b-b5dd-b15155783262"
 						altText="tuxr"
 						link1="https://github.com/JuanLopez2004"
 						link2="https://www.linkedin.com/in/juan-lopez-6278bb234/"

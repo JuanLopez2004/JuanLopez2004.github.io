@@ -26,6 +26,12 @@ const projects: Project[] = [
 	website: "https://juanlopezcs.com/"
 	},
 	{
+		title: 'Radishbeet.com',
+		description: 'Where I get to be myself! Built with basic HTML/CSS for simplicity.',
+		imageSrc: 'https://github.com/user-attachments/assets/d0f1bcee-235f-499b-9ccb-43dd3d5f4a6a',
+		link: 'https://github.com/JuanLopez2004/radishbeet',
+	},
+	{
 	title: "Android Themed HTML/CSS Website",
 	description: "HTML/CSS Website built with an Android Theme",
 	imageSrc: "https://github.com/user-attachments/assets/8e947683-4f46-49c8-81a9-738d9b38279e",
