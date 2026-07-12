@@ -151,26 +151,31 @@
     .hero {
         flex-direction: column;
         height: auto;
-        min-height: 0;
-        width: 100vw;
+        min-height: auto;
+        width: 100%;
         margin: 0;
-        max-width: 100vw;
+        max-width: 100%;
         border-radius: 0;
         z-index: 2;
+        overflow: hidden;
     }
     .hero-image-container,
     .hero-content {
-        width: 100vw;
+        width: 100%;
         height: auto;
+        flex: 0 0 auto;
     }
     .hero-image-container {
         order: 1;
+        align-items: stretch;
+        justify-content: center;
+        overflow: hidden;
     }
     .hero-content {
         order: 2;
         padding: clamp(1rem, 3vw, 1.5rem) clamp(0.5rem, 2vw, 1rem);
         text-align: center;
-        min-height: 20vh;
+        min-height: auto;
         align-items: center;
     }
     .hero-image {

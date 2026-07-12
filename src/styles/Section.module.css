@@ -1,15 +1,15 @@
 .sectionbody {
-  width: 100vw;
+	width: 100%;
   margin: 0;
   display: flex;
-  align-items: stretch;
+	align-items: center;
   justify-content: center;
   background: #f2f2f2;
   position: relative;
   max-width: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: clamp(2rem, 4vw, 2.5rem);
-  gap: clamp(1.5rem, 4vw, 1.8rem);
+	padding: clamp(1.5rem, 3vw, 2rem) clamp(1.25rem, 3.5vw, 2.75rem);
+	gap: clamp(0.75rem, 2vw, 1.25rem);
   height: auto;
   min-height: auto;
 }
@@ -38,12 +38,13 @@
 		   @media (max-width: 768px) {
 			 .sectionbody {
 			   flex-direction: column;
-			   width: 100vw;
+			   width: 100%;
 			   max-width: none;
 			   margin: 0;
-			   padding: 0;
+			   padding: clamp(1rem, 3vw, 1.5rem);
 			   gap: clamp(1rem, 3vw, 1.5rem);
 			   min-height: auto;
+			   overflow: hidden;
 			 }
 			 .sectionbody.reverse {
 			   flex-direction: column;
@@ -71,14 +72,16 @@
 				}
 
 			.sectionContent {
-				width: 45%;
+				width: 50%;
+				flex: 1 1 50%;
+				max-width: 760px;
 				display: flex;
 				flex-direction: column;
-				justify-content: flex-start;
+				justify-content: center;
 				align-items: flex-start;
 				box-sizing: border-box;
 				background-color: #fff;
-				padding: clamp(1rem, 3vw, 1.3rem);
+				padding: clamp(1.25rem, 2.5vw, 1.75rem);
 				border-radius: clamp(6px, 1.5vw, 0.75rem);
 				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 				}
@@ -162,18 +165,21 @@
 
 			.sectionImageWrapper {
 				width: 50%;
+				flex: 1 1 50%;
+				max-width: 760px;
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				padding: clamp(0.5rem, 2vw, 0.8rem) 0;
+				padding: 0;
 				border-radius: clamp(6px, 1.5vw, 0.75rem);
+				overflow: hidden;
 				}
 
 			.sectionImage {
-				width: auto;
+				width: 100%;
 				max-width: 100%;
 				height: auto;
-				max-height: clamp(250px, 50vw, 360px);
+				max-height: clamp(320px, 42vw, 520px);
 				object-fit: cover;
 				border-radius: clamp(6px, 1.5vw, 0.75rem);
 				display: block;
