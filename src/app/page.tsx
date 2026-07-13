@@ -95,7 +95,7 @@ export default function Home() {
 						link1="https://github.com/JuanLopez2004"
 						link2="https://www.linkedin.com/in/juan-lopez-6278bb234/"
 						link3="https://www.hackerrank.com/profile/jlopezcs04"
-						link4="https://drive.google.com/file/d/10vOiWVNOcnjulLkdYKG7kC8YOOjxf4Zt/view?usp=sharing"
+						link4="/Juan%20Lopez%20Resume%202026.pdf"
 						whiteBg={false}
 					/>
 				</section>
