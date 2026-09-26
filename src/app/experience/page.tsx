@@ -35,7 +35,7 @@ export default function Experience() {
           <Section
             title="Education"
             content="B.S. Computer Science | Northern Illinois University, DeKalb, IL | May 2026 | Focus: Software Development | GPA 3.5 Cumulative, Graduated Magna Cum Laude"
-            content2="M.S. Information Management | University of Illinois Urbana-Champaign | Expected May 2028 | Focus: Human-Centered Systems Design & Development"
+            content2="M.S. Information Management | University of Illinois Urbana-Champaign | Expected December 2027 | Focus: Human-Centered Systems Design & Development"
             content3=""
             whiteBg={false}
             imageSrc="https://github.com/user-attachments/assets/94fe4818-5526-4e57-ab61-732b70829a12"

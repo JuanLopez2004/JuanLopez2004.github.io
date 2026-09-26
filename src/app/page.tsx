@@ -94,7 +94,7 @@ export default function Home() {
 					<Hero
 						title="Full-Stack Developer & Software Engineer"
 						content="I'm a Computer Science graduate with a passion for full-stack development and creating scalable solutions. I hold a B.S. in Computer Science and am pursuing an M.S. in Information Management, specializing in Human-Centered Systems Design & Development."
-						content2="I'm experienced in full-stack web development with ReactJS, TypeScript, Next.js, and ASP.NET Core/.NET. I recently completed a Software Engineering internship building and maintaining production applications, where I implemented features, wrote unit tests, and collaborated using modern development tools."
+						content2="I'm experienced in full-stack web development with ReactJS, TypeScript, Next.js, and ASP.NET Core/.NET."
 						content3="I'm currently a Software Engineering intern at the Illinois Housing Development Authority (IHDA)."
 						content4="I enjoy building practical, efficient apps that connect smoothly with databases and provide great user experiences."
 						imageSrc="https://github.com/user-attachments/assets/3b2b3bdf-3205-4b5b-b5dd-b15155783262"
