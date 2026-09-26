@@ -6,6 +6,13 @@ import Showcase, { Project } from '@/components/showcase';
 //Project Section
 const projects: Project[] = [
 	{
+		title: 'Snack Snack',
+		description:
+			'Snack rating website developed with HTML, CSS, JS and hosted on SupaBase, Vercel, GitHub, and Squarespace',
+		imageSrc: 'https://github.com/user-attachments/assets/6be30b70-3aa2-4c5c-91cd-3551c0573678',
+		website: "https://www.snack-snack.com/"
+	},
+	{
 	title: "NIU ACM Website",
 	description: "ACM Departmental Website Programmed with ReactJS, TypeScript. Serverside Development with NextJS with nixOS/Bun toolkit",
 	imageSrc: "https://github.com/user-attachments/assets/aae54359-7f88-400b-a9a9-77bbd42aba99",

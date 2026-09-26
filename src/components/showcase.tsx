@@ -5,7 +5,7 @@ export type Project = {
   title: string;
   description: string;
   imageSrc: string;
-  link: string;
+  link?: string;
   website?: string;
 };
 
@@ -42,15 +42,17 @@ export default function Showcase({ projects }: ShowcaseProps) {
               </p>
             </div>
             <div className={styles.cardFooter}>
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.codeLink}
-              >
-                <FaGithub aria-hidden="true" />
-                View Code
-              </a>
+              {link && (
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.codeLink}
+                >
+                  <FaGithub aria-hidden="true" />
+                  View Code
+                </a>
+              )}
               {website && (
                 <a
                   href={website}
