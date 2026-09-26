@@ -30,6 +30,8 @@ export default function Showcase({ projects }: ShowcaseProps) {
               src={imageSrc}
               alt={title}
               className={styles.cardImage}
+              loading="lazy"
+              decoding="async"
             />
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>

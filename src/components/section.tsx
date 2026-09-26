@@ -25,7 +25,13 @@ export default function Section({ title, content, content2, content3, imageSrc, 
 			<header className={`${styles.sectionbody} ${whiteBg ? styles.whiteBg : ''} ${grayBg ? styles.grayBg : ''} ${reverse ? styles.reverse : ''} ${!imageSrc && twoColumn ? styles.twoColumn : ''}`}>
 				{imageSrc && (
 					<div className={styles.sectionImageWrapper}>
-						<img src={imageSrc} alt={altText} className={styles.sectionImage} />
+						<img
+							src={imageSrc}
+							alt={altText}
+							className={styles.sectionImage}
+							loading="lazy"
+							decoding="async"
+						/>
 					</div>
 				)}
 

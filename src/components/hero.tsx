@@ -40,7 +40,13 @@ export default function Hero({
 
             <div className={styles.hero}>
                 <div className={styles["hero-image-container"]}>
-                    <img src={imageSrc} alt={altText} className={styles["hero-image"]} />
+                    <img
+                        src={imageSrc}
+                        alt={altText}
+                        className={styles["hero-image"]}
+                        fetchPriority="high"
+                        decoding="async"
+                    />
                 </div>
                 <div className={styles["hero-content"]}>
                     <div className={styles["hero-title"]}>{title}</div>

@@ -26,6 +26,10 @@ export default function Header() {
                                 src="https://github.com/user-attachments/assets/4d971aa8-85d8-47f3-bb23-d154e0a485b6"
                                 alt="Logo"
                                 className={styles.headerLogo}
+                                width={70}
+                                height={70}
+                                fetchPriority="high"
+                                decoding="async"
                             />
                         </Link>
                         <span className={styles.headerTitle}>Juan Lopez</span>

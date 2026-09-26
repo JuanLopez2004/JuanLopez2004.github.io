@@ -55,6 +55,8 @@ export default function BlogPostContainer({title, desc, image1, image2, image3, 
               src={image1}
               alt="Blog Image 1"
               onError={() => setImage1Error(true)}
+              loading="lazy"
+              decoding="async"
             />
           )}
           <div className={styles.blogBody}>{renderBody(body1, body1Title)}</div>
@@ -67,6 +69,8 @@ export default function BlogPostContainer({title, desc, image1, image2, image3, 
                 src={image2}
                 alt="Blog Image 2"
                 onError={() => setImage2Error(true)}
+                loading="lazy"
+                decoding="async"
               />
             )}
             <div className={styles.blogBody}>{renderBody(body2, body2Title)}</div>
@@ -80,6 +84,8 @@ export default function BlogPostContainer({title, desc, image1, image2, image3, 
                 src={image3}
                 alt="Blog Image 3"
                 onError={() => setImage3Error(true)}
+                loading="lazy"
+                decoding="async"
               />
             )}
             <div className={styles.blogBody}>{renderBody(body3, body3Title)}</div>
