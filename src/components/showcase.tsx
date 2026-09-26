@@ -1,4 +1,4 @@
-import React from "react";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 import styles from '../styles/Showcase.module.css';
 
 export type Project = {
@@ -46,7 +46,8 @@ export default function Showcase({ projects }: ShowcaseProps) {
                 rel="noopener noreferrer"
                 className={styles.codeLink}
               >
-                View Code →
+                <FaGithub aria-hidden="true" />
+                View Code
               </a>
               {website && (
                 <a
@@ -55,7 +56,8 @@ export default function Showcase({ projects }: ShowcaseProps) {
                   rel="noopener noreferrer"
                   className={styles.siteLink}
                 >
-                  Visit Site →
+                  <FaGlobe aria-hidden="true" />
+                  Visit Site
                 </a>
               )}
             </div>
